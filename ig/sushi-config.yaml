@@ -47,6 +47,8 @@ dependencies:
 pages:
   index.md:
     title: Home
+  policy.md:
+    title: Policy
 
 
 #   implementation.xml:
@@ -77,6 +79,7 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Policy: policy.html
   Artifacts: artifacts.html
   ToC: toc.html
   Links:
