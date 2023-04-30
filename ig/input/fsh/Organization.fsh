@@ -69,7 +69,7 @@ Description: "Organization Rakvere Hospital"
   * address.state = "Lääne-Viru"
 * active = true
 
-/*
+
 Instance: OrganizationITK
 InstanceOf: EEBaseOrganization
 Usage: #example
@@ -118,4 +118,3 @@ Description: "Organization Tervisekassa"
   * address.line = "Lastekodu 88"
   * address.city = "Tallinn"
 * active = true
-*/
