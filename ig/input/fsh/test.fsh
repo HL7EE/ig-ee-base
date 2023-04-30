@@ -17,7 +17,7 @@ Id: organization-identity-1
 Title: "Organization Identity Systems"
 Description: "Identity systems acceptable for the organization identification"
 * ^experimental = true
-* include codes from system TestIdentitySystem1 where concept = #https://fhir.ee/sid/org/est/br and concept = #urn:pin:org:est:br
+* include codes from system TestIdentitySystem1 where concept = #https://fhir.ee/sid/org/est/br and concept = #urn:pin:org:est:vatin
 
 
 Profile: TestOrganization1
