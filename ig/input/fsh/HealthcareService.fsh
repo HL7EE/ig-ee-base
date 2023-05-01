@@ -2,7 +2,7 @@ Profile: EEBaseHealthcareService
 Parent: HealthcareService
 Id: ee-healthcare-service
 Title: "EEBase HealthcareService"
-Description: "EEBase HealthcareService"
+Description: "The details of a healthcare service available at a location."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"

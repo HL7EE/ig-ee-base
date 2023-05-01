@@ -14,7 +14,7 @@ Profile: EEBasePractitioner
 Parent: Practitioner
 Id: ee-practitioner
 Title: "EEBase Practitioner"
-Description: "EEBase Practitioner profile"
+Description: "A person who is directly or indirectly involved in the provisioning of healthcare or related services."
 * ^meta.versionId = "4"
 * ^meta.lastUpdated = "2022-11-21T13:15:21.1820806+00:00"
 * ^version = "1.0.0"

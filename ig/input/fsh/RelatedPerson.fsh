@@ -7,7 +7,7 @@ Profile: EEBaseRelatedPerson
 Parent: RelatedPerson
 Id: ee-related-person
 Title: "EEBase RelatedPerson"
-Description: "EEBase RelatedPerson"
+Description: "Information about a person that is involved in a patient's health or the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"

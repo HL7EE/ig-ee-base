@@ -63,7 +63,7 @@ Profile: EEBasePractitionerRole
 Parent: PractitionerRole
 Id: ee-practitioner-role
 Title: "EEBase PractitionerRole"
-Description: "EEBase PractitionerRole"
+Description: "A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time."
 * ^meta.lastUpdated = "2022-09-26T08:01:30.1809509+00:00"
 * ^version = "1.0.0"
 * ^status = #draft

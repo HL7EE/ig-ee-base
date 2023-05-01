@@ -8,3 +8,5 @@ Alias: $LN = http://loinc.org
 Alias: $identifier-type = http://terminology.hl7.org/CodeSystem/v2-0203
 
 Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
+
+Alias: $iso3166 = urn:iso:std:iso:3166

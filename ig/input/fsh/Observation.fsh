@@ -2,7 +2,7 @@ Profile: EEBaseObservation
 Parent: Observation
 Id: ee-observation
 Title: "EEBase Observation"
-Description: "EEBase Observation"
+Description: "Measurements and simple assertions made about a patient, device or other subject."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"

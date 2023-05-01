@@ -43,7 +43,7 @@ Profile: EEBasePatient
 Parent: Patient
 Id: ee-patient
 Title: "EEBase Patient"
-Description: "EEBase Patient"
+Description: "Demographics and other administrative information about an individual or animal receiving care or other health-related services."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"

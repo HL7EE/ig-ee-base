@@ -10,7 +10,7 @@ Profile: EEBaseLocation
 Parent: Location
 Id: ee-location
 Title: "EEBase Location"
-Description: "EEBase Location"
+Description: "Details and position information for a place where services are provided and resources and participants may be stored, found, contained, or accommodated."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
