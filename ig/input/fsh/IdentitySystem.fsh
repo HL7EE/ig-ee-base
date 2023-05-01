@@ -26,11 +26,21 @@ Id: ee-organization-identity
 Title: "Organization Identity Systems"
 Description: "Identity system acceptable for organization identification"
 * ^experimental = true
-* include codes from system EEBaseIdentitySystem where concept = #https://fhir.ee/sid/org-est-medre and concept = #https://fhir.ee/sid/org/est/br and concept = #https://fhir.ee/sid/org/vatin
+* EEBaseIdentitySystem#https://fhir.ee/sid/org-est-medre
+* EEBaseIdentitySystem#https://fhir.ee/sid/org/est/br
+* EEBaseIdentitySystem#https://fhir.ee/sid/org/vatin
+
+ValueSet: EEBasePractitionerIdentity
+Id: ee-practitioner-identity
+Title: "Practitioner Identity Systems"
+Description: "Identity system acceptable for practitioner identification"
+* ^experimental = true
+* EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/ni
+* EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/medre
 
 ValueSet: EEBasePatientIdentity
 Id: ee-patient-identity
 Title: "Person Identity Systems"
 Description: "Identity system acceptable for organization identification"
 * ^experimental = true
-* include codes from system EEBaseIdentitySystem where concept = #https://fhir.ee/sid/pid/est/ni
+* EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/ni

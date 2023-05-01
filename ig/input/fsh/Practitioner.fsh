@@ -1,16 +1,13 @@
-ValueSet: EEBasePractitionerIdentity
-Id: ee-practitioner-identity
-Title: "Practitioner Identity Systems"
-Description: "Identity system acceptable for practitioner identification"
-* ^experimental = true
-* include codes from system EEBaseIdentitySystem where concept = #https://fhir.ee/sid/pid/est/ni and concept = #https://fhir.ee/sid/pid/est/medre
+Alias: $degreeLicenseCertificate = http://terminology.hl7.org/CodeSystem/v2-0360
 
 ValueSet: EEBaseQualification
 Id: ee-qualification
 Title: "Kvalifikatsioon (Haridus)"
 Description: "Eriala (kvalifikatsioon)"
 * ^experimental = true
-* include codes from system http://terminology.hl7.org/CodeSystem/v2-0360 where concept is-a #MD "Doctor of Medicine" and concept is-a #PN "Advanced Practice Nurse" and concept is-a #CRN "Certified Registered Nurse" 
+* $degreeLicenseCertificate#MD "Doctor of Medicine"
+* $degreeLicenseCertificate#PN "Advanced Practice Nurse"
+* $degreeLicenseCertificate#CRN "Certified Registered Nurse" 
 
 
 Profile: EEBasePractitioner

@@ -58,7 +58,7 @@ Usage: #example
 Description: "Organization Rakvere Hospital"
 * id = "rh"
 * name = "Rakvere Haigla"
-* identifier.system = #urn:pin:org:est:br //#https://fhir.ee/sid/org/est/br
+* identifier.system = #https://fhir.ee/sid/org/est/br
 * identifier.value = "10856624"
 * alias = "RH"
 * contact

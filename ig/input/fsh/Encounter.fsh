@@ -20,6 +20,7 @@ Id: ee-mode-of-arrival
 Title: "Mode Of Arrival"
 Description: "Mode Of Arrival"
 * ^experimental = false
+* ^copyright = "This value set includes content from HL7 Terminology, which is copyright © 2002+ HL7"
 * include codes from system https://terminology.hl7.org/5.1.0/CodeSystem-v2-0430.html
 * include codes from system EEBaseModeOfArrival
 
