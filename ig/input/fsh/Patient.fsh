@@ -1,5 +1,5 @@
-Alias: $EEBase-ESTID = https://fhir.ee/sid/pid/est/ni
-Alias: $EEBase-TISID = https://hl7.ee/fhir/StructureDefinition/EEBase-TISID
+//Alias: $EEBase-ESTID = https://fhir.ee/sid/pid/est/ni
+//Alias: $EEBase-TISID = https://hl7.ee/fhir/StructureDefinition/EEBase-TISID
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 
 
