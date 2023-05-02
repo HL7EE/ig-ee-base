@@ -21,7 +21,7 @@ Title: "Mode Of Arrival"
 Description: "Mode Of Arrival"
 * ^experimental = false
 * ^copyright = "This value set includes content from HL7 Terminology, which is copyright © 2002+ HL7"
-* include codes from system https://terminology.hl7.org/5.1.0/CodeSystem-v2-0430.html
+* include codes from valueset http://terminology.hl7.org/ValueSet/v2-0430
 * include codes from system EEBaseModeOfArrival
 
 
@@ -39,6 +39,31 @@ Description: "Act Priority"
 * ^experimental = false
 * include codes from valueset http://terminology.hl7.org/ValueSet/v3-ActPriority
 
+/*
+Extension: EEBaseAssociatedEncounter
+Id: ee-encounter-associatedEncounter
+Title: "Encounter Associated Encounter"
+Description: "This encounter occurs within the scope of the referenced encounter."
+//* ^url = "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter"
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.4.642.5.1269"
+* ^version = "1.0.0"
+* ^experimental = false
+* ^date = "2015-02-21"
+* ^publisher = "HL7 International / FHIR Infrastructure"
+* ^contact.telecom.system = #url
+//* ^contact.telecom.value = "http://hl7.org/Special/committees/fiwg"
+* ^jurisdiction = $m49.htm#001
+* ^context.type = #element
+* ^context.expression = "Encounter"
+* . 0..1
+* . ^short = "Associated Encounter"
+* . ^definition = "This encounter occurs within the scope of the referenced encounter."
+//* url = "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter" (exactly)
+* value[x] 1..
+* value[x] only Reference(EEBaseEncounter)
+*/
+
 Profile: EEBaseEncounter
 Parent: Encounter
 Id: ee-encounter
@@ -46,22 +71,17 @@ Title: "EEBase Encounter"
 Description: "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities."
 * ^version = "1.0.0"
 * ^status = #draft
-* ^publisher = "HL7 EE"
+* ^publisher = "HL7 Estonia"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
-    $encounter-modeOfArrival named modeOfArrival 0..* and
-    $encounter-associatedEncounter named associatedEncounter 0..*
+    $encounter-modeOfArrival named modeOfArrival 0..1 MS and
+    $encounter-associatedEncounter named associatedEncounter 0..1
 * extension[modeOfArrival].valueCoding from EEBaseModeOfArrival (extensible)
+//* extension[modeOfArrival].value[x] ^binding.extension.valueString = "EEBaseModeOfArrival"
 * extension[modeOfArrival] ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
-* extension[modeOfArrival] ^min = 0
-* extension[modeOfArrival] ^isModifier = false
-* extension[modeOfArrival] ^binding.description = "The method that the patient arrived at the facility."
-* extension[associatedEncounter] ^min = 0
-* extension[associatedEncounter] ^isModifier = false
-* extension[associatedEncounter].value[x] only Reference(EEBaseEncounter)
+//* extension[associatedEncounter].value[x] only Reference(EEBaseEncounter)
 * status MS
 * priority from EEBaseActPriority (extensible)
 * subject only Reference(Group or EEBasePatient)
