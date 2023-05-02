@@ -8,4 +8,4 @@ RUN ./_genonce.sh
 
 FROM nginx:1.21-alpine
 COPY etc/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=builder /fsh/output /usr/share/nginx/html/ig-mpi
+COPY --from=builder /fsh/output /usr/share/nginx/html/ig-ee-base
