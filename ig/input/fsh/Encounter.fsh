@@ -25,7 +25,7 @@ Description: "Mode Of Arrival"
 * include codes from system EEBaseModeOfArrival
 
 Extension: ExtensionEEBaseModeOfArrival
-Title: "EEBase modeOfArrival"
+Title: "EEBase ModeOfArrival"
 Description: "The method that the patient arrived at the facility."
 Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * ^version = "1.0.0"
