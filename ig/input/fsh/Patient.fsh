@@ -1,11 +1,10 @@
 //Alias: $EEBase-ESTID = https://fhir.ee/sid/pid/est/ni
-//Alias: $EEBase-TISID = https://hl7.ee/fhir/StructureDefinition/EEBase-TISID
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 
 
 Extension: ExtensionEEBasePatientAge
 Id: ee-patient-age
-Title: "Extension EEBase PatientAge"
+Title: "EEBase PatientAge"
 Description: "Patient age measure and unit"
 * ^version = "1.0.0"
 * ^context.expression = "Patient.birthDate"
@@ -98,7 +97,7 @@ Description: "Demographics and other administrative information about an individ
 
 * telecom MS
 * gender MS
-* gender ^isModifierReason = "Neede for proper reference ranges"
+* gender ^isModifierReason = "Needed for proper reference ranges"
 * gender from EEBaseAdministrativeGender (required)
 * birthDate MS
 * birthDate.extension ^slicing.discriminator.type = #value
@@ -107,8 +106,9 @@ Description: "Demographics and other administrative information about an individ
 * birthDate.extension contains $patient-birthTime named birthTime 0..1 and ExtensionEEBasePatientAge named age 0..1 MS
 * birthDate.extension[birthTime] MS
 * birthDate.extension[birthTime].value[x] MS
+* birthDate.extension[birthTime] ^short = "Sünniaeg"
 * birthDate.extension[age] ^isModifier = false
-
+* birthDate.extension[age] ^short = "Vanus"
 * deceased[x] MS
 * address only EEBaseAddress
 * address MS
@@ -120,3 +120,19 @@ Description: "Demographics and other administrative information about an individ
 * managingOrganization only Reference(EEBaseOrganization)
 * link MS
 * link.other only Reference(EEBasePatient or EEBaseRelatedPerson)
+
+
+Instance: PatientJohnDoe
+InstanceOf: EEBasePatient
+Description: "Foreigner with minimal dataset."
+Usage: #example
+* id = "pat2"
+* identifier[0]
+  * system = "https://fhir.ee/sid/pid/usa/ppn"
+  * value = "N857623628"
+* active = true
+* name[other]
+  * use = #usual
+  * given = "John"
+  * family = "Doe"
+* gender = #male

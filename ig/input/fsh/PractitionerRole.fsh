@@ -89,10 +89,10 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
     tor 0..1 MS
 * code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code[role] ^short = "Roll TTO-s"
-* code[role] from EEBasePractitionerRole (required)
+* code[role] from EEBasePractitionerRole (extensible)
 * code[tor].coding.system = "https://fhir.ee/CodeSystem/ee-occupation" (exactly)
 * code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"
-* code[tor] from EEBaseOccupation (required)
+* code[tor] from EEBaseOccupation (extensible)
 
 * specialty MS
 //* specialty from $c80-practice-codes (required)
@@ -101,11 +101,11 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * specialty ^slicing.discriminator.path = "coding.system"
 * specialty ^slicing.rules = #open
 * specialty contains
-    tegevusvaldkond 0..* MS and
+    specialty 0..* MS and
     eriala 0..* MS
-* specialty[tegevusvaldkond].coding.system = $SCT (exactly)
-* specialty[tegevusvaldkond] ^short = "Tegevusvaldkond"
-* specialty[tegevusvaldkond] from EEBaseSpecialty (required)
+* specialty[specialty].coding.system = $SCT (exactly)
+* specialty[specialty] ^short = "Tegevusvaldkond"
+* specialty[specialty] from EEBaseSpecialty (required)
 * specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/ee-eriala" (exactly)
 * specialty[eriala] ^short = "Eriala"
 * specialty[eriala] from EEBaseEriala (required)

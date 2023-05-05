@@ -24,6 +24,19 @@ Description: "Mode Of Arrival"
 * include codes from valueset http://terminology.hl7.org/ValueSet/v2-0430
 * include codes from system EEBaseModeOfArrival
 
+Extension: ExtensionEEBaseModeOfArrival
+Title: "EEBase modeOfArrival"
+Description: "The method that the patient arrived at the facility."
+Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
+* ^version = "1.0.0"
+* ^status = #draft
+* ^publisher = "HL7 Estonia"
+* ^context.type = #element
+* ^context.expression = "Address"
+* . ^short = "The method that the patient arrived at the facility."
+* . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
+* value[x] from EEBaseModeOfArrival (extensible)
+
 
 ValueSet: EEBaseEncounterClass
 Id: ee-encounter-class
@@ -76,12 +89,8 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    $encounter-modeOfArrival named modeOfArrival 0..1 MS and
+    ExtensionEEBaseModeOfArrival named modeOfArrival 0..1 MS and
     $encounter-associatedEncounter named associatedEncounter 0..1
-* extension[modeOfArrival].valueCoding from EEBaseModeOfArrival (extensible)
-//* extension[modeOfArrival].value[x] ^binding.extension.valueString = "EEBaseModeOfArrival"
-* extension[modeOfArrival] ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
-//* extension[associatedEncounter].value[x] only Reference(EEBaseEncounter)
 * status MS
 * priority from EEBaseActPriority (extensible)
 * subject only Reference(Group or EEBasePatient)
@@ -95,3 +104,4 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * partOf only Reference(EEBaseEncounter)
 * partOf ^short = "Reference to previous encounter"
 * partOf ^definition = "Viide eelmisele külastusele"
+

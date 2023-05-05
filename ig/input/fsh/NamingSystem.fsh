@@ -41,8 +41,8 @@ Usage: #definition
 Instance: org-est-br
 InstanceOf: NamingSystem
 Usage: #definition
-* name = "EstonianBusinessRegistryNumber"
-* title = "Estonian Business Registry Number"
+* name = "MedreOrganizationLicense"
+* title = "Medre Organization License"
 * status = #draft
 * kind = #identifier
 * date = "2022-11-14T18:39:08.4689312+00:00"
@@ -55,6 +55,25 @@ Usage: #definition
 * usage = "Used in resources defining the identifier for a facility or business."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://fhir.ee/sid/org/est/br"
+* uniqueId[=].preferred = true
+
+Instance: org-est-medre
+InstanceOf: NamingSystem
+Usage: #definition
+* name = "EstonianBusinessRegistryNumber"
+* title = "Estonian Business Registry Number"
+* status = #draft
+* kind = #identifier
+* date = "2022-11-14T18:39:08.4689312+00:00"
+* publisher = "HL7 Estonia"
+* contact.telecom.system = #url
+* contact.telecom.value = "https://www.terviseamet.ee"
+* type = $identifier-type#XX
+* description = "he license number of Estonian health care facilities registered at Health Board."
+* jurisdiction = urn:iso:std:iso:3166#EE
+* usage = "Used in resources defining the identifier for a facility or business."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = "https://fhir.ee/sid/org/est/medre"
 * uniqueId[=].preferred = true
 
 Instance: org-vatin
