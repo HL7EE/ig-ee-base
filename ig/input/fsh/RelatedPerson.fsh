@@ -13,6 +13,8 @@ Description: "Information about a person that is involved in a patient's health 
 * ^publisher = "HL7 Estonia"
 * patient only Reference(EEBasePatient)
 * patient MS
+* identifier MS
+* identifier ^short = "Kontaktisiku identifikaatorid."
 * identifier.system from EEBasePatientIdentity (extensible)
 * identifier.system 1.. MS
 * identifier.value 1.. MS

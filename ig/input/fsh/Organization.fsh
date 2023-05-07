@@ -67,6 +67,8 @@ Description: "Organization Rakvere Hospital"
   * address.line = "Lõuna põik 1"
   * address.city = "Rakvere"
   * address.state = "Lääne-Viru"
+  * address.country = "EE"
+  * address.use = #work
 * active = true
 
 
@@ -85,6 +87,8 @@ Description: "Organization ITK"
   * address.line = "Ravi tn 18"
   * address.city = "Tallinn"
   * address.state = "Harju"
+  * address.country = "EE"
+  * address.use = #work  
 * active = true
 
 Instance: OrganizationSynlab
@@ -101,6 +105,8 @@ Description: "Organization Synlab"
   * telecom.value = "info@synlab.com"
   * address.line = "Veerenni tn 53a"
   * address.city = "Tallinn"
+  * address.country = "EE"
+  * address.use = #work  
 * active = true
 
 Instance: OrganizationTervisekassa
@@ -117,4 +123,6 @@ Description: "Organization Tervisekassa"
   * telecom.value = "info@tervisekassa.ee"
   * address.line = "Lastekodu 88"
   * address.city = "Tallinn"
+  * address.country = "EE"
+  * address.use = #work  
 * active = true

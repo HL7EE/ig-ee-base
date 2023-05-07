@@ -10,8 +10,8 @@ Description: "EEBase ADS extension"
 * . ^short = "ADS extension"
 * . ^definition = "Aadressiandmete süsteem (ADS) koosneb aadressiandmete süsteemi infosüsteemist ning erinevatest nõuetest. ADS-i eesmärk on tagada ühene aadressiandmete kogumine, registreerimine, töötlemine, säilitamine, identifitseerimine ning töötlemise funktsioonide ühetaoline korraldamine."
 * value[x] only Coding
-* value[x].system 1..
-* value[x].system = "https://fhir.ee/sid/ads" (exactly)
+//* value[x].system 1..
+//* value[x].system = "https://fhir.ee/sid/ads" (exactly)
 * value[x].system ^short = "Reference to ADR-ID (identifier of address object and its version)"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
@@ -29,8 +29,8 @@ Description: "EEBase EHAK extension"
 * . ^short = "EHAK extension"
 * . ^definition = "Eesti haldus- ja asustusjaotuse klassifikaator (EHAK) on ette nähtud territoriaalse paiknemise tähistamiseks. Igale klassifitseerimisobjektile on antud unikaalne neljakohaline kood ja näidatud on objekti nimi ning rööpnimi (kui see on olemas)."
 * value[x] only Coding
-* value[x].system 1..
-* value[x].system = "https://fhir.ee/sid/ehak" (exactly)
+//* value[x].system 1..
+//* value[x].system = "https://fhir.ee/sid/ehak" (exactly)
 * value[x].system ^short = "Reference to EHAK classifier"
 * value[x].system ^comment = "HL7 V3 OID puus registreeritud väärtusena 1.3.6.1.4.1.28284.6.2.3.2"
 * value[x].code 1..
@@ -41,6 +41,8 @@ Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21
 Alias: $iso21090-ADXP-streetNameBase = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase
 Alias: $iso21090-ADXP-houseNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: $iso21090-ADXP-additionalLocator = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator
+
+
 
 Profile: EEBaseAddress
 Parent: Address
@@ -60,6 +62,14 @@ Description: "EEBase Address Type"
 * extension[ads] ^isModifier = false
 * extension[ehak] ^short = "EHAK code"
 * extension[ehak] ^isModifier = false
+* country 1..1 MS 
+* country ^short = "Should use a 2 digit ISO 3166 code"
+* country ^definition = "Riigi kood (lubatud ISO-3166-2 koodid)"
+* country from $country2
+* use 1..1 MS
+* text MS
+* state ^short = "Sub-unit of country"
+* district ^short = "Administrative or political subdivision of a state"
 * line.extension ^slicing.discriminator.type = #value
 * line.extension ^slicing.discriminator.path = "url"
 * line.extension ^slicing.rules = #open
@@ -70,26 +80,65 @@ Description: "EEBase Address Type"
     $iso21090-ADXP-streetNameBase named streetNameBase 0..1 and
     $iso21090-ADXP-houseNumber named houseNumber 0..1 and
     $iso21090-ADXP-additionalLocator named additionalLocator 0..1
-* line.extension[censusTract] ^short = "A geographic sub-unit delineated for demographic purposes."
-* line.extension[censusTract] ^definition = "Väikekoht (AÜ, SÜ, GÜ, vkt). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 4."
 * line.extension[censusTract] ^isModifier = false
-* line.extension[streetName] ^short = "Street name"
-* line.extension[streetName] ^definition = "Liikluspind (tee, tänav, puiestee, maantee). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 5."
 * line.extension[streetName] ^isModifier = false
-* line.extension[streetNameBase] ^short = "The base name of a roadway or artery recognized by a municipality (excluding street type and direction)."
-* line.extension[streetNameBase] ^definition = "Nimi (kohanimi, maaüksuse nimi). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 6."
 * line.extension[streetNameBase] ^isModifier = false
-* line.extension[houseNumber] ^short = "House number"
-* line.extension[houseNumber] ^definition = "Aadressinumber (maaüksuse või hoone erilisand). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 7."
 * line.extension[houseNumber] ^isModifier = false
-* line.extension[additionalLocator] ^short = "Additional locator"
-* line.extension[additionalLocator] ^definition = "Korteri või muu hooneosa number. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 8."
 * line.extension[additionalLocator] ^isModifier = false
-* city ^definition = "Omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2."
-* district ^short = "The name of the administrative area"
-* district ^definition = "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
-* state ^short = "Sub-unit of country"
-* state ^definition = "Maakond. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 1."
-* postalCode ^definition = "Postiindeks"
-* country ^definition = "Riigi kood (lubatud ISO 3166 2 or 3 koodid)"
+* line.extension[censusTract] ^short = "A geographic sub-unit delineated for demographic purposes."
+* line.extension[streetName] ^short = "Street name"
+* line.extension[streetNameBase] ^short = "The base name of a roadway or artery recognized by a municipality (excluding street type and direction)."
+* line.extension[houseNumber] ^short = "House number"
+* line.extension[additionalLocator] ^short = "Additional locator"
+
+Invariant: inv-add-1
+Description: "Country code shall be 2 symbols"
+Severity: #error
+Expression: "matches('^[A-Z]{2}$')"
+
+Profile: EEBaseAddressEE
+Parent: EEBaseAddress
+Id: ee-address-ee
+Title: "Estonain Address"
+Description: "Estonian Address Type"
+* ^version = "1.0.0"
+* ^status = #draft
+* country = #EE (exactly)
+* text ^short = "Täisaadressi visuaalne esitlus"
+* state ^short = "Maakond. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 1."
+* city ^short = "Omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2."
+* district ^short = "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
+/* IB ettepanek
+* district ^short = "Omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2."
+* city ^short = "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
+*/
+* postalCode ^short = "Postiindeks"
+* postalCode obeys inv-add-2
+* line.extension[censusTract] ^short = "Väikekoht (AÜ, SÜ, GÜ, vkt). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 4."
+* line.extension[streetName] ^short = "Liikluspind (tee, tänav, puiestee, maantee). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 5."
+* line.extension[streetNameBase] ^short = "Nimi (kohanimi, maaüksuse nimi). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 6."
+* line.extension[houseNumber] ^short = "Aadressinumber (maaüksuse või hoone erilisand). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 7."
+* line.extension[additionalLocator] ^short = "Korteri või muu hooneosa number. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 8."
+
+Invariant: inv-add-2
+Description: "Postal code shall be 5 digits"
+Severity: #error
+Expression: "matches('^[0-9]{5}$')"
+
+Profile: EEBaseAddressNonEE
+Parent: EEBaseAddress
+Id: ee-address-non-ee
+Title: "Foreigner Address"
+Description: "This profile defines an address structure for non Estonian patients."
+* ^jurisdiction = urn:iso:std:iso:3166#EE
+* . ^short = "Välismaalase aadress"
+* text 1..1 MS 
+* text ^short = "Täisaadressi visuaalne esitlus"
+* country ^short = "Should use non 'EE' a 2 digit ISO 3166 code"
+* obeys inv-add-3
+
+Invariant: inv-add-3
+Description: "Non Estonian aadress"
+Severity: #error
+Expression: "country != 'EE'"
 

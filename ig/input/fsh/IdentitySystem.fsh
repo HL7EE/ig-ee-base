@@ -1,6 +1,6 @@
 CodeSystem: EEBaseIdentitySystem
 Id: ee-identity-system
-Title: "Identity Systems"
+Title: "Identity System"
 Description: "Description of the identity system concepts acceptable for entity identification"
 * ^caseSensitive = false
 * ^experimental = true
@@ -36,35 +36,35 @@ Description: "Description of the identity system concepts acceptable for entity 
     * ^property[+].code = #naming-system
     * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-est-br"
     * ^property[+].code = #status
-    * ^property[=].valueCode = #A      
-  * #https://fhir.ee/sid/org/est/medre
+    * ^property[=].valueCode = #A
+  * #https://fhir.ee/sid/org/est/fi
       "License number provided by The National Institute for Health Development"  
       "Terviseameti litsentsi number"
     * ^property[0].code = #idtype
-    * ^property[=].valueCode = #XX
+    * ^property[=].valueCode = #FI
     * ^property[+].code = #country
       * ^property[=].valueCode = #EST
     * ^property[+].code = #naming-system
-    * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-est-medre"
+    * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-est-fi"
     * ^property[+].code = #status
     * ^property[=].valueCode = #A      
   * #https://fhir.ee/sid/org/vatin
       "VAT identification number"
       "KMKR"
     * ^property[0].code = #idtype
-    * ^property[=].valueCode = #XX
+    * ^property[=].valueCode = #TAX
     * ^property[+].code = #naming-system
     * ^property[=].valueString = "https://fhir.ee/NamingSystem/org-vatin"    
     * ^property[+].code = #status
     * ^property[=].valueCode = #A    
 * #https://fhir.ee/sid/pid "Root of identifiers for person identification" "Identifikaatorid isikutele"
-* #https://fhir.ee/sid/pid ^property[0].code = #status
-* #https://fhir.ee/sid/pid ^property[=].valueCode = #R
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #R
   * #https://fhir.ee/sid/pid/est "Root of Estonian identifiers for person identification" "Eesti identifikaatorid isikutele"
-  * #https://fhir.ee/sid/pid/est ^property[0].code = #status
-  * #https://fhir.ee/sid/pid/est ^property[=].valueCode = #R
-  * #https://fhir.ee/sid/pid/est ^property[+].code = #country
-  * #https://fhir.ee/sid/pid/est ^property[=].valueCode = #EST 
+    * ^property[0].code = #status
+    * ^property[=].valueCode = #R
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #EST 
     * #https://fhir.ee/sid/pid/est/ni
         "Estonian personal national identification code"
         "Eesti isikukood"
@@ -87,6 +87,42 @@ Description: "Description of the identity system concepts acceptable for entity 
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-EST"  
       * ^property[+].code = #status
       * ^property[=].valueCode = #A       
+    * #https://fhir.ee/sid/pid/est/mr
+        "MPI issued medical record number"
+        "Patsiendiregistri poolt genereeritud identifikaator"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #MR
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A       
+    * #https://fhir.ee/sid/pid/est/npi
+        "Stillborn code provided by The National Institute for Health Development"
+        "Surnultsündinu kood genereeritud TAI poolt"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NPI
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A           
+    * #https://fhir.ee/sid/pid/est/prn
+        "Namespace for identifier issued by healthcare providers"
+        "Nimeruum TTO poolt genereeritud identifikaatoritele"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PRN
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #EST
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #R   
+      * #https://fhir.ee/sid/pid/fin/ppn/90006399
+          "North Estonian Medical Center"
+          "Põhja-Eesti Regionaalhaigla" 
+        * ^property[0].code = #idtype
+        * ^property[=].valueCode = #PRN
+        * ^property[+].code = #country
+        * ^property[=].valueCode = #EST
+        * ^property[+].code = #status
+        * ^property[=].valueCode = #A                 
   * #https://fhir.ee/sid/pid/deu "Root of German identifiers for person identification" "Saksamaa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/deu ^property[0].code = #status
   * #https://fhir.ee/sid/pid/deu ^property[=].valueCode = #R
@@ -143,7 +179,7 @@ Description: "Description of the identity system concepts acceptable for entity 
       * ^property[+].code = #naming-system
       * ^property[=].valueString = "http://terminology.hl7.org/NamingSystem/passportNumNS-FIN"  
       * ^property[+].code = #status
-      * ^property[=].valueCode = #A       
+      * ^property[=].valueCode = #A
 * #https://fhir.ee/sid/pro "Root of identifiers for healthcare professionals" "Identifikaatorid tervishoiutöötajatele"
 * #https://fhir.ee/sid/pro ^property[0].code = #status
 * #https://fhir.ee/sid/pro ^property[=].valueCode = #R
@@ -152,15 +188,15 @@ Description: "Description of the identity system concepts acceptable for entity 
   * #https://fhir.ee/sid/pro/est ^property[=].valueCode = #R
   * #https://fhir.ee/sid/pro/est ^property[+].code = #country
   * #https://fhir.ee/sid/pro/est ^property[=].valueCode = #EST
-    * #https://fhir.ee/sid/pro/est/medre
-        "Healthcare professional number provided by The National Institute for Health Development"
+    * #https://fhir.ee/sid/pro/est/pho
+        "Healthcare professional official ID provided by The National Institute for Health Development"
         "Tervishoiutöötaja TAM kood"
       * ^property[0].code = #idtype
-      * ^property[=].valueCode = #AC
+      * ^property[=].valueCode = #PHO
       * ^property[+].code = #country
       * ^property[=].valueCode = #EST
       * ^property[+].code = #naming-system
-      * ^property[=].valueString = "https://fhir.ee/NamingSystem/pro-est-medre"  
+      * ^property[=].valueString = "https://fhir.ee/NamingSystem/pro-est-pho"  
       * ^property[+].code = #status
       * ^property[=].valueCode = #A   
 
@@ -176,7 +212,7 @@ Id: ee-organization-identity
 Title: "Organization Identity Systems"
 Description: "Identity system acceptable for organization identification"
 * ^experimental = true
-* EEBaseIdentitySystem#https://fhir.ee/sid/org/est/medre
+* EEBaseIdentitySystem#https://fhir.ee/sid/org/est/fi
 * EEBaseIdentitySystem#https://fhir.ee/sid/org/est/br
 * EEBaseIdentitySystem#https://fhir.ee/sid/org/vatin
 
@@ -186,10 +222,10 @@ Title: "Practitioner Identity Systems"
 Description: "Identity system acceptable for practitioner identification"
 * ^experimental = true
 * EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/ni
-* EEBaseIdentitySystem#https://fhir.ee/sid/pro/est/medre
+* EEBaseIdentitySystem#https://fhir.ee/sid/pro/est/pho
 
 ValueSet: EEBaseIdentitySystemPid
-Id: ee-identity-system-pid
+Id: ee-pid-identity
 Title: "Person Identity Systems"
 Description: "Identity system acceptable for organization identification"
 * ^experimental = true
@@ -201,6 +237,7 @@ Description: "Identity system acceptable for organization identification"
 ValueSet: EEBasePatientIdentity
 Id: ee-patient-identity
 Title: "Person Identity Systems"
-Description: "Identity system acceptable for organization identification"
+Description: "Identity system acceptable for patient identification"
 * ^experimental = true
 * include codes from valueset EEBaseIdentitySystemPid and EEBaseIdentitySystemActive
+

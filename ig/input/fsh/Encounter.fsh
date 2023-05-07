@@ -25,6 +25,7 @@ Description: "Mode Of Arrival"
 * include codes from system EEBaseModeOfArrival
 
 Extension: ExtensionEEBaseModeOfArrival
+Id: ee-mode-of-arrival
 Title: "EEBase ModeOfArrival"
 Description: "The method that the patient arrived at the facility."
 Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
@@ -32,7 +33,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * ^context.type = #element
-* ^context.expression = "Address"
+* ^context.expression = "Encounter"
 * . ^short = "The method that the patient arrived at the facility."
 * . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
 * value[x] from EEBaseModeOfArrival (extensible)

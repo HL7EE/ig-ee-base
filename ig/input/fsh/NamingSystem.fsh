@@ -38,26 +38,26 @@ Usage: #definition
 * uniqueId[=].preferred = false 
 
 
-Instance: org-est-br
+Instance: org-est-fi
 InstanceOf: NamingSystem
 Usage: #definition
 * name = "MedreOrganizationLicense"
-* title = "Medre Organization License"
+* title = "Estonian Health Facility ID"
 * status = #draft
 * kind = #identifier
 * date = "2022-11-14T18:39:08.4689312+00:00"
 * publisher = "HL7 Estonia"
 * contact.telecom.system = #url
-* contact.telecom.value = "https://ariregister.rik.ee"
-* type = $identifier-type#XX
-* description = "The national identifier of Estonian organization."
+* contact.telecom.value = "https://www.terviseamet.ee"
+* type = $identifier-type#FI
+* description = "The license number of Estonian health care facilities registered at The National Institute for Health Development."
 * jurisdiction = urn:iso:std:iso:3166#EE
 * usage = "Used in resources defining the identifier for a facility or business."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://fhir.ee/sid/org/est/br"
+* uniqueId[=].value = "https://fhir.ee/sid/org/est/fi"
 * uniqueId[=].preferred = true
 
-Instance: org-est-medre
+Instance: org-est-br
 InstanceOf: NamingSystem
 Usage: #definition
 * name = "EstonianBusinessRegistryNumber"
@@ -67,13 +67,13 @@ Usage: #definition
 * date = "2022-11-14T18:39:08.4689312+00:00"
 * publisher = "HL7 Estonia"
 * contact.telecom.system = #url
-* contact.telecom.value = "https://www.terviseamet.ee"
+* contact.telecom.value = "https://ariregister.rik.ee"
 * type = $identifier-type#XX
-* description = "he license number of Estonian health care facilities registered at Health Board."
+* description = "The identification code of organization in the Estonian Business Register."
 * jurisdiction = urn:iso:std:iso:3166#EE
 * usage = "Used in resources defining the identifier for a facility or business."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://fhir.ee/sid/org/est/medre"
+* uniqueId[=].value = "https://fhir.ee/sid/org/est/xx"
 * uniqueId[=].preferred = true
 
 Instance: org-vatin
@@ -87,7 +87,7 @@ Usage: #definition
 * publisher = "HL7 Estonia"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://taxation-customs.ec.europa.eu/vat-identification-numbers_en"
-* type = $identifier-type#XX
+* type = $identifier-type#TAX
 * description = "VAT identification number."
 * jurisdiction = urn:iso:std:iso:3166#EE
 * usage = "Used in resources defining the identifier for a taxable person (business) or non-taxable legal entity that is registered for VAT."
@@ -95,24 +95,27 @@ Usage: #definition
 * uniqueId[=].value = "https://fhir.ee/sid/org/vatin"
 * uniqueId[=].preferred = true
 
-Instance: pid-est-medre
+Instance: pro-est-pho
 InstanceOf: NamingSystem
 Usage: #definition
 * name = "MedrePractitonerIdentifier"
-* title = "Estonian Health Care Professional License Number"
+* title = "Estonian Health Professional Official ID"
 * status = #draft
 * kind = #identifier
 * date = "2022-11-05T11:55:28.6412938+00:00"
 * publisher = "HL7 Estonia"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.terviseamet.ee"
-* description = "The license number of Estonian health care professional registered at Health Board."
+* type = $identifier-type#PHO
+* description = "The official identifier of Estonian health care professional registered at Health Board."
 * jurisdiction = urn:iso:std:iso:3166#EE
 * usage = "Used in resources where the health care professional is identified with a code provided by Estonian Health Board."
 * uniqueId[0].type = #uri
-* uniqueId[=].value = "https://fhir.ee/sid/pid/est/medre"
+* uniqueId[=].value = "https://fhir.ee/sid/pid/est/pho"
 * uniqueId[=].preferred = true
-
+* uniqueId[0].type = #oid
+* uniqueId[=].value = "1.3.6.1.4.1.28284.2"
+* uniqueId[=].preferred = true
 
 Instance: pid-est-ni
 InstanceOf: NamingSystem
