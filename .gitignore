@@ -12,6 +12,14 @@
 *.DS_Store
 .DS_Store
 
+.gradle
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/temp
+/template
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
