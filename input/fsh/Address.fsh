@@ -69,7 +69,7 @@ Description: "EEBase Address Type"
 * use 1..1 MS
 * text MS
 * state ^short = "Sub-unit of country"
-* district ^short = "Administrative or political subdivision of a state"
+* district ^short = "Administrative or political subdivision of a state or city"
 * line.extension ^slicing.discriminator.type = #value
 * line.extension ^slicing.discriminator.path = "url"
 * line.extension ^slicing.rules = #open
