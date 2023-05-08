@@ -200,12 +200,14 @@ Description: "Description of the identity system concepts acceptable for entity 
       * ^property[+].code = #status
       * ^property[=].valueCode = #A   
 
+/*
 ValueSet: EEBaseIdentitySystemActive
 Id: ee-identity-active
 Title: "Active Identity Systems"
 Description: "Active Identity Systems"
 * ^experimental = true
 * include codes from system EEBaseIdentitySystem where status = "A"
+*/
 
 ValueSet: EEBaseOrganizationIdentity
 Id: ee-organization-identity
@@ -224,6 +226,7 @@ Description: "Identity system acceptable for practitioner identification"
 * EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/ni
 * EEBaseIdentitySystem#https://fhir.ee/sid/pro/est/pho
 
+/*
 ValueSet: EEBaseIdentitySystemPid
 Id: ee-pid-identity
 Title: "Person Identity Systems"
@@ -233,11 +236,13 @@ Description: "Identity system acceptable for organization identification"
 * include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid"
 //* include codes from system EEBaseIdentitySystem where idtype = "PPN" and idtype = "NI"
 //* exclude codes from system EEBaseIdentitySystem where status = "R" 
+*/
 
 ValueSet: EEBasePatientIdentity
 Id: ee-patient-identity
 Title: "Person Identity Systems"
 Description: "Identity system acceptable for patient identification"
 * ^experimental = true
-* include codes from valueset EEBaseIdentitySystemPid and EEBaseIdentitySystemActive
+* include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid"
+//* include codes from valueset EEBaseIdentitySystemPid and EEBaseIdentitySystemActive
 

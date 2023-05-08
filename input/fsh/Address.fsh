@@ -91,6 +91,16 @@ Description: "EEBase Address Type"
 * line.extension[houseNumber] ^short = "House number"
 * line.extension[additionalLocator] ^short = "Additional locator"
 
+* line.extension[censusTract] ^definition = "Väikekoht (AÜ, SÜ, GÜ, vkt). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 4."
+* line.extension[streetName] ^definition = "Liikluspind (tee, tänav, puiestee, maantee). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 5."
+* line.extension[streetNameBase] ^definition = "Nimi (kohanimi, maaüksuse nimi). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 6."
+* line.extension[houseNumber] ^definition = "Aadressinumber (maaüksuse või hoone erilisand). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 7."
+* line.extension[additionalLocator] ^definition = "Korteri või muu hooneosa number. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 8."
+* postalCode ^definition = "Postiindeks"
+//* district ^short = "Omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2."
+* city ^definition = "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
+
+/*
 Invariant: inv-add-1
 Description: "Country code shall be 2 symbols"
 Severity: #error
@@ -108,10 +118,6 @@ Description: "Estonian Address Type"
 * state ^short = "Maakond. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 1."
 * city ^short = "Omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2."
 * district ^short = "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
-/* IB ettepanek
-* district ^short = "Omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2."
-* city ^short = "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
-*/
 * postalCode ^short = "Postiindeks"
 * postalCode obeys inv-add-2
 * line.extension[censusTract] ^short = "Väikekoht (AÜ, SÜ, GÜ, vkt). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 4."
@@ -142,3 +148,4 @@ Description: "Non Estonian aadress"
 Severity: #error
 Expression: "country != 'EE'"
 
+*/
