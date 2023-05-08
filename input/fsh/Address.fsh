@@ -1,3 +1,20 @@
+CodeSystem: ADS
+Id:         ee-ads
+Title:     "ADS"
+Description: "Estonian Address Data System."
+* ^experimental = true
+* ^caseSensitive = false
+* ^content = #fragment
+* #377840387000004BW00001SLZ00000000 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
+
+ValueSet: ADS
+Id: ee-ads
+Title: "ADS"
+Description: "Estonian Address Data System."
+* ^experimental = true
+* include codes from system ADS 
+
+
 Extension: ExtensionEEBaseADS
 Id: ee-ads
 Title: "EEBase ADS"
@@ -10,8 +27,7 @@ Description: "EEBase ADS extension"
 * . ^short = "ADS extension"
 * . ^definition = "Aadressiandmete süsteem (ADS) koosneb aadressiandmete süsteemi infosüsteemist ning erinevatest nõuetest. ADS-i eesmärk on tagada ühene aadressiandmete kogumine, registreerimine, töötlemine, säilitamine, identifitseerimine ning töötlemise funktsioonide ühetaoline korraldamine."
 * value[x] only Coding
-//* value[x].system 1..
-//* value[x].system = "https://fhir.ee/sid/ads" (exactly)
+* value[x] from ADS
 * value[x].system ^short = "Reference to ADR-ID (identifier of address object and its version)"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
@@ -29,8 +45,6 @@ Description: "EEBase EHAK extension"
 * . ^short = "EHAK extension"
 * . ^definition = "Eesti haldus- ja asustusjaotuse klassifikaator (EHAK) on ette nähtud territoriaalse paiknemise tähistamiseks. Igale klassifitseerimisobjektile on antud unikaalne neljakohaline kood ja näidatud on objekti nimi ning rööpnimi (kui see on olemas)."
 * value[x] only Coding
-//* value[x].system 1..
-//* value[x].system = "https://fhir.ee/sid/ehak" (exactly)
 * value[x].system ^short = "Reference to EHAK classifier"
 * value[x].system ^comment = "HL7 V3 OID puus registreeritud väärtusena 1.3.6.1.4.1.28284.6.2.3.2"
 * value[x].code 1..

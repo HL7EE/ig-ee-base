@@ -22,16 +22,8 @@ Description: "Date Accuracy Indicator"
 
 Extension: ExtensionEEBaseDateAccuracyIndicator
 Id: ee-date-accuracy-indicator
-Title: "Date Accuracy Indicator"
-Description: "This extension applies to the [date](http://hl7.org/fhir/R4/datatypes.html#date) and [dateTime](http://hl7.org/fhir/R4/datatypes.html#dateTime) data types and is used to represent the accuracy of the associated date."
-/*
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 2
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #trial-use
-* ^extension[=]._valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=]._valueCode.extension.valueCanonical = "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"
-*/
+Title: "EEBase Date Accuracy Indicator"
+Description: "This extension applies to the [date](http://hl7.org/fhir/datatypes.html#date) and [dateTime](http://hl7.org/fhir/datatypes.html#dateTime) data types and is used to represent the accuracy of the associated date."
 * ^version = "5.0.0"
 * ^publisher = "HL7 Estonia"
 * ^jurisdiction = urn:iso:std:iso:3166#EE

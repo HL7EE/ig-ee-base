@@ -1,12 +1,10 @@
-//Alias: $practitioner-role = http://hl7.ee/fhir/ValueSet/practitioner-role
-//Alias: $c80-practice-codes = http://hl7.ee/fhir/ValueSet/c80-practice-codes
-
 CodeSystem: EEBaseOccupation
 Id:         ee-occupation
 Title:     "Eesti ametite klassifikaator"
 Description: "Eesti ametite klassifikaator"
 * ^experimental = true
 * ^caseSensitive = false
+* ^content = #fragment
 * #22122501 "Pediaater"
 * #22121101 "Allergoloog-immunoloog"
 * #22120901 "Kardioloog"
@@ -18,9 +16,7 @@ Id: ee-occupation
 Title: "Occupation"
 Description: "Ametinimetus"
 * ^experimental = true
-//* include codes from system SCT where concept descendent-of #14679004 "Occupation"
 * include codes from system EEBaseOccupation
-//* include codes from system http://terminology.hl7.org/CodeSystem/v2-0360 where concept = #PN "Advanced Practice Nurse"
 
 CodeSystem: EEBaseJobType
 Id:         ee-job-type
@@ -28,6 +24,7 @@ Title:     "Type of job"
 Description: "Type of job (aka 'TIS erialade loend' in Estonian)"
 * ^experimental = true
 * ^caseSensitive = false
+* ^content = #fragment
 * #E170 "Kardioloogia"
 * #E290 "Pediaatria"
 * #E670 "Pediaatria allergoloogia lisapädevusega"
@@ -77,8 +74,6 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * organization.reference MS
 * location only Reference(EEBaseLocation)
 * healthcareService only Reference(EEBaseHealthcareService)
-//* code MS
-//* code from $practitioner-role (required)
 * code 1.. MS
 * code ^short = "Tervishoiutöötaja roll TTO-s"
 * code ^slicing.discriminator.type = #value
@@ -95,7 +90,6 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * code[tor] from EEBaseOccupation (extensible)
 
 * specialty MS
-//* specialty from $c80-practice-codes (required)
 * specialty ^short = "Specialty and jon type (tegevusvaldkond ja TIS eriala)"
 * specialty ^slicing.discriminator.type = #value
 * specialty ^slicing.discriminator.path = "coding.system"
@@ -109,9 +103,6 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/ee-job-type" (exactly)
 * specialty[eriala] ^short = "Job type (TIS eriala)"
 * specialty[eriala] from EEBaseJobType (required)
-
-
-
 
 
 
