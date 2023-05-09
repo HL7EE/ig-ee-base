@@ -89,6 +89,7 @@ This <b>MUST NOT</b> follow the format: <b>https://[baseurl]/[fhir-version]</b>
 To promote consistency and make it easier for implementers to locate suitable profiles, extensions, value sets and others for their projects, a naming strategy will be adopted for EEBase-defined FHIR assets or FHIR assets derived from the EEBase. All EEBase-derived implementation guides and FHIR assets <b>MUST</b> follow these rules to claim conformace with the EEBase.
 For detailed definitions of concepts discussed within this guidance document, refer to the appropriate published version of the [FHIR standard](https://www.hl7.org/fhir/).
 
+
 ---
 
 ### Resource identifiers
@@ -167,7 +168,7 @@ For detailed definitions of concepts discussed within this guidance document, re
 | Estonian Health Insurance Fund | EEHIF | fhir.ee |	
 
 ---
----
+<!---
 ---
 
 Content below to DELETE.
@@ -261,7 +262,6 @@ The FHIR standard provides a mechanism to specialise and extend FHIR resources b
         <li>Profiles <b>MUST NOT</b> define alternate summary fields for resources.</li>
         <ul>
             <li>All FHIR base resources have several fields defined as 'summary' fields, which appear when the client requests summary versions of the resource to be returned (for example, in <a href="https://www.hl7.org/fhir/search.html#summary">search results</a>). These summary fields can only be defined in base resources and cannot be changed in any profiles.</li>
-            <!--li>Note: This is a rule established by HL7, but is not clear in the HL7 FHIR specification.</li-->
         </ul>
     </ul>
   </div>
@@ -320,24 +320,6 @@ The FHIR standard provides a mechanism to specialise and extend FHIR resources b
   </div>
 </div>
 
-
-<!--div class="card border-success mb-3" id="fhir-ver-03">
-  <div class="card-header bg-warning">
-   <strong class="card-title"><i class="bi bi-check-circle-fill"></i> FHIR-VER-03: HL7 FHIR version in FHIR Endpoint URL</strong>
-   <a href="#fhir-ver-03"><i class="bi bi-link-45deg"></i></a>
-  </div>
-  <div class="card-body">
-    <ul>
-        <li>TO BE DELETED</li>
-        <li>Nationally delivered FHIR endpoints (i.e. servers that implement FHIR standards to serve FHIR resources or respond to calls to FHIR operations), including FHIR messaging endoints, <b>MUST NOT</b> differentiate the HL7 FHIR version (e.g. R4, R5, etc) in the FHIR base URL.
-        </br>        
-This <b>MUST</b> follow the format: <b>https://[baseurl]</b>
-</br>
-This <b>MUST NOT</b> follow the format: <b>https://[baseurl]/[fhir-version]</b>
-</li>
-    </ul>
-  </div>
-</div-->
 
 
 ### Naming
@@ -524,5 +506,6 @@ For detailed definitions of concepts discussed within this guidance document, re
   </div>
 </div>
 
+-->
 
 

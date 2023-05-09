@@ -5,7 +5,7 @@ Description: "Description of the identity system concepts acceptable for entity 
 * ^caseSensitive = false
 * ^experimental = true
 * ^publisher = "HL7 Estonia"
-* ^content = #complete
+* ^content = #fragment
 * ^hierarchyMeaning = #is-a
 * ^property[0].code = #idtype
 //* ^property[=].uri = "http://terminology.hl7.org/CodeSystem/v2-0203"
