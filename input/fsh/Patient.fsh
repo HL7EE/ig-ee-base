@@ -47,9 +47,10 @@ Description: "Demographics and other administrative information about an individ
 * identifier.system from EEBasePatientIdentity (extensible)
 * active 1.. MS
 * name MS
-//* name.text MS
-//* name.family MS
-//* name.given MS
+* name.use 1..1 MS
+* name.text MS
+* name.family MS
+* name.given MS
 
 // >>> added from MPI
 * name ^slicing.discriminator.type = #value
@@ -68,7 +69,7 @@ Description: "Demographics and other administrative information about an individ
 * name[official].period MS
 * name[nickname] ^short = "Tundmatu või anonüümse patsiendi nimi"
 * name[nickname].use = #nickname (exactly)
-* name[nickname].text 1..
+* name[nickname].text 1.. MS
 * name[nickname].text ^short = "Tundmatu patsiendi hüüdnimi"
 * name[nickname].family ..0
 * name[nickname].given ..0

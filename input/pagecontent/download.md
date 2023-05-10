@@ -1,4 +1,8 @@
-### Release packages
+### Current build
+- [package.tgz](package.tgz) is a release package of the current build;
+- [full-ig.zip](full-ig.zip) is an archive of the current Implementation Guide.
+
+### Official download
 Please find release package for download on the official [Download page](https://fhir.ee/packages).
 
 ### Source
