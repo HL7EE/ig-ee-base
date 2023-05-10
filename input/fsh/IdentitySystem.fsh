@@ -211,8 +211,8 @@ Description: "Active Identity Systems"
 
 ValueSet: EEBaseOrganizationIdentity
 Id: ee-organization-identity
-Title: "Organization Identity Systems"
-Description: "Identity system acceptable for organization identification"
+Title: "Organization Identity System"
+Description: "Identity systems acceptable for organization identification"
 * ^experimental = true
 * EEBaseIdentitySystem#https://fhir.ee/sid/org/est/fi
 * EEBaseIdentitySystem#https://fhir.ee/sid/org/est/br
@@ -220,8 +220,8 @@ Description: "Identity system acceptable for organization identification"
 
 ValueSet: EEBasePractitionerIdentity
 Id: ee-practitioner-identity
-Title: "Practitioner Identity Systems"
-Description: "Identity system acceptable for practitioner identification"
+Title: "Practitioner Identity System"
+Description: "Identity systems acceptable for practitioner identification"
 * ^experimental = true
 * EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/ni
 * EEBaseIdentitySystem#https://fhir.ee/sid/pro/est/pho
@@ -240,8 +240,8 @@ Description: "Identity system acceptable for organization identification"
 
 ValueSet: EEBasePatientIdentity
 Id: ee-patient-identity
-Title: "Person Identity Systems"
-Description: "Identity system acceptable for patient identification"
+Title: "Person Identity System"
+Description: "Identity systems acceptable for patient identification"
 * ^experimental = true
 * include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid"
 //* include codes from valueset EEBaseIdentitySystemPid and EEBaseIdentitySystemActive

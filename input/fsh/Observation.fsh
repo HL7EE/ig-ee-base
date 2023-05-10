@@ -1,3 +1,13 @@
+Alias: $obscat = http://terminology.hl7.org/CodeSystem/observation-category
+
+ValueSet: EEBaseObservationCategory
+Id: ee-observation-category
+Title: "Observation category"
+Description: "Observation category"
+* ^experimental = true
+* include codes from system $obscat
+
+
 Profile: EEBaseObservation
 Parent: Observation
 Id: ee-observation
@@ -8,6 +18,12 @@ Description: "Measurements and simple assertions made about a patient, device or
 * ^publisher = "HL7 Estonia"
 * status MS
 * category MS
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "coding.system"
+* category ^slicing.rules = #open
+* category contains obscat 0..* MS 
+* category[obscat].coding.system = $obscat (exactly)
+* category[obscat] from EEBaseObservationCategory (required)
 * code MS
 * subject only Reference(EEBasePatient or Group or Device or EEBaseLocation or EEBaseOrganization or Procedure or EEBasePractitioner or Medication or Substance or BiologicallyDerivedProduct or NutritionProduct)
 * subject MS
