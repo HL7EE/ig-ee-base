@@ -1,7 +1,7 @@
 CodeSystem: EEBaseOccupation
 Id:         ee-occupation
-Title:     "Eesti ametite klassifikaator"
-Description: "Eesti ametite klassifikaator"
+Title:     "Classification of occupations"
+Description: "Estonian Edition of International Standard Classification of Occupations. Based on ISCO-88"
 * ^experimental = true
 * ^caseSensitive = false
 * ^content = #fragment
@@ -74,14 +74,14 @@ Description: "A specific set of Roles/Locations/specialties/services that a prac
 * organization.reference MS
 * location only Reference(EEBaseLocation)
 * healthcareService only Reference(EEBaseHealthcareService)
-* code 1.. MS
+* code MS
 * code ^short = "The role of the healthcare professional in the healthcare facility"
 * code ^definition = "Tervishoiutöötaja roll TTO-s"
 * code ^slicing.discriminator.type = #value
 * code ^slicing.discriminator.path = "coding.system"
 * code ^slicing.rules = #open
 * code contains
-    role 1..1 MS and
+    role 0..1 MS and
     tor 0..1 MS
 * code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code[role] ^short = "Practitioner role"
