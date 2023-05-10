@@ -3,7 +3,7 @@
 - [full-ig.zip](full-ig.zip) is an archive of the current Implementation Guide.
 
 ### Official download
-Please find release package for download on the official [Download page](https://fhir.ee/packages).
+Please find history of the release packages on the official [Download page](https://fhir.ee/history.html).
 
 ### Source
 You can download the source code of Implementation Guide from [Github](https://github.com/HL7EE/ig-ee-base).
