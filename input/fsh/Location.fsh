@@ -22,3 +22,20 @@ Description: "Details and position information for a place where services are pr
 * managingOrganization only Reference(EEBaseOrganization)
 * partOf only Reference(EEBaseLocation)
 
+
+Instance: LocationItkED
+InstanceOf: EEBaseLocation
+Title: "ITK ED"
+Description: "Location of the Emergency Department at ITK"
+Usage: #example
+* id = "itk-ed"
+* name = "ITK Emergency Department"
+* managingOrganization = Reference(Organization/itk)
+* address
+  * use = #work
+  * text = "Ravi 18, 10138 Tallinn"
+  * country = "EE"
+* contact
+  * telecom 
+    * system = #phone
+    * value = "6207040"  
