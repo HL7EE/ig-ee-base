@@ -5,6 +5,8 @@ Id: ee-organization-type
 Title: "Organization Types"
 Description: "Organization Types"
 * ^experimental = false
+* include codes from system $org-type
+/*
 * ^compose.include.system = $org-type
 
 * ^compose.include.concept[+].code = #prov
@@ -22,7 +24,7 @@ Description: "Organization Types"
 * ^compose.include.concept[+].code = #other
 * ^compose.include.concept[=].designation[+].language = #et
 * ^compose.include.concept[=].designation[=].value = "Muu"
-
+*/
 
 Profile: EEBaseOrganization
 Parent: Organization
