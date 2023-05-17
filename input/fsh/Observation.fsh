@@ -2,7 +2,7 @@ Alias: $obscat = http://terminology.hl7.org/CodeSystem/observation-category
 
 ValueSet: EEBaseObservationCategory
 Id: ee-observation-category
-Title: "Observation category"
+Title: "Observation Category"
 Description: "Observation category"
 * ^experimental = true
 * include codes from system $obscat

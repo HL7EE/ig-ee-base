@@ -1,6 +1,6 @@
 CodeSystem: EEBaseOccupation
 Id:         ee-occupation
-Title:     "Classification of occupations"
+Title:     "Classification of Occupations"
 Description: "Estonian Edition of International Standard Classification of Occupations. Based on ISCO-88"
 * ^experimental = true
 * ^caseSensitive = false
@@ -14,13 +14,13 @@ Description: "Estonian Edition of International Standard Classification of Occup
 ValueSet: EEBaseOccupation
 Id: ee-occupation
 Title: "Occupation"
-Description: "Ametinimetus"
+Description: "Classification of Occupations"
 * ^experimental = true
 * include codes from system EEBaseOccupation
 
 CodeSystem: EEBaseMedreSpecialty
 Id:         ee-medre-specialty
-Title:     "Medre specialty"
+Title:     "Medre Specialty"
 Description: "Medre specialty (aka 'TAM erialade loend' in Estonian)"
 * ^experimental = true
 * ^caseSensitive = false
@@ -35,14 +35,14 @@ Description: "Medre specialty (aka 'TAM erialade loend' in Estonian)"
 
 ValueSet: EEBaseMedreSpecialty
 Id: ee-medre-specialty
-Title: "Medre specialty"
+Title: "Medre Specialty"
 Description: "Medre specialty (aka 'TAM eriala' in Estonian)."
 * ^experimental = true
 * include codes from system EEBaseMedreSpecialty
 
 ValueSet: EEBaseClinicalSpecialty
 Id: ee-clinical-specialty
-Title: "Clinical specialty"
+Title: "Clinical Specialty"
 Description: "Clinical specialty (aka 'tegevusvaldkond' in Estonian)"
 * ^experimental = true
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
@@ -50,7 +50,7 @@ Description: "Clinical specialty (aka 'tegevusvaldkond' in Estonian)"
 
 ValueSet: EEBasePractitionerRole
 Id: ee-practitioner-role
-Title: "Practitioner role"
+Title: "Practitioner Role"
 Description: "The role of practitioner in the healthcare facility."
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/practitioner-role
