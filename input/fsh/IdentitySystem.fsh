@@ -114,7 +114,7 @@ Description: "Description of the identity system concepts acceptable for entity 
       * ^property[=].valueCode = #EST
       * ^property[+].code = #status
       * ^property[=].valueCode = #R   
-      * #https://fhir.ee/sid/pid/fin/ppn/90006399
+      * #https://fhir.ee/sid/pid/est/prn/90006399
           "North Estonian Medical Center"
           "Põhja-Eesti Regionaalhaigla" 
         * ^property[0].code = #idtype
