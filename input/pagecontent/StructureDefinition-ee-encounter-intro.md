@@ -1,4 +1,4 @@
 ### Example Usage Scenarios
-- Query for locations general availability using the query parameter Location.status
-- Query for locations based on type of functions performed using the query parameter Location.type
-- Exchange Location information within a FHIR document or message
+- Query for encounters based on specific status using the query parameter Encounter.status
+- Query for reasons this encounter occurred using the query parameter Encounter.reasonReference
+- Exchange encounter information within a FHIR document or message
