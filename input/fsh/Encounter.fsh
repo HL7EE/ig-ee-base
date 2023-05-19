@@ -36,15 +36,8 @@ Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * ^context.expression = "Encounter"
 * . ^short = "The method that the patient arrived at the facility."
 * . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
+* value[x] only Coding
 * value[x] from EEBaseModeOfArrival (extensible)
-
-
-ValueSet: EEBaseEncounterClass
-Id: ee-encounter-class
-Title: "Encounter Class"
-Description: "Encounter Class"
-* ^experimental = false
-* include codes from valueset http://terminology.hl7.org/ValueSet/encounter-class
 
 ValueSet: EEBaseActPriority
 Id: ee-act-priority
@@ -52,6 +45,13 @@ Title: "Act Priority"
 Description: "Act Priority"
 * ^experimental = false
 * include codes from valueset http://terminology.hl7.org/ValueSet/v3-ActPriority
+
+ValueSet: EEBaseEncounterClass
+Id: ee-encounter-class
+Title: "Encounter Class"
+Description: "This value set defines a set of codes that can be used to indicate the class of encounter: a specific code indicating class of service provided."
+* ^experimental = false
+* include codes from valueset http://terminology.hl7.org/ValueSet/encounter-class
 
 /*
 Extension: EEBaseAssociatedEncounter
@@ -90,14 +90,17 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    ExtensionEEBaseModeOfArrival named modeOfArrival 0..1 MS and
+    ExtensionEEBaseModeOfArrival named modeOfArrival 0..1 and
     $encounter-associatedEncounter named associatedEncounter 0..1
 * status MS
+* class MS
+* class from EEBaseEncounterClass (extensible)
 * priority from EEBaseActPriority (extensible)
 * subject only Reference(Group or EEBasePatient)
 * episodeOfCare only Reference(EEBaseEpisodeOfCare)
 * participant.actor only Reference(EEBasePractitioner or EEBasePractitionerRole or EEBaseRelatedPerson)
-//* reason.value only CodeableReference(Condition or DiagnosticReport or EEBaseObservation or ImmunizationRecommendation or Procedure)
+* serviceType only Reference(EEBaseHealthcareService)
+* reason.value only Reference(Condition or DiagnosticReport or EEBaseObservation or ImmunizationRecommendation or Procedure)
 * admission.origin only Reference(EEBaseLocation or EEBaseOrganization)
 * admission.destination only Reference(EEBaseLocation or EEBaseOrganization)
 * location.location only Reference(EEBaseLocation)
@@ -106,3 +109,19 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * partOf ^short = "Reference to previous encounter"
 * partOf ^definition = "Viide eelmisele külastusele"
 
+Instance: EncounterPatient1
+InstanceOf: EEBaseEncounter
+Title:      "Inpatient encounter of bear Pooh"
+Description: "Inpatient encounter of bear Pooh"
+Usage: #example
+* status = #in-progress
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP 
+//"Inpatient encounter"
+* subject = Reference(Patient/pat1)
+* actualPeriod.start = "2023-05-09"
+* episodeOfCare[0] = Reference(EpisodeOfCarePatient1)
+* serviceProvider = Reference(Organization/rh)
+* extension[modeOfArrival].valueCoding = EEBaseModeOfArrival#PV "Police Vehicle"
+* location[0].location.display = "Emergency Waiting Room"
+* location[=].status = #active
+* location[=].period.start = "2023-05-09T19:00:00+02:00"
