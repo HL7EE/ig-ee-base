@@ -55,13 +55,14 @@ Description: "Information about a person that is involved in a patient's health 
 * relationship[person].coding.system from EEBasePersonRelationship (extensible)
 * relationship[person] ^short = "Social context. Relation to the patient"
 
+
 Instance: Pooh2Robin
 InstanceOf: EEBaseRelatedPerson
 Description: "Christopher Robin is an emergency contact of bear Pooh"
 * patient = Reference(PatientKaruPuhh)
 * name.text = "Christopher Robin"
-* relationship[class] = v3-RoleCode#ECON "emergency contact"
-* relationship[person] = $SCT#113163005 "Friend"
+* relationship[0] = v3-RoleCode#ECON "emergency contact"
+* relationship[+] = $SCT#113163005 "Friend"
 
 
 Instance: Dow2Dow
@@ -72,5 +73,7 @@ Description: "Jane Dow is a wife of John Dow"
   * given = "Jane"
   * family = "Dow"
 * gender = #female  
-* relationship[class] = v3-RoleCode#NOK "Next of kin"
-* relationship[person] = $SCT#127850001 "Wife"
+* relationship[0] = v3-RoleCode#NOK "Next of kin"
+* relationship[+] = $SCT#127850001 "Wife"
+//* relationship[class] = v3-RoleCode#NOK "Next of kin"
+//* relationship[person] = $SCT#127850001 "Wife"
