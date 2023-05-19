@@ -11,7 +11,7 @@ Description: "Organization Types"
 
 * ^compose.include.concept[+].code = #prov
 * ^compose.include.concept[=].designation[+].language = #et
-* ^compose.include.concept[=].designation[=].value = "Tervishoiu teenuse osutaja"
+* ^compose.include.concept[=].designation[=].value = "Tervishoiuteenuse osutaja"
 
 * ^compose.include.concept[+].code = #govt
 * ^compose.include.concept[=].designation[+].language = #et
