@@ -176,7 +176,7 @@ Usage: #example
   * family = "Puhh"
 * gender = #male
 * birthDate = "1973-02-10"
-  * extension[accuracyIndicator].valueCoding = DateAccuracyIndicator#AAA "DMY"
+  * extension[accuracyIndicator].valueCoding = DateAccuracyIndicator#AAA "Day, month and year are accurate"
 * address[0]
   * use = #work
   * country = "EE"
@@ -184,7 +184,8 @@ Usage: #example
   * city = "Tallinn"
   * postalCode = "14215"
   * text = "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-  * extension[ads].valueCoding = ADS#377840387000004BW00001SLZ00000000    
+  * extension[ads].valueCoding = ADS#377840387000004BW00001SLZ00000000
+  * extension[ehak].valueCoding = https://fhir.ee/sid/ehak#0387 
 
 Instance: PatientShadow
 InstanceOf: EEBasePatient
