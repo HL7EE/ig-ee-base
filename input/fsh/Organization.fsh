@@ -48,7 +48,6 @@ Description: "A formally or informally recognized grouping of people or organiza
 * active ^definition = "Whether the organization's record is in active use"
 * type from EEBaseOrganizationType (extensible)
 * name 1.. MS
-* contact MS
 * contact.address MS
 * contact.address only EEBaseAddress
 * partOf only Reference(EEBaseOrganization)
