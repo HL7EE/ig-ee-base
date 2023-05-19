@@ -41,7 +41,7 @@ Description: "Information about a person that is involved in a patient's health 
 
 * telecom MS
 * address only EEBaseAddress
-* relationship MS
+* relationship MS 
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open
