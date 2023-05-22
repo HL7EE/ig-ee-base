@@ -2,7 +2,7 @@ Profile: EEBaseEpisodeOfCare
 Parent: EpisodeOfCare
 Id: ee-episode-of-care
 Title: "EEBase EpisodeOfCare"
-Description: "An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time."
+Description: "An association between a patient and an organization/healthcare provider(s) over a period of time. The managing organization assumes a level of responsibility for the patient during this time. EpisodeOfCare acts as a container resource that links a series of Encounters together for problems/issues (specific condition)."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
