@@ -4,6 +4,7 @@ Title: "Identity System"
 Description: "Description of the identity system concepts acceptable for entity identification"
 * ^caseSensitive = false
 * ^experimental = true
+* ^copyright = "Apache-2.0"
 * ^publisher = "HL7 Estonia"
 * ^content = #fragment
 * ^hierarchyMeaning = #is-a
