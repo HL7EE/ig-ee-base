@@ -19,7 +19,7 @@ Profile: EEBasePractitioner
 Parent: Practitioner
 Id: ee-practitioner
 Title: "EEBase Practitioner"
-Description: "A person who is directly or indirectly involved in the provisioning of healthcare or related services."
+Description: "This profile defines the EE Base constraints and extensions on the Practitioner resource for the minimal set of data to query and retrieve practitioner information. The profile defines a structure that localises core concepts, including identifiers and terminology, for use in an Estonian context for practitioner."
 * ^meta.versionId = "4"
 * ^meta.lastUpdated = "2022-11-21T13:15:21.1820806+00:00"
 * ^version = "1.0.0"
