@@ -82,7 +82,7 @@ Profile: EEBaseEncounter
 Parent: Encounter
 Id: ee-encounter
 Title: "EEBase Encounter"
-Description: "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities."
+Description: "Encounter is an interaction between a patient and healthcare provider(s) to provide healthcare service(s) or assess a patient's health status. There are many types of encounters (such as ambulatory, inpatient, home visits, emergency and the like) which is the reason why the resource encompasses the lifecycle from pre-admission to the actual encounter (for ambulatory encounters) and admission, stay and discharge (for inpatient encounters). Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
