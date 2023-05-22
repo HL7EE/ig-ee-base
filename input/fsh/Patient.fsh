@@ -156,9 +156,9 @@ Usage: #example
   * postalCode = "32819"
   * text = "5601 Universal Blvd, Orlando, FL 32819, USA"
 
-Instance: PatientKaruPuhh
+Instance: PatientMartMets
 InstanceOf: EEBasePatient
-Title: "Karu Puhh (verified patient)"
+Title: "Mart Mets (verified patient)"
 Description: "Estonian citizen"
 Usage: #example
 * id = "pat1"
@@ -172,8 +172,8 @@ Usage: #example
   * period.end = "2023-12-28"
   * assigner.display = "Estonian Police and Board Agency"
 * name[official]
-  * given = "Karu"
-  * family = "Puhh"
+  * given = "Mart"
+  * family = "Mets"
 * gender = #male
 * birthDate = "1973-02-10"
   * extension[accuracyIndicator].valueCoding = DateAccuracyIndicator#AAA "Day, month and year are accurate"
