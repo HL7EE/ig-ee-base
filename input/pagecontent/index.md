@@ -21,7 +21,9 @@ The EEBase Implementation Guide covers a set of national base profiles, terminol
 
 This guide serves the purpose of simplifying the process of implementing FHIR and thus increasing interoperability and clinical data quality in the Estonian context by including the following components:
 - FHIR resources tailored for local use, e.g. **base profiles**, whereas conformance requirements, must support flags and binding strengths have been held to as minimum as possible to support [open-world modeling](https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_Profiling_Guidelines_R4#Open_vs._closed_world_modeling);
-- Ready-to-use **CodeSystems** and **ValueSets** developed for Estonian healthcare data exchange specifically;
+- Ready-to-use **CodeSystems** and **ValueSets** developed for Estonian healthcare data exchange specifically.
+
+The conformance and terminology resources in EEBase are in English due to FHIR being an international standard. The only exceptions are some of the CodeSystems and ValueSets, where displays and descriptions are in Estonian. 
 
 Even though the initial draft of the EEBase Implementation Guide was developed in March 2022 - May 2023 as part of project "Estonian National Health Information System support for event-based data exchange", it should be regarded as the intellectual property of a community of contributors and reviewers who have provided valuable input during the validation process of this guide. 
 
