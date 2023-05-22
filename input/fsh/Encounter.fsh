@@ -111,8 +111,8 @@ Description: "Encounter is an interaction between a patient and healthcare provi
 
 Instance: EncounterPatient1
 InstanceOf: EEBaseEncounter
-Title:      "Inpatient encounter of bear Pooh"
-Description: "Inpatient encounter of bear Pooh"
+Title:      "Inpatient encounter of Mart Mets"
+Description: "Inpatient encounter of Mart Mets"
 Usage: #example
 * status = #in-progress
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP 
@@ -121,7 +121,7 @@ Usage: #example
 * actualPeriod.start = "2023-05-09"
 * episodeOfCare[0] = Reference(EpisodeOfCarePatient1)
 * serviceProvider = Reference(Organization/rh)
-* extension[modeOfArrival].valueCoding = EEBaseModeOfArrival#PV "Police Vehicle"
+* extension[modeOfArrival].valueCoding = EEBaseModeOfArrival#A "Ambulance"
 * location[0].location.display = "Emergency Waiting Room"
 * location[=].status = #active
 * location[=].period.start = "2023-05-09T19:00:00+02:00"
