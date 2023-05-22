@@ -12,7 +12,7 @@ Profile: EEBaseObservation
 Parent: Observation
 Id: ee-observation
 Title: "EEBase Observation"
-Description: "Measurements and simple assertions made about a patient, device or other subject."
+Description: "Observation represents one of the most important and central units of healthcare data exchange - different kinds of observations varying from clinical findings and measurements to social history. The resource is designed to cover a wide variety of use cases and as a result, at its simplest, a resource instance can consist of only a code, value, and status flag. The granularity of instance highly depends on the use case, therefore the minimal viable data considered is a decision that needs to be made during profiling process."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
