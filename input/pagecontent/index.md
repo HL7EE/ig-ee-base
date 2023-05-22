@@ -33,9 +33,9 @@ This document aims to provide standardized clinical data components and instruct
 
 ### Scope
 From the perspective of future and current implementers, it is most logical to divide the content of the EEBase Implementation Guide into three parts by the function they serve:
-- **FHIR profiles and extensions** suitable for use in the Estonian healthcare domain specifically. Each profile has its dedicated page for details on example use cases, usage instructions and descriptions of data items. For a general overview of all profiles and extensions in this guide, it is suggested to look at the [Profiles Index](artifacts.html) page, where one can find profiling guidelines developed and followed in the profiling process of EEBase. The profiling guidelines offer insight into the principles and best practices, which are especially valuable in the early stage of building profiles based on one's use cases. *Please note that EEBase profiles are intended as a starting point for utilizing the possibilities offered by FHIR for specific use cases, projects and/or services.* The profiles provided *should not be considered suitable for use straight out of the box but must be used as a base profile to derive additional profiles from*;
+- **FHIR profiles and extensions** suitable for use in the Estonian healthcare domain specifically. Each profile has its dedicated page for details on example use cases, usage instructions and descriptions of data items. For a general overview of all profiles and extensions in this guide, it is suggested to look at the [Profiles Index](artifacts.html) page, where one can find profiling guidelines developed and followed in the profiling process of EEBase. The profiling guidelines offer insight into the principles and best practices, which are especially valuable in the early stage of building profiles based on one's use cases. *Please note that EEBase profiles are intended as a starting point for utilizing the possibilities offered by FHIR for specific use cases, projects and/or services. The profiles provided should not be considered suitable for use straight out of the box but must be used as a base profile to derive additional profiles from*;
 - **CodeSystems and ValueSets** specially developed for EEBase (this means that CodeSystems and ValueSets developed by HL7 are not included in this IG even when bound with data elements in EEBase profiles, as the latest documentation of these artefacts could be found on [FHIR’s webpage](http://hl7.org/fhir/terminologies-systems.html)). 
-ConceptMaps from custom value sets developed for EEBase to HL7’s ’default’ value sets are also provided in case of implementers decide on using the ones provided by HL7. For maximum interoperability, it is encouraged to use stable identifiers (either a URI or OID) in profiles. For that purpose, the authors of this implementation guide have utilized the [NamingSystem](artifacts.html#terminology-naming-systems) resources. For more information on using terminology, see the Profiling Guidelines section on the [Profiles Index](artifacts.html) page and pages under the Terminology tab;
+For maximum interoperability, it is encouraged to use stable identifiers (either a URI or OID) in profiles. For that purpose, the authors of this implementation guide have utilized the [NamingSystem](artifacts.html#terminology-naming-systems) resources. For more information on using terminology, see the Profiling Guidelines section on the [Profiles Index](artifacts.html) page and pages under the Terminology tab;
 - **Policy** from general compliance principles to FHIR operations to be followed when implementing FHIR within your jurisdiction. For more information, see the [Policy Index](policy.html) page.
 
 
@@ -45,18 +45,17 @@ This Guide is divided into several pages, which are listed at the top of each pa
 
 - [Home](index.html): The home page provides the introduction and background for EEBase.
 - [Policy](policy.html): The Policy page provides the set of rules for FHIR standard developers in Estonia.
-  - [General](policy.html#general): <!-- siia lisada selgitus -->
-  - [Conformance](policy.html#conformance): <!-- siia lisada selgitus -->
-  - [Profiling](policy.html#profiling): <!-- siia lisada selgitus -->
-  - [Versioning](policy.html#versioning): <!-- siia lisada selgitus -->
-  - [Naming](policy.html#naming): <!-- siia lisada selgitus -->
-  - [Resource identifiers](policy.html#resource-identifiers): <!-- siia lisada selgitus -->
-  - [Publishing](policy.html#publishing): <!-- siia lisada selgitus -->
-  - [Serialization](policy.html#serialization): <!-- siia lisada selgitus -->
-  - [FHIR operations](policy.html#fhir-operations): <!-- siia lisada selgitus -->
-<!--  - [General](policy.html#health-service): List of providers of National Health Services. -->
-- Profiles and Extensions: The header for pages about Extensions and Profiles
-  - The [Extension Library](artifacts.html#structures-extension-definitions), which have been defined for the EEBase.
+  - [General](policy.html#general)
+  - [Conformance](policy.html#conformance)
+  - [Profiling](policy.html#profiling)
+  - [Versioning](policy.html#versioning)
+  - [Naming](policy.html#naming)
+  - [Resource identifiers](policy.html#resource-identifiers)
+  - [Publishing](policy.html#publishing)
+  - [Serialization](policy.html#serialization)
+  - [FHIR operations](policy.html#fhir-operations)
+  - [Health services](policy.html#health-service)
+- [Artifacts](artifacts.html): This page provides a list of the FHIR artifacts defined as part of this implementation guide.
   - The [Profiles](artifacts.html#structures-resource-profiles), which have been defined for the EEBase:
     - [EEBaseEncounter](StructureDefinition-ee-encounter.html)
     - [EEBaseEpisodeOfCare](StructureDefinition-ee-episode-of-care.html)
@@ -68,11 +67,6 @@ This Guide is divided into several pages, which are listed at the top of each pa
     - [EEBasePractitioner](StructureDefinition-ee-practitioner.html)
     - [EEBasePractitionerRole](StructureDefinition-ee-practitioner-role.html)
     - [EEBaseRelatedPerson](StructureDefinition-ee-related-person.html)
-- Terminology: This page lists all the Terminology assets defined as part of this Implementation Guide.
-<!-- - [ConceptMaps](#): This is the list of all ConceptMaps necessary to guarantee interoperability for using EEBase and HL7 terminology resources. NB! Delete this line because IG does not contain concept maps. -->
-  - [CodeSystems](artifacts.html#terminology-code-systems): This is the list of all CodeSystems defined for use within the EEBase.
-  - [ValueSets](artifacts.html#terminology-value-sets): This is the list of all ValueSets defined for use within the EEBase.
-  - [NamingSystems](artifacts.html#terminology-naming-systems): This is the list of all Namingsystems defined for use within the EEBase.
 - [Download](download.html): List of downloads available.
 - [Contact Us](contact.html): How to Contact the key parties associated with this implementation guide.
 
