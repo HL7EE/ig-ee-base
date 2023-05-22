@@ -42,7 +42,7 @@ Profile: EEBasePatient
 Parent: Patient
 Id: ee-patient
 Title: "EEBase Patient"
-Description: "Demographics and other administrative information about an individual or animal receiving care or other health-related services."
+Description: "Patient is a FHIR resource intended for documenting demographical and/or administrative information about the individual on the receiving end of healthcare services. In context of Estonian healthcare data exchange, the patient MUST be identifiable at least by either Estonian Personal Identification Number (if the subject is an Estonian resident) or TIS Personal Idenitification Number (if the subject is a non-resident)."
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
