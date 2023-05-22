@@ -60,7 +60,7 @@ Profile: EEBasePractitionerRole
 Parent: PractitionerRole
 Id: ee-practitioner-role
 Title: "EEBase PractitionerRole"
-Description: "A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time."
+Description: "PractitionerRole resource allows exchange of specific set of roles, specialties and services that a practitioner may perform at an organisation for a period of time. EEBase PractitionerRole profile defines the constraints and extensions for the minimal set of data to query and retrieve information for practitioner role in Estonian context."
 * ^meta.lastUpdated = "2022-09-26T08:01:30.1809509+00:00"
 * ^version = "1.0.0"
 * ^status = #draft
