@@ -30,7 +30,7 @@ Profile: EEBaseOrganization
 Parent: Organization
 Id: ee-organization
 Title: "EEBase Organization"
-Description: "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc."
+Description: " Organization is a resource intended for documenting information related to an entity that has been formed for the purpose of achieving some form of collective action. 'Organization' as such has a narrower definition in context of EEBase - in order to be conformant to EEBaseOrganization profile, an organization MUST be registered as a business. Yet, Organization could be used for documenting contact information and/or providing support for other resources that need to reference organizations."
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-11-21T13:25:49.780106+00:00"
 * ^version = "1.0.0"
