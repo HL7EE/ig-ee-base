@@ -4,13 +4,15 @@
 <br/>
 <b>The guidance does not form the basis for a completely described deployable service in and of itself but is the basis from which other FHIR implementation guides can be derived.</b>
 <br/>
-- This version of the EEBase Implementation Guide is currently under development and will be updated daily.
 <br/>
-- Known issues currently being addressed have been listed below:<br/>  
-  - Some of the URLs might not be resolvable yet, there may be a few broken links.<br/>
-  - Some of the CodeSystems and ValueSets are still in development.<br/>
-  - Subpages "People and Organizations" and "Profiling Guidelines" are still in development.<br/>
-  - Official contacts and the list of contributors/reviewers will be added in the near future. Until then the main contact point for inquiries is <b>fhir@tehik.ee</b>.
+This version of the EEBase Implementation Guide is currently under development and will be updated daily.
+<br/>
+<ul>
+     <li>Some of the URLs might not be resolvable yet, there may be a few broken links.</li>
+     <li>Some of the CodeSystems and ValueSets are still in development.</li>
+     <li>Subpages "People and Organizations" and "Profiling Guidelines" are still in development.</li>
+     <li>Official contacts and the list of contributors/reviewers will be added in the near future. Until then the main contact point for inquiries is <b>fhir@tehik.ee</b>.</li>
+</ul> 
 
 </div>
 
