@@ -56,11 +56,11 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 * relationship[person] ^short = "Social context. Relation to the patient"
 
 
-Instance: Pooh2Robin
+Instance: Mets2Meri
 InstanceOf: EEBaseRelatedPerson
-Description: "Christopher Robin is an emergency contact of bear Pooh"
-* patient = Reference(PatientKaruPuhh)
-* name.text = "Christopher Robin"
+Description: "Mari Meri is an emergency contact of mart Mets"
+* patient = Reference(PatientMartMets)
+* name.text = "Mari Meri"
 * relationship[0] = v3-RoleCode#ECON "emergency contact"
 * relationship[+] = $SCT#113163005 "Friend"
 
