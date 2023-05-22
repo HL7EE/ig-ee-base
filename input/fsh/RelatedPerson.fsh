@@ -65,13 +65,13 @@ Description: "Christopher Robin is an emergency contact of bear Pooh"
 * relationship[+] = $SCT#113163005 "Friend"
 
 
-Instance: Dow2Dow
+Instance: Doe2Doe
 InstanceOf: EEBaseRelatedPerson
-Description: "Jane Dow is a wife of John Dow"
+Description: "Jane Doe is a wife of John Doe"
 * patient = Reference(PatientJohnDoe)
 * name
   * given = "Jane"
-  * family = "Dow"
+  * family = "Doe"
 * gender = #female  
 * relationship[0] = v3-RoleCode#NOK "Next of kin"
 * relationship[+] = $SCT#127850001 "Wife"
