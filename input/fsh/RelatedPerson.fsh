@@ -46,14 +46,14 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 * relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open
 * relationship contains
-    class 0..1 and
-    person 0..1
+    class 0..* and
+    person 0..* 
 * relationship[class].coding.system = v3-RoleCode (exactly)
 * relationship[class].coding.system from http://terminology.hl7.org/ValueSet/v3-RoleClass (extensible)
-* relationship[class] ^short = "Association or relationship between two entities."
+* relationship[class] ^short = "Association or legal relationship between two entities."
 * relationship[person].coding.system = $SCT (exactly)
 * relationship[person].coding.system from EEBasePersonRelationship (extensible)
-* relationship[person] ^short = "Social context. Relation to the patient"
+* relationship[person] ^short = "Social relation to the patient"
 
 
 Instance: Mets2Meri
