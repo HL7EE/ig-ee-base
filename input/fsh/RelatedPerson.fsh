@@ -1,4 +1,4 @@
-Alias: v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode 
+Alias: v3-RoleClass = http://terminology.hl7.org/CodeSystem/v3-RoleClass
 
 ValueSet: EEBasePersonRelationship
 Id: ee-person-relationship
@@ -48,7 +48,7 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 * relationship contains
     class 0..* and
     person 0..* 
-* relationship[class].coding.system = v3-RoleCode (exactly)
+* relationship[class].coding.system = v3-RoleClass (exactly)
 * relationship[class].coding.system from http://terminology.hl7.org/ValueSet/v3-RoleClass (extensible)
 * relationship[class] ^short = "Association or legal relationship between two entities."
 * relationship[person].coding.system = $SCT (exactly)
@@ -61,7 +61,7 @@ InstanceOf: EEBaseRelatedPerson
 Description: "Mari Meri is an emergency contact of Mart Mets"
 * patient = Reference(PatientMartMets)
 * name.text = "Mari Meri"
-* relationship[0] = v3-RoleCode#ECON "emergency contact"
+* relationship[0] = v3-RoleClass#ECON "emergency contact"
 * relationship[+] = $SCT#113163005 "Friend"
 
 
@@ -73,7 +73,7 @@ Description: "Jane Doe is a wife of John Doe"
   * given = "Jane"
   * family = "Doe"
 * gender = #female  
-* relationship[0] = v3-RoleCode#NOK "Next of kin"
+* relationship[0] = v3-RoleClass#NOK "Next of kin"
 * relationship[+] = $SCT#127850001 "Wife"
 //* relationship[class] = v3-RoleCode#NOK "Next of kin"
 //* relationship[person] = $SCT#127850001 "Wife"
