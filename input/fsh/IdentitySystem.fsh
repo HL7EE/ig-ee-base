@@ -54,11 +54,14 @@ Description: "Description of the identity system concepts acceptable for entity 
 * ^property[+].code = #naming-system
 * ^property[=].description = "The uri to the related naming system"
 * ^property[=].type = #string
+* ^property[+].code = #oid
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#oid"
+* ^property[=].description = "OID in TIS"
+* ^property[=].type = #string
 * ^property[+].code = #status
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[=].description = "Status of the concept according to http://terminology.hl7.org/CodeSystem/v3-ConceptStatus"
 * ^property[=].type = #code
-
 // Organizations
 * #https://fhir.ee/sid/org "Root of identifiers for organization identification" "Identifikaatorid asutustele"
 * #https://fhir.ee/sid/org ^property[0].code = #status
@@ -70,6 +73,8 @@ Description: "Description of the identity system concepts acceptable for entity 
 * #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[=].valueCode = #EST
 * #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[+].code = #naming-system
 * #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[=].valueString = "https://fhir.ee/NamingSystem/org-est-br"
+* #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[+].code = #oid
+* #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[=].valueString = "1.2.3.4.5.6"
 * #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[+].code = #status
 * #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/br ^property[=].valueCode = #A
 * #https://fhir.ee/sid/org #https://fhir.ee/sid/org/est/fi "License number provided by The National Institute for Health Development" "Terviseameti litsentsi number"
