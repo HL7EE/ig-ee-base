@@ -45,85 +45,58 @@ Description: "This profile defines the EE Base constraints and extensions on the
 * qualification[degree].code ^short = "Qualification, education, license"
 
 
-Instance: PractitionerD05647
+Instance: PractitionerD99876
 InstanceOf: EEBasePractitioner
 Usage: #example
-Description: "Practitioner D05647"
-* id = "D05647"
+Description: "Practitioner D99876"
+* id = "D99876"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "D05647"
+* identifier[=].value = "D99876"
 * identifier[+].system = "https://fhir.ee/sid/pid/est/ni"
-* identifier[=].value = "XXXXXXXXXXX1"
+* identifier[=].value = "35006080229"
 * active = true
 * name.family = "Arst"
-* name.given = "Hea"
+* name.given = "Paavo"
 * qualification[degree].code.text = "pediaatria"
 * qualification[degree].code = http://terminology.hl7.org/CodeSystem/v2-0360#MD "Doctor of Medicine"
 
-Instance: PractitionerD04281
+Instance: PractitionerD98765
 InstanceOf: EEBasePractitioner
 Usage: #example
-Description: "Practitioner D04281"
-* id = "D04281"
+Description: "Practitioner D98765"
+* id = "D98765"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "D04281"
+* identifier[=].value = "D98765"
 * identifier[+].system = "https://fhir.ee/sid/pid/est/ni"
-* identifier[=].value = "XXXXXXXXXXX2"
+* identifier[=].value = "489050599952"
 * active = true
 * name.family = "Arst"
-* name.given = "Hea"
+* name.given = "Ly"
 
-Instance: PractitionerN12770
+Instance: PractitionerN98765
 InstanceOf: EEBasePractitioner
 Usage: #example
-Description: "Practitioner N12770"
-* id = "N12770"
+Description: "Practitioner N98765"
+* id = "N98765"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "N12770"
+* identifier[=].value = "N98765"
 * identifier[+].system = "https://fhir.ee/sid/pid/est/ni"
-* identifier[=].value = "YYYYYY3"
+* identifier[=].value = "49806307018"
 * active = true
 * name.family = "Õde"
-* name.given = "Tubli"
+* name.given = "Laura"
 
 
-Instance: PractitionerN13001
+Instance: PractitionerN99876
 InstanceOf: EEBasePractitioner
 Usage: #example
-Description: "Practitioner N13001"
-* id = "N13001"
+Description: "Practitioner N99876"
+* id = "N99876"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "N13001"
+* identifier[=].value = "N99876"
 * identifier[+].system = "https://fhir.ee/sid/pid/est/ni"
-* identifier[=].value = "YYYYYY4"
+* identifier[=].value = "38001010015"
 * active = true
 * name.family = "Õde"
-* name.given = "Tubli"
-
-Instance: PractitionerN00778
-InstanceOf: EEBasePractitioner
-Usage: #example
-Description: "Practitioner N00778"
-* id = "N00778"
-* identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "N00778"
-* identifier[+].system = "https://fhir.ee/sid/pid/est/ni"
-* identifier[=].value = "YYYYYY5"
-* active = true
-* name.family = "Õde"
-* name.given = "Tubli"
-
-
-Instance: PractitionerN14105
-InstanceOf: EEBasePractitioner
-Usage: #example
-Description: "Practitioner N14105"
-* id = "N14105"
-* identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "N14105"
-* identifier[+].system = "https://fhir.ee/sid/pid/est/ni"
-* identifier[=].value = "YYYYYY6"
-* active = true
-* name.family = "Õde"
-* name.given = "Tubli"
+* name.given = "Kari"
 
