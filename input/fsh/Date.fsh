@@ -1,4 +1,4 @@
-CodeSystem: DateAccuracyIndicator
+CodeSystem: EEBaseDateAccuracyIndicator
 Id:         ee-date-accuracy-indicator
 Title:     "Date Accuracy Indicator"
 Description: "The Date Accuracy Indicator code system defines concepts that indicate the accuracy of components of a reported date. The concepts defined in this code system are equivalent to those defined in the METeOR value domains for Date—accuracy indicator, code AAA (http://meteor.aihw.gov.au/content/index.phtml/itemId/294429)."
@@ -32,12 +32,12 @@ Description: "The Date Accuracy Indicator code system defines concepts that indi
 * #UUE	"Day and month are unknown, year is estimated"
 * #UUU	"Day, month and year are unknown"
 
-ValueSet: DateAccuracyIndicator
+ValueSet: EEBaseDateAccuracyIndicator
 Id: ee-date-accuracy-indicator
 Title: "Date Accuracy Indicator"
 Description: "Date Accuracy Indicator"
 * ^experimental = true
-* include codes from system DateAccuracyIndicator 
+* include codes from system EEBaseDateAccuracyIndicator 
 
 
 Extension: ExtensionEEBaseDateAccuracyIndicator
@@ -57,7 +57,7 @@ Description: "This extension applies to the [date](http://hl7.org/fhir/datatypes
 * . ^comment = "In some circumstances, systems may capture date or dateTime data that has unknown or estimated parts. This coding indicates the accuracy of the day, month and year parts. This concept is equivalent to Australian Institute of Health and Welfare data element 294418 [Date—accuracy indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/294418)."
 * value[x] 1..
 * value[x] only Coding
-* value[x] from DateAccuracyIndicator (required)
+* value[x] from EEBaseDateAccuracyIndicator (required)
 * value[x] ^short = "Date accuracy coding"
 * value[x] ^definition = "Coding of the accuracy of a date."
 * value[x] ^binding.description = "Date accuracy coding"

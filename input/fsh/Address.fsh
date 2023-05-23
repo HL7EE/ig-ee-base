@@ -1,18 +1,18 @@
-CodeSystem: ADS
+CodeSystem: EEBaseADS
 Id:         ee-ads
 Title:     "ADS"
 Description: "Estonian Address Data System."
 * ^experimental = true
 * ^caseSensitive = false
 * ^content = #fragment
-* #377840387000004BW00001SLZ00000000 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
+* #2280361 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
 
-ValueSet: ADS
+ValueSet: EEBaseADS
 Id: ee-ads
 Title: "ADS"
 Description: "Estonian Address Data System."
 * ^experimental = true
-* include codes from system ADS 
+* include codes from system EEBaseADS 
 
 
 Extension: ExtensionEEBaseADS
@@ -27,7 +27,7 @@ Description: "EEBase ADS extension"
 * . ^short = "ADS extension"
 * . ^definition = "Aadressiandmete süsteem (ADS) koosneb aadressiandmete süsteemi infosüsteemist ning erinevatest nõuetest. ADS-i eesmärk on tagada ühene aadressiandmete kogumine, registreerimine, töötlemine, säilitamine, identifitseerimine ning töötlemise funktsioonide ühetaoline korraldamine."
 * value[x] only Coding
-* value[x] from ADS
+* value[x] from EEBaseADS
 * value[x].system ^short = "Reference to ADR-ID (identifier of address object and its version)"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
