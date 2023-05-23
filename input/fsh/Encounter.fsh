@@ -21,7 +21,7 @@ Title: "Mode Of Arrival"
 Description: "Mode Of Arrival"
 * ^experimental = false
 * ^copyright = "This value set includes content from HL7 Terminology, which is copyright © 2002+ HL7"
-* include codes from valueset http://terminology.hl7.org/ValueSet/v2-0430
+* include codes from system http://terminology.hl7.org/CodeSystem/v2-0430
 * include codes from system EEBaseModeOfArrival
 
 Extension: ExtensionEEBaseModeOfArrival
@@ -121,7 +121,7 @@ Usage: #example
 * actualPeriod.start = "2023-05-09"
 * episodeOfCare[0] = Reference(EpisodeOfCarePatient1)
 * serviceProvider = Reference(Organization/rh)
-* extension[modeOfArrival].valueCoding = EEBaseModeOfArrival#A "Ambulance"
+* extension[modeOfArrival].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0430#A "Ambulance"
 * location[0].location.display = "Emergency Waiting Room"
 * location[=].status = #active
 * location[=].period.start = "2023-05-09T19:00:00+02:00"
