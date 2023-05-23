@@ -110,14 +110,14 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
 
 
 
-Instance: PractitionerRoleD05647
+Instance: PractitionerRoleD99876
 InstanceOf: EEBasePractitionerRole
 Usage: #example
-Description: "PractitionerRole D05647"
-* id = "PractRoleD05647"
+Description: "PractitionerRole D99876"
+* id = "PractRoleD99876"
 * active = true
 * period.start = "2012-01-01"
-* practitioner = Reference(Practitioner/D05647)
+* practitioner = Reference(Practitioner/D99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = EEBaseOccupation#22122501 "Pediaater"
@@ -128,14 +128,14 @@ Description: "PractitionerRole D05647"
 * specialty[+] = EEBaseMedreSpecialty#E670 "Pediaatria allergoloogia lisapädevusega"
 
 
-Instance: PractitionerRoleD04281
+Instance: PractitionerRoleD98765
 InstanceOf: EEBasePractitionerRole
 Usage: #example
-Description: "PractitionerRole D04281"
-* id = "PractRoleD04281"
+Description: "PractitionerRole D98765"
+* id = "PractRoleD98765"
 * active = true
 * period.start = "2012-01-01"
-* practitioner = Reference(Practitioner/D04281)
+* practitioner = Reference(Practitioner/D98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = EEBaseOccupation#22120901 "Kardioloog"
@@ -146,14 +146,14 @@ Description: "PractitionerRole D04281"
 
 
 
-Instance: PractitionerRoleN12770
+Instance: PractitionerRoleN98765
 InstanceOf: EEBasePractitionerRole
 Usage: #example
-Description: "PractitionerRole N12770"
-* id = "PractRoleN12770"
+Description: "PractitionerRole N98765"
+* id = "PractRoleN98765"
 * active = true
 * period.start = "2012-01-01"
-* practitioner = Reference(Practitioner/N12770)
+* practitioner = Reference(Practitioner/N98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
@@ -161,48 +161,16 @@ Description: "PractitionerRole N12770"
 * specialty[+] = EEBaseMedreSpecialty#N200 "Kliiniline õendus"
 
 
-Instance: PractitionerRoleN13001
+Instance: PractitionerRoleN99876
 InstanceOf: EEBasePractitionerRole
 Usage: #example
-Description: "PractitionerRole N13001"
-* id = "PractRoleN13001"
+Description: "PractitionerRole N99876"
+* id = "PractRoleN99876"
 * active = true
 * period.start = "2012-01-01"
-* practitioner = Reference(Practitioner/N13001)
+* practitioner = Reference(Practitioner/N99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
 * specialty[0] = $SCT#773568002 "Emergency medicine"
 * specialty[+] = EEBaseMedreSpecialty#N100 "Intensiivõendus"
-
-
-Instance: PractitionerRoleN00778
-InstanceOf: EEBasePractitionerRole
-Usage: #example
-Description: "PractitionerRole N00778"
-* id = "PractRoleN00778"
-* active = true
-* period.start = "2012-01-01"
-* practitioner = Reference(Practitioner/N00778)
-* organization = Reference(Organization/rh)
-* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
-* specialty[0] = $SCT#394821009 "Occupational medicine"
-* specialty[+] = EEBaseMedreSpecialty#N300 "Terviseõendus"
-
-
-Instance: PractitionerRoleN14105
-InstanceOf: EEBasePractitionerRole
-Usage: #example
-Description: "PractitionerRole N14105"
-* id = "PractRoleN14105"
-* active = true
-* period.start = "2012-01-01"
-* practitioner = Reference(Practitioner/N14105)
-* organization = Reference(Organization/rh)
-* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEBaseOccupation#22210502 "Õde"
-* specialty[0] = $SCT#722165004 "Nursing"
-* specialty[0] = $SCT#394537008 "Pediatric specialty"
-* specialty[+] = EEBaseMedreSpecialty#N500 "Õde"
-
