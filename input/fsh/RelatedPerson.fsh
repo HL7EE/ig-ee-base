@@ -58,7 +58,7 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 
 Instance: Mets2Meri
 InstanceOf: EEBaseRelatedPerson
-Description: "Mari Meri is an emergency contact of mart Mets"
+Description: "Mari Meri is an emergency contact of Mart Mets"
 * patient = Reference(PatientMartMets)
 * name.text = "Mari Meri"
 * relationship[0] = v3-RoleCode#ECON "emergency contact"
