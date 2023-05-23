@@ -2057,7 +2057,7 @@ Description: "Description of the identity system concepts acceptable for entity 
 * #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[+].code = #country
 * #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[=].valueCode = #IMN
 * #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[+].code = #naming-system
-* #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IMN
+* #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IMM
 * #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/mar "Root identifier for person identification of country Morocco" "Maroko identifikaatorid isikutele"
 * #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/mar ^property[0].code = #status
 * #https://fhir.ee/sid/pid #https://fhir.ee/sid/pid/mar ^property[=].valueCode = #R
