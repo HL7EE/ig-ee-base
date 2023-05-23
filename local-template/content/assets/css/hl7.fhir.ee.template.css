@@ -12,3 +12,6 @@
     --bs-font-sans-serif: "Helvetica Neue",system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   }
 
+.alert.alert-warning {
+    color: black;
+}
