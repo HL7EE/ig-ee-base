@@ -1415,6 +1415,13 @@ Description: "Description of the identity system concepts acceptable for entity 
       * ^property[=].valueCode = #A
       * ^property[+].code = #country
       * ^property[=].valueCode = #IRL
+    * #https://fhir.ee/sid/pid/irl/cz "ID Card of Ireland" "Iirimaa ID-kaart"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #IRL
   * #https://fhir.ee/sid/pid/isr "Root identifier for person identification of country Israel" "Iisrael identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/isr ^property[0].code = #status
   * #https://fhir.ee/sid/pid/isr ^property[=].valueCode = #R
@@ -1486,10 +1493,10 @@ Description: "Description of the identity system concepts acceptable for entity 
   * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[+].code = #naming-system
   * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRN
   * #https://fhir.ee/sid/pid/isl "Root identifier for person identification of country Iceland" "Island identifikaatorid isikutele"
-  * #https://fhir.ee/sid/pid/isl ^property[0].code = #status
-  * #https://fhir.ee/sid/pid/isl ^property[=].valueCode = #R
-  * #https://fhir.ee/sid/pid/isl ^property[+].code = #country
-  * #https://fhir.ee/sid/pid/isl ^property[=].valueCode = #ISL
+    * ^property[0].code = #status
+    * ^property[=].valueCode = #R
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #ISL
     * #https://fhir.ee/sid/pid/isl/ppn "Passport number of Iceland" "Islandi passinumber"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
@@ -1502,6 +1509,13 @@ Description: "Description of the identity system concepts acceptable for entity 
     * #https://fhir.ee/sid/pid/isl/ni "National identifier of Iceland" "Islandi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #ISL
+    * #https://fhir.ee/sid/pid/isl/cz "ID Card of Iceland" "Islandi ID-kaart"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
       * ^property[+].code = #status
       * ^property[=].valueCode = #A
       * ^property[+].code = #country
@@ -3515,10 +3529,10 @@ Description: "Description of the identity system concepts acceptable for entity 
   * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[+].code = #naming-system
   * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZWE
   * #https://fhir.ee/sid/pid/dnk "Root identifier for person identification of country Denmark" "Taani identifikaatorid isikutele"
-  * #https://fhir.ee/sid/pid/dnk ^property[0].code = #status
-  * #https://fhir.ee/sid/pid/dnk ^property[=].valueCode = #R
-  * #https://fhir.ee/sid/pid/dnk ^property[+].code = #country
-  * #https://fhir.ee/sid/pid/dnk ^property[=].valueCode = #DNK
+    * ^property[0].code = #status
+    * ^property[=].valueCode = #R
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #DNK
     * #https://fhir.ee/sid/pid/dnk/ppn "Passport number of Denmark" "Taani passinumber"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #PPN
@@ -3531,6 +3545,13 @@ Description: "Description of the identity system concepts acceptable for entity 
     * #https://fhir.ee/sid/pid/dnk/ni "National identifier of Denmark" "Taani personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #DNK
+    * #https://fhir.ee/sid/pid/dnk/cz "ID Card of Denmark" "Taani ID-kaart"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #CZ
       * ^property[+].code = #status
       * ^property[=].valueCode = #A
       * ^property[+].code = #country
