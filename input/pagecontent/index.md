@@ -50,7 +50,7 @@ This Guide is divided into several pages, which are listed at the top of each pa
   - [Publishing](policy.html#publishing)
   - [Serialization](policy.html#serialization)
   - [FHIR operations](policy.html#fhir-operations)
-  - [Health services](policy.html#health-service)
+  - [Health services](policy.html#health-services)
 - [Artifacts](artifacts.html): This page provides a list of the FHIR artifacts defined as part of this implementation guide.
   - The [Profiles](artifacts.html#structures-resource-profiles), which have been defined for the EEBase:
     - [EEBaseEncounter](StructureDefinition-ee-encounter.html)
