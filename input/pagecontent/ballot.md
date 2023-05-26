@@ -37,12 +37,10 @@ Antud Balloti osana võetakse arvesse ainult juurutusjuhendi praeguse sisu kohta
 
 Igaüks võib teie püstitatud teemapunkti kommenteerida, kuid ainult tehnilisel töörühmal*** on õigus otsustada kommentaari tulemuste üle. Töörühm koguneb peale balloti lõppu ja otsustab balloti raames esitatud tagasiside üle.
 
-Kui teil on antud protsessi kohta küsimusi, võtke meiega ühendust siin.
+Kui teil on antud protsessi kohta küsimusi, võtke meiega ühendust **fhir@tehik.ee** .
 
-Head tagasisidestamist!
-
-EEBase'i ja MPI juurutusjuhendite autorid
-
+<br/>
+<br/>
 
 \* EE MPI = Master Patient Index (Patsientide üldandmete teenus)
 
