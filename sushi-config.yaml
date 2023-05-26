@@ -55,6 +55,8 @@ pages:
     title: Contact Us
   download.md:
     title: Download
+  ballot.md
+    title: IG vastuvõtmise protsess
 
 
 #   implementation.xml:
@@ -91,6 +93,7 @@ menu:
   Links:
     "Contact Us": contact.html
     Downloads: download.html
+    IG vastuvõtmise protsess: ballot.html
     "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
 
 #parameters:
