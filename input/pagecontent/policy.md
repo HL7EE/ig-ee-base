@@ -12,7 +12,7 @@ This section of the Implementation Guide is subject to change.
 
 #### FHIR-GEN-01 **HL7 FHIR standard compliance**.
 - All FHIR implementations **MUST** comply with the HL7 FHIR standard.
-- All implementations of FHIR interfaces **MUST** comply with the requirements outlined in the relevant release of the HL7 FHIR standards, as outlined on [http://fhir.hl7.org](http://fhir.hl7.org).
+- All implementations of FHIR interfaces **MUST** comply with the requirements outlined in the relevant release of the HL7 FHIR standards, as outlined on [fhir.hl7.org](http://fhir.hl7.org).
 
 #### FHIR-GEN-02 **Availability of FHIR resources on a public server**.
 - All FHIR resources are published on a public FHIR reference server.
@@ -20,7 +20,7 @@ This section of the Implementation Guide is subject to change.
 - Resources that are part of the National Estonian Health System (TIS) **MUST** also be published on a TEHIK branded public FHIR server fhir.tehik.ee.
 
 #### FHIR-GEN-03 **Avoid FHIR Document Paradigm**
-- Avoid FHIR [Document Paradigm](https://www.hl7.org/fhir/documents.html) when possible. Use [REST](https://www.hl7.org/fhir/http.html) and [Messaging Paradigms](https://www.hl7.org/fhir/messaging.html) instead.
+- Avoid FHIR [Document Paradigm](http://www.hl7.org/fhir/documents.html) when possible. Use [REST](http://www.hl7.org/fhir/http.html) and [Messaging Paradigms](http://www.hl7.org/fhir/messaging.html) instead.
 
 ---
 
@@ -74,12 +74,12 @@ Example of a version number in Estonian base Organization
 
 ### Naming
 To promote consistency and make it easier for implementers to locate suitable profiles, extensions, value sets and others for their projects, a naming strategy will be adopted for EEBase-defined FHIR assets or FHIR assets derived from the EEBase. All EEBase-derived implementation guides and FHIR assets **MUST** follow these rules to claim conformace with the EEBase.
-For detailed definitions of concepts discussed within this guidance document, refer to the appropriate published version of the [FHIR standard](https://www.hl7.org/fhir/).
+For detailed definitions of concepts discussed within this guidance document, refer to the appropriate published version of the [FHIR standard](http://www.hl7.org/fhir/).
 
 #### FHIR-NAME-01: **Convention for Profile definition**
 FHIR Profile name **MUST** follow an agreed format. 
 The FHIR profile name consists of several logical name segments:
-- **Base URL**: The **URL** used for standard publishing. For example, [hl7.org](fhir.hl7.org) for HL7 International and [fhir.ee](fhir.ee) for HL7 Estonia. **Mandatory**.
+- **Base URL**: The **URL** used for standard publishing. For example, [hl7.org](http://fhir.hl7.org) for HL7 International and [fhir.ee](https://fhir.ee) for HL7 Estonia. **Mandatory**.
   - Check the full [list](#health-services) of providers. 
   - You can register your project with fhir.ee namespace through [HL7 Estonia Board](contact.html).
 - **Base**: The provider name. May differ for *resource name* and for *id*. **Mandatory**. 
