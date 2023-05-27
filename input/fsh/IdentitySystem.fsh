@@ -20,11 +20,14 @@ Id: ee-patient-identity
 Title: "Person Identity System"
 Description: "Identity systems acceptable for patient identification"
 * ^experimental = false
-* include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid"
-// and status = "A" should be added when tooling is fixed!!!
-//* include codes from valueset EEBaseIdentitySystemPid and EEBaseIdentitySystemActive
-//* include codes from system EEBaseIdentitySystem where idtype = "PPN" and idtype = "NI"
-//* exclude codes from system EEBaseIdentitySystem where status = "R" 
+* include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid" and status = "A"
+
+ValueSet: EEBaseIdentitySystem
+Id: ee-patient-identity
+Title: "Identity System"
+Description: "All identification systems have ever been used for identification."
+* ^experimental = false
+* include codes from system EEBaseIdentitySystem 
 
 
 CodeSystem: EEBaseIdentitySystem
