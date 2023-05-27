@@ -18,8 +18,8 @@ Description: "Observation represents one of the most important and central units
 * ^publisher = "HL7 Estonia"
 * status MS
 * category MS
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding.system"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains obscat 0..* MS 
 * category[obscat].coding.system = $obscat (exactly)
