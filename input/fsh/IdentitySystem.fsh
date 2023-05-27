@@ -23,7 +23,7 @@ Description: "Identity systems acceptable for patient identification"
 * include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid" and status = "A"
 
 ValueSet: EEBaseIdentitySystem
-Id: ee-patient-identity
+Id: ee-identity-system
 Title: "Identity System"
 Description: "All identification systems have ever been used for identification."
 * ^experimental = false
