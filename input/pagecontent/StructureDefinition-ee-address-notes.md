@@ -55,7 +55,7 @@ Mäppimise reeglid on järgmised:
   - district - vaikimis on omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2. 
 
 Kui vallade väliste linnade puhul tehakse erisusi ning linna kuvatakse *city* elemendis järgmistes olukordades:
-- kus ADS kolmadal tasemel ei ole haldusüksusi. Antud olukorras tegemist vallavälise linnaga millel ei ole sisemisi haldusjaotusi. Nt, ADR-ID: 374460000000000000000000000000000 | Harju maakond, Maardu linn. 
+- kus ADS kolmadal tasemel ei ole haldusüksusi. Antud olukorras tegemist vallavälise linnaga millel ei ole sisemisi haldusjaotusi. Nt, ADR-ID: 100030 | Harju maakond, Maardu linn. 
 Õige:
 ```json
   "address": [
@@ -73,7 +73,7 @@ Kui vallade väliste linnade puhul tehakse erisusi ning linna kuvatakse *city* e
         {
           "url" : "https://fhir.ee/StructureDefinition/ee-ads",
           "valueCoding" : {
-            "code" : "374460000000000000000000000000000"
+            "code" : "100030"
           }
         }
       ]          
@@ -96,7 +96,7 @@ Vale:
   ]
 ```
 
-- kus ADS registris teisel ja kolmandal tasemel on sama nimetus. Nt, ADR-ID: 797938151000000000000000000000000 | Tartu maakond, Tartu linn, Tartu linn. 
+- kus ADS registris teisel ja kolmandal tasemel on sama nimetus. Nt, ADR-ID: 3020414 | Tartu maakond, Tartu linn, Tartu linn. 
 Õige:
 ```json
   "address": [
@@ -114,7 +114,7 @@ Vale:
         {
           "url" : "https://fhir.ee/StructureDefinition/ee-ads",
           "valueCoding" : {
-            "code" : "797938151000000000000000000000000"
+            "code" : "3020414"
           }
         }
       ]    
@@ -138,7 +138,7 @@ Vale:
   ]
 ```
 
-- Tallinna linnaosad kodeeritakse *district* elemendina. Nt, ADR-ID: 377840339000000000000000000000000 | Harju maakond, Tallinn, Kristiine linnaosa.
+- Tallinna linnaosad kodeeritakse *district* elemendina. Nt, ADR-ID: 2103556 | Harju maakond, Tallinn, Kristiine linnaosa.
 Õige:
 ```json
   "address": [
@@ -157,7 +157,7 @@ Vale:
         {
           "url" : "https://fhir.ee/StructureDefinition/ee-ads",
           "valueCoding" : {
-            "code" : "377840339000000000000000000000000"
+            "code" : "2103556"
           }
         }
       ]          
@@ -165,7 +165,7 @@ Vale:
   ]
 ```
 
-- juhul kui muu linnal on haldusjaotused siis tuleb lähtuda ADS haldusjotusest. Nt, ADR-ID: 797938560000000000000000000000000 | Tartu maakond, Tartu linn, Tähtvere küla.
+- juhul kui muu linnal on haldusjaotused siis tuleb lähtuda ADS haldusjotusest. Nt, ADR-ID: 3020415 | Tartu maakond, Tartu linn, Tähtvere küla.
 Õige:
 ```json
   "address": [
@@ -184,7 +184,7 @@ Vale:
         {
           "url" : "https://fhir.ee/StructureDefinition/ee-ads",
           "valueCoding" : {
-            "code" : "797938560000000000000000000000000"
+            "code" : "3020415"
           }
         }
       ]     
