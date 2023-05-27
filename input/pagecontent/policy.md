@@ -139,8 +139,8 @@ Examples:
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | -------- | ------------- | -------- | -------- |
-| EEMPIPatientEducationStatus | Patient-education | https://fhir.ee/OperationDefinition/Patient-education | EEMPI Patient Education Status | 
-| EEMPIPatientLink | Patient-link | https://fhir.ee/OperationDefinition/Patient-link | EEMPI Patient Link | 
+| EEMPIPatientEducationStatus | patient-education | https://fhir.ee/OperationDefinition/patient-education | EEMPI Patient Education Status | 
+| EEMPIPatientLink | patient-link | https://fhir.ee/OperationDefinition/patient-link | EEMPI Patient Link | 
 
 ---
 
