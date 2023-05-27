@@ -41,8 +41,8 @@ Usage: #definition
 Instance: org-est-fi
 InstanceOf: NamingSystem
 Usage: #definition
-* name = "MedreOrganizationLicense"
-* title = "Estonian Health Facility ID"
+* name = "OrgEstFi"
+* title = "Estonian Medre Health Facility ID"
 * status = #draft
 * kind = #identifier
 * date = "2022-11-14T18:39:08.4689312+00:00"
@@ -60,7 +60,7 @@ Usage: #definition
 Instance: org-est-br
 InstanceOf: NamingSystem
 Usage: #definition
-* name = "EstonianBusinessRegistryNumber"
+* name = "OrgEstBr"
 * title = "Estonian Business Registry Number"
 * status = #draft
 * kind = #identifier
@@ -79,7 +79,7 @@ Usage: #definition
 Instance: org-vatin
 InstanceOf: NamingSystem
 Usage: #definition
-* name = "VatIdentificationNumber"
+* name = "OrgVATIN"
 * title = "VAT identification number"
 * status = #draft
 * kind = #identifier
@@ -98,8 +98,8 @@ Usage: #definition
 Instance: pro-est-pho
 InstanceOf: NamingSystem
 Usage: #definition
-* name = "MedrePractitonerIdentifier"
-* title = "Estonian Health Professional Official ID"
+* name = "ProEstPho"
+* title = "Estonian Medre Health Professional Official ID"
 * status = #draft
 * kind = #identifier
 * date = "2022-11-05T11:55:28.6412938+00:00"
