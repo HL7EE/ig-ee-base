@@ -1,4 +1,4 @@
-## Ballot HL7® FHIR® EE Base ja EE MPI* juurutusjuhendite kohta.
+## Ballot HL7® FHIR® [EE Base](https://fhir.ee/ig/ee-base/ballot-2023-may) ja [EE MPI](https://fhir.ee/ig/mpi/ballot-2023-may)* juurutusjuhendite kohta.
 
 Kutsume Teid osalema **HL7® FHIR® EE Base ja EE MPI juurutusjuhendite** (LINGID!!) esimeste avaldatavate versioonide tagasisidestamisele. Juurutusjuhend (ingl k. *Implementation Guide*, IG)  sisaldab põhilisi FHIR-i rakendamise reegleid (eelkõige laiendeid, profiile, identifikaatoreid ja terminoloogiat) Eesti kontekstis. EE Base juurutusjuhend on abstraktne üksus, mis on aluseks teistele (k.a. EE MPI) FHIR-i juurutusjuhenditele. Juurutusjuhend on loodud olema dünaamiline üksus, mida pidevalt täiustatakse ja hooldatakse, tuginedes peamiselt FHIR-i kogukonna tagasisidele ja kasutuskogemusele Eestis ning laiemalt.
 
