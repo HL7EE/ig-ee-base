@@ -9,7 +9,6 @@ Description: "Estonian Edition of International Standard Classification of Occup
 * #22121101 "Allergoloog-immunoloog"
 * #22120901 "Kardioloog"
 * #22210502 "Õde"
-* #PN "Advanced Practice Nurse"
 
 ValueSet: EEBaseOccupation
 Id: ee-occupation
@@ -156,7 +155,7 @@ Description: "PractitionerRole N98765"
 * practitioner = Reference(Practitioner/N98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
+* code[tor] = EEBaseOccupation#22210502 "Õde"
 * specialty[0] = $SCT#394810000 "Rheumatology"
 * specialty[+] = EEBaseMedreSpecialty#N200 "Kliiniline õendus"
 
@@ -171,6 +170,7 @@ Description: "PractitionerRole N99876"
 * practitioner = Reference(Practitioner/N99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
+//* code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
+* code[tor] = EEBaseOccupation#22210502 "Õde"
 * specialty[0] = $SCT#773568002 "Emergency medicine"
 * specialty[+] = EEBaseMedreSpecialty#N100 "Intensiivõendus"
