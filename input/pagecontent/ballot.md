@@ -1,6 +1,6 @@
-## Ballot HL7® FHIR® [EE Base](https://fhir.ee/ig/ee-base/ballot-2023-may) ja [EE MPI](https://fhir.ee/ig/mpi/ballot-2023-may)* juurutusjuhendite kohta.
+## Ballot HL7® FHIR® EE Base ja EE MPI* juurutusjuhendite kohta.
 
-Kutsume Teid osalema **HL7® FHIR® EE Base ja EE MPI juurutusjuhendite** (LINGID!!) esimeste avaldatavate versioonide tagasisidestamisele. Juurutusjuhend (ingl k. *Implementation Guide*, IG)  sisaldab põhilisi FHIR-i rakendamise reegleid (eelkõige laiendeid, profiile, identifikaatoreid ja terminoloogiat) Eesti kontekstis. EE Base juurutusjuhend on abstraktne üksus, mis on aluseks teistele (k.a. EE MPI) FHIR-i juurutusjuhenditele. Juurutusjuhend on loodud olema dünaamiline üksus, mida pidevalt täiustatakse ja hooldatakse, tuginedes peamiselt FHIR-i kogukonna tagasisidele ja kasutuskogemusele Eestis ning laiemalt.
+Kutsume Teid osalema **HL7® FHIR® [EE Base](https://fhir.ee/ig/ee-base/ballot-2023-may) ja [EE MPI](https://fhir.ee/ig/mpi/ballot-2023-may) juurutusjuhendite** (LINGID!!) esimeste avaldatavate versioonide tagasisidestamisele. Juurutusjuhend (ingl k. *Implementation Guide*, IG)  sisaldab põhilisi FHIR-i rakendamise reegleid (eelkõige laiendeid, profiile, identifikaatoreid ja terminoloogiat) Eesti kontekstis. EE Base juurutusjuhend on abstraktne üksus, mis on aluseks teistele (k.a. EE MPI) FHIR-i juurutusjuhenditele. Juurutusjuhend on loodud olema dünaamiline üksus, mida pidevalt täiustatakse ja hooldatakse, tuginedes peamiselt FHIR-i kogukonna tagasisidele ja kasutuskogemusele Eestis ning laiemalt.
 
 ## Mis on HL7 Ballot**?
 
@@ -13,7 +13,7 @@ Hääletamine (tagasisidestamine) ehk *Balloting* on protsess, mida HL7 kasutab,
 
 ## Kus asuvad EE Base ja EE MPI juurutusjuhendid?
 
-Juurutusjuhendi Ballot Versioon EE Base asub **siin** (link!!) ja Ballot Versioon EE MPI **siin** (link!!). EE Base koosneb kümnest profiilist, EE MPI kaheteistkümnest profiilist, mis on leitavad vahelehel „Artifacts” või „Artefaktid“. Lisaks on juurutusjuhendites kirjeldused ka andmetüüpide (*data type*), laiendite (*extension*), loendite (*Value Set*) ning koodisüsteemide (*Code System*) kohta.
+Juurutusjuhendi Ballot Versioon EE Base asub **[siin](https://fhir.ee/ig/ee-base/ballot-2023-may)** (link!!) ja Ballot Versioon EE MPI **[siin](https://fhir.ee/ig/mpi/ballot-2023-may)** (link!!). EE Base koosneb kümnest profiilist, EE MPI kaheteistkümnest profiilist, mis on leitavad vahelehel „Artifacts” või „Artefaktid“. Lisaks on juurutusjuhendites kirjeldused ka andmetüüpide (*data type*), laiendite (*extension*), loendite (*Value Set*) ning koodisüsteemide (*Code System*) kohta.
 
 ## Kuidas luua Ballot kommentaare?
 
