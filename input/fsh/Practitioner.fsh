@@ -7,7 +7,6 @@ Description: "Qualification based on the education"
 * ^experimental = true
 * ^compose.include.system = $degreeLicenseCertificate
 
-* ^compose.include.concept[+].code = #MD
 * ^compose.include.concept[+].code = #PN
 * ^compose.include.concept[=].designation[+].language = #et
 * ^compose.include.concept[=].designation[=].value = "Eriõde"
@@ -85,6 +84,7 @@ Description: "Practitioner N98765"
 * active = true
 * name.family = "Õde"
 * name.given = "Laura"
+* qualification.code = $degreeLicenseCertificate#PN "Advanced Practice Nurse"
 
 
 Instance: PractitionerN99876
@@ -99,4 +99,4 @@ Description: "Practitioner N99876"
 * active = true
 * name.family = "Õde"
 * name.given = "Kari"
-
+* qualification.code = $degreeLicenseCertificate#RN "Registered Nurse"
