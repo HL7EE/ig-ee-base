@@ -5,6 +5,7 @@
 <ul>
      <li>Some of the URLs might not be resolvable yet, there may be a few broken links.</li>
      <li>Some of the CodeSystems and ValueSets are still in development.</li>
+     <li>There is no working FHIR reference server yet but it is soon to be fixed.</li>
      <li>Official contacts and the list of contributors/reviewers will be added in the near future. Until then the main contact point for inquiries is <b>fhir@tehik.ee</b>.</li>
 </ul> 
 
