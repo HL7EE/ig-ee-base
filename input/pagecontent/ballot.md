@@ -18,7 +18,7 @@ Juurutusjuhendi Ballot Versioon EE Base asub **siin** (link!!) ja Ballot Versioo
 ## Kuidas luua Ballot kommentaare?
 
 Balloti käigus tekkinud kommentaarid salvestatakse Juurutusjuhendi algallikasse, milleks on **siin**(link!!) (EE Base) ja **siin**(link!!) (EE MPI) asuvad GitHubi hoidlad. Balloti raames loodud teemapüstitused (Issue) on GitHubi teisel vahekaardil (link!!).
-* Esiteks vajate GitHubi kontot. Kui teil seda veel pole, minge GitHubi (link!!) ja klõpsake paremas ülanurgas lingil „Sign up“ ja järgige sealt antud juhiseid.
+* Esiteks vajate GitHubi kontot. Kui teil seda veel pole, minge ([GitHubi](https://github.com/)) ja klõpsake paremas ülanurgas lingil „Sign up“ ja järgige sealt antud juhiseid.
 * Järgmisena sirvige HL7 Estonia ig-ee-base ja ig-ee-mpi teemapüstituste (Issues) lehte
 * Paremal (praeguse teemade loendi kohal) on nupp pealkirjaga „New Issue”. Klõpsake seda ja kuvatakse uue teemapüstituse (issue) loomise aken.
 * Igal teemapüstitusel on pealkiri ja kirjeldus
