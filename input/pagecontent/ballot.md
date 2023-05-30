@@ -19,7 +19,7 @@ Juurutusjuhendi Ballot Versioon EE Base asub **[siin](https://fhir.ee/ig/ee-base
 
 Balloti käigus tekkinud kommentaarid salvestatakse Juurutusjuhendi algallikasse, milleks on **[siin](https://github.com/HL7EE/ig-ee-base)** (EE Base) ja **[siin](https://github.com/HL7EE/ig-ee-mpi)** (EE MPI) asuvad GitHubi hoidlad. Balloti raames loodud teemapüstitused (Issues) on GitHubi teisel vahekaardil.
 * Esiteks vajate GitHubi kontot. Kui teil seda veel pole, minge [GitHubi](https://github.com/) ja klõpsake paremas ülanurgas lingil „Sign up“ ja järgige sealt antud juhiseid.
-* Järgmisena sirvige HL7 Estonia ig-ee-base ja ig-ee-mpi teemapüstituste (Issues) lehte
+* Järgmisena sirvige HL7 Estonia ig-ee-base ja ig-ee-mpi teemapüstituste (*Issues*) lehte
 * Paremal (praeguse teemade loendi kohal) on nupp pealkirjaga „New Issue”. Klõpsake seda ja kuvatakse uue teemapüstituse (issue) loomise aken.
 * Igal teemapüstitusel on pealkiri ja kirjeldus
 * Sisestage kommentaari esitamiseks mõtestatud pealkiri. Näiteks: „EEBase Patient profiilist puudub perekonnanime element“ või „EE MPI Patient unknown seotud Value Set vajab täiendust“.
