@@ -18,12 +18,12 @@ Description: "Observation represents one of the most important and central units
 * ^publisher = "HL7 Estonia"
 * status MS
 * category MS
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "coding"
-* category ^slicing.rules = #open
-* category contains obscat 0..* MS 
-* category[obscat].coding.system = $obscat (exactly)
-* category[obscat] from EEBaseObservationCategory (required)
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains obscat 0..* MS 
+* category.coding[obscat].system = $obscat (exactly)
+* category.coding[obscat] from EEBaseObservationCategory (required)
 * code MS
 * subject only Reference(EEBasePatient or Group or Device or EEBaseLocation or EEBaseOrganization or Procedure or EEBasePractitioner or Medication or Substance or BiologicallyDerivedProduct or NutritionProduct)
 * subject MS
