@@ -5,7 +5,13 @@ Description: "Estonian Address Data System."
 * ^experimental = true
 * ^caseSensitive = false
 * ^content = #fragment
+* #2103553 "Harju maakond, Tallinn"
+* #2103556 "Harju maakond, Tallinn, Lasnamäe linnaosa"
 * #2280361 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
+* #3020414 "Tartu maakond, Tartu linn" "Tartu maakond, Tartu linn, Tartu linn"
+* #3066282 "Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4"
+* #3020415 "Tartu maakond, Tartu linn, Tähtvere küla"
+
 
 ValueSet: EEBaseADS
 Id: ee-ads
