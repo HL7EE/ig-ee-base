@@ -45,7 +45,7 @@ Description: "Description of the identity system concepts acceptable for entity 
 * ^copyright = "Apache-2.0"
 * ^caseSensitive = false
 * ^hierarchyMeaning = #is-a
-* ^content = #complete
+* ^content = #fragment
 * ^property[0].code = #idtype
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#idtype"
 * ^property[=].description = "Identifier type of concept according to http://terminology.hl7.org/CodeSystem/v2-0203"
