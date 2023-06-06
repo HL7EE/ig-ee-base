@@ -47,7 +47,9 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * identifier 1.. MS
-* identifier.system from EEBasePatientIdentity (extensible)
+* identifier.system from EEBasePatientIdentity (required)
+* identifier.system 1.. MS
+* identifier.value 1.. MS
 * active 1.. MS
 * name MS
 * name.use 1..1 MS
@@ -141,6 +143,9 @@ Usage: #example
 * identifier[0]
   * system = "https://fhir.ee/sid/pid/usa/ppn"
   * value = "N857623628"
+* identifier[+]
+  * system = "https://fhir.ee/sid/pid/est/prn/90006399"
+  * value = "983453-4363-634-63423457-325"
 * name[0]
   * use = #usual
   * given = "John"
