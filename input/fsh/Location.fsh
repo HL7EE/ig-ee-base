@@ -3,7 +3,7 @@ Id: ee-location-form
 Title: "Location Form"
 Description: "Location Form"
 * ^experimental = false
-* ^compose.include.system = http://terminology.hl7.org/CodeSystem/location-physical-type
+* include codes from system http://terminology.hl7.org/CodeSystem/location-physical-type
 
 
 Profile: EEBaseLocation
