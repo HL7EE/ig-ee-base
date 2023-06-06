@@ -3903,19 +3903,26 @@ Description: "Description of the identity system concepts acceptable for entity 
   * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[+].code = #naming-system
   * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-URY
   * #https://fhir.ee/sid/pid/uzb "Root identifier for person identification of country Uzbekistan" "Usbekistan identifikaatorid isikutele"
-  * #https://fhir.ee/sid/pid/uzb ^property[0].code = #status
-  * #https://fhir.ee/sid/pid/uzb ^property[=].valueCode = #R
-  * #https://fhir.ee/sid/pid/uzb ^property[+].code = #country
-  * #https://fhir.ee/sid/pid/uzb ^property[=].valueCode = #UZB
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn "Passport number of Uzbekistan" "Usbekistan passinumber"
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[0].code = #idtype
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[=].valueCode = #PPN
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[+].code = #status
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[=].valueCode = #A
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[+].code = #country
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[=].valueCode = #UZB
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/uzb #https://fhir.ee/sid/pid/uzb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-UZB
+    * ^property[0].code = #status
+    * ^property[=].valueCode = #R
+    * ^property[+].code = #country
+    * ^property[=].valueCode = #UZB
+    * #https://fhir.ee/sid/pid/uzb/ppn "Passport number of Uzbekistan" "Usbekistan passinumber"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #PPN
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZB
+      * ^property[+].code = #naming-system
+      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-UZB
+    * #https://fhir.ee/sid/pid/uzb/ni "National identifier of Uzbekistan" "Usbekistan personaalne identifikaator"
+      * ^property[0].code = #idtype
+      * ^property[=].valueCode = #NI
+      * ^property[+].code = #status
+      * ^property[=].valueCode = #A
+      * ^property[+].code = #country
+      * ^property[=].valueCode = #UZB
   * #https://fhir.ee/sid/pid/ncl "Root identifier for person identification of country New Caledonia" "Uus-Kaledoonia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ncl ^property[0].code = #status
   * #https://fhir.ee/sid/pid/ncl ^property[=].valueCode = #R
