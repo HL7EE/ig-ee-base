@@ -172,6 +172,34 @@ Description: "Description of the identity system concepts acceptable for entity 
         * ^property[=].valueCode = #EST
         * ^property[+].code = #status
         * ^property[=].valueCode = #A
+      * #https://fhir.ee/sid/pid/est/prn/70009770 "Health and Welfare Information Systems Centre" "TERVISE JA HEAOLU INFOSÜSTEEMIDE KESKUS"
+        * ^property[0].code = #idtype
+        * ^property[=].valueCode = #PRN
+        * ^property[+].code = #country
+        * ^property[=].valueCode = #EST
+        * ^property[+].code = #status
+        * ^property[=].valueCode = #A
+        * #https://fhir.ee/sid/pid/est/prn/70009770/kmt "KMT unknown patient identifier" "KMT tundmatu patsiendi identifikaator"
+          * ^property[0].code = #idtype
+          * ^property[=].valueCode = #MRT
+          * ^property[+].code = #country
+          * ^property[=].valueCode = #EST
+          * ^property[+].code = #status
+          * ^property[=].valueCode = #A
+        * #https://fhir.ee/sid/pid/est/prn/70009770/rk "RK unknown patient identifier" "RK tundmatu patsiendi identifikaator"
+          * ^property[0].code = #idtype
+          * ^property[=].valueCode = #MRT
+          * ^property[+].code = #country
+          * ^property[=].valueCode = #EST
+          * ^property[+].code = #status
+          * ^property[=].valueCode = #A
+        * #https://fhir.ee/sid/pid/est/prn/70009770/ap "AP unknown patient identifier" "AP tundmatu patsiendi identifikaator"
+          * ^property[0].code = #idtype
+          * ^property[=].valueCode = #MRT
+          * ^property[+].code = #country
+          * ^property[=].valueCode = #EST
+          * ^property[+].code = #status
+          * ^property[=].valueCode = #A
   * #https://fhir.ee/sid/pid/afg "Root identifier for person identification of country Afghanistan" "Afganistan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/afg ^property[0].code = #status
   * #https://fhir.ee/sid/pid/afg ^property[=].valueCode = #R
