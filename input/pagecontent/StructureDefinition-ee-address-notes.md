@@ -37,12 +37,12 @@ Example of usage as *city district*
 ```
 
 #### Meaning of address elements 
-NB! In the case of an address, all fields provide informational content only, these fields may not be used for statistics or similar operations. The only exceptions that are strictly typed attributes: 1) **country** and 2) **ADS extension**.
-In the case of an Estonian address, the **ADS extension** with with values and [services](https://geoportaal.maaamet.ee/eng/Services/In-ADS-p660.html) supported by Maaament are required.
+NB! In case of an address, all fields provide informational content only, these fields may not be used for statistics or similar operations. The only exceptions that are strictly typed attributes: 1) **country** and 2) **ADS extension**.
+In case of an Estonian address, the **ADS extension** with values and [services](https://geoportaal.maaamet.ee/eng/Services/In-ADS-p660.html) supported by Estonian Land Board is required.
 
 
 #### Addresses in Estonia 
-Tuleb arvestada, et ADS omab piisavalt keerulist struktuuri, mis lähtub administratiivses kuuluvusest, samas Address andmetüüp lähtub postikujust. Administratiivse ja postikuju erinevuste tõttu ADS-i teist ja kolmandat taset ei ole võimalik ühtlaselt mäppida *FHIR Address* struktuuri.
+Tuleb arvestada, et ADS omab piisavalt keerulist struktuuri, mis lähtub administratiivses kuuluvusest, samas Address andmetüüp lähtub postikujust. Administratiivse ja postikuju erinevuste tõttu ei ole võimalik ADS-i teist ja kolmandat taset ühtlaselt mäppida *FHIR Address* struktuuri.
 Mäppimise reeglid on järgmised:
 - *state* - Maakond. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 1.
 - extension *censusTract* - Väikekoht (AÜ, SÜ, GÜ, vkt). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 4.
@@ -50,12 +50,12 @@ Mäppimise reeglid on järgmised:
 - extension *streetNameBase* - Nimi (kohanimi, maaüksuse nimi). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 6.
 - extension *houseNumber* - Aadressinumber (maaüksuse või hoone erilisand). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 7.
 - extension *additionalLocator* - Korteri või muu hooneosa number. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 8.
-- *city* ja *district* - seotakse teise ja kolmanda tasemega, kuid kuna district võib esineda mitmes rollis (nii maakonna kui linna töpsustusena) siis reeglid ei ole lineaarsed.
+- *city* ja *district* - seotakse teise ja kolmanda tasemega, kuid kuna district võib esineda mitmes rollis (nii maakonna kui linna täpsustusena) siis reeglid ei ole lineaarsed.
   - city - vaikimisi "Asula (küla, alevik, alev, vallasisene linn) või linnaosa. Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 3."
   - district - vaikimis on omavalitsus (linn, vald). Vastab Maa-ameti ADS-iga liidestumise juhendis tasemele 2. 
 
-Kui vallade väliste linnade puhul tehakse erisusi ning linna kuvatakse *city* elemendis järgmistes olukordades:
-- kus ADS kolmadal tasemel ei ole haldusüksusi. Antud olukorras tegemist vallavälise linnaga millel ei ole sisemisi haldusjaotusi. Nt, ADR-ID: 100030 | Harju maakond, Maardu linn. 
+Vallaväliste linnade puhul tehakse erisusi ning linna kuvatakse *city* elemendis järgmistes olukordades:
+- kus ADS kolmadal tasemel ei ole haldusüksusi. Antud olukorras on tegemist vallavälise linnaga, millel ei ole sisemisi haldusjaotusi. Nt, ADR-ID: 100030 | Harju maakond, Maardu linn. 
 Õige:
 ```json
   "address": [
@@ -165,7 +165,7 @@ Vale:
   ]
 ```
 
-- juhul kui muu linnal on haldusjaotused siis tuleb lähtuda ADS haldusjotusest. Nt, ADR-ID: 3020415 | Tartu maakond, Tartu linn, Tähtvere küla.
+- juhul, kui linnal on haldusjaotused, siis tuleb lähtuda ADS haldusjaotusest. Nt, ADR-ID: 3020415 | Tartu maakond, Tartu linn, Tähtvere küla.
 Õige:
 ```json
   "address": [
