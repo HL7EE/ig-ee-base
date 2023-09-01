@@ -15,7 +15,7 @@ Description: "An association between a patient and an organization/healthcare pr
 * managingOrganization MS
 * period MS
 * careManager only Reference(EEBasePractitioner or EEBasePractitionerRole)
-* reason.value only Reference(Condition or Procedure or EEBaseObservation or EEBaseHealthcareService)
+* reason.value only CodeableReference(Condition or Procedure or EEBaseObservation or EEBaseHealthcareService)
 
 Instance: EpisodeOfCarePatient1
 InstanceOf: EEBaseEpisodeOfCare
