@@ -20,7 +20,7 @@ Id: ee-patient-identity
 Title: "Person Identity System"
 Description: "Identity systems acceptable for patient identification"
 * ^experimental = false
-* include codes from system EEBaseIdentitySystem where concept descendent-of "https://fhir.ee/sid/pid" and notSelectable = "false"
+* include codes from system EEBaseIdentitySystem where concept is-a "https://fhir.ee/sid/pid" and notSelectable = "false"
 
 ValueSet: EEBaseIdentitySystem
 Id: ee-identity-system
@@ -60,7 +60,7 @@ Description: "Description of the identity system concepts acceptable for entity 
 * ^property[+].code = #notSelectable
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#notSelectable"
 * ^property[=].description = "The concept is not intended to be chosen by the user"
-* ^property[=].type = #code
+* ^property[=].type = #boolean
 // Organizations
 * #https://fhir.ee/sid/org "Root of identifiers for organization identification" "Identifikaatorid asutustele"
   * ^property[0].code = #notSelectable
