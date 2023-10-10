@@ -38,28 +38,26 @@ Description: "EEBase ADS extension"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
 
-Extension: ExtensionEEBaseAddressOfResidency
-Id: ee-address-of-residency
-Title: "EEBase Address of Residency"
-Description: "This extension applies to the Address data type and is used to indicate that a official address of residency issued by Population Register."
-* ^version = "1.0.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2023-10-10"
-* ^publisher = "HL7 Estonia"
-* ^jurisdiction = $m49.htm#001
-* ^context.type = #element
+Extension: OfficialAddress
+Id: address-official
+Title: "Official Address"
+Description: "Indicate that this address is meant to be the 'official' address for that person. What an 'official' address is depends on the country. This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country"
+* ^publisher = "Health Level Seven International"
+* ^version = "0.1.0"
+* ^url = "http://hl7.org/fhir/StructureDefinition/address-official"
 * ^context.expression = "Address"
-* . 0..1
-* . ^short = "The indicator of officail address of residency"
-* . ^definition = "The indicator of officail address of residency. True is official."
-* url = "https://fhir.ee/StructureDefinition/ee-address-of-residency" (exactly)
-* value[x] only boolean
-* valueBoolean 1..1
-* valueBoolean only boolean
-* valueBoolean = true (exactly)
-* valueBoolean ^sliceName = "valueBoolean"
-* valueBoolean ^short = "Indicator of address of residency"
+* ^context.type = #element
+* ^contact.telecom.value = "http://www.hl7.org/Special/committees/fiwg"
+* ^contact.telecom.system = #url
+* ^copyright = "CC0"
+* ^status = #draft
+* . ^short = "Official Address"
+* . ^definition = "This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country (true assumed)."
+* url = "http://hl7.org/fhir/StructureDefinition/address-official" (exactly)
+* value[x] 1..1
+* value[x] only boolean or CodeableConcept
+* value[x] ^meaningWhenMissing = "Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address."
+
 
 Extension: ExtensionEEBaseEHAK
 Id: ee-ehak
@@ -100,13 +98,13 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension contains
     ExtensionEEBaseADS named ads 0..1 MS and
     ExtensionEEBaseEHAK named ehak 0..1 MS and
-    ExtensionEEBaseAddressOfResidency named residency 0..1 MS
+    OfficialAddress named official 0..1 MS
 * extension[ads] ^short = "ADR-ID"
 * extension[ads] ^isModifier = false
 * extension[ehak] ^short = "EHAK code"
 * extension[ehak] ^isModifier = false
-* extension[residency] ^short = "Indicator of address of residency"
-* extension[residency] ^isModifier = false
+* extension[official] ^short = "Indicator of address of residency"
+* extension[official] ^isModifier = false
 * country 1..1 MS 
 * country ^short = "Should use a 2 digit ISO 3166 code"
 * country ^definition = "Riigi kood (lubatud ISO-3166-2 koodid)"

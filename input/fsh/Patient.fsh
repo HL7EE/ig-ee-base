@@ -191,7 +191,7 @@ Usage: #example
   * text = "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
   * extension[ads].valueCoding = EEBaseADS#2280361
   * extension[ehak].valueCoding = https://fhir.ee/sid/ehak#0387 
-  * extension[residency].valueBoolean = true
+  * extension[official].valueBoolean = true
 
 Instance: PatientShadow
 InstanceOf: EEBasePatient
