@@ -38,6 +38,28 @@ Description: "EEBase ADS extension"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
 
+Extension: ExtensionEEBaseAddressOfResidency
+Id: ee-address-of-residency
+Title: "EEBase Address of Residency"
+Description: "This extension applies to the Address data type and is used to indicate that a official address of residency issued by Population Register."
+* ^version = "1.0.0"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2023-10-10"
+* ^publisher = "HL7 Estonia"
+* ^jurisdiction = $m49.htm#001
+* ^context.type = #element
+* ^context.expression = "Address"
+* . 0..1
+* . ^short = "The indicator of officail address of residency"
+* . ^definition = "The indicator of officail address of residency. True is official."
+* url = "https://fhir.ee/StructureDefinition/ee-address-of-residency" (exactly)
+* value[x] only boolean
+* valueBoolean 1..1
+* valueBoolean only boolean
+* valueBoolean = true (exactly)
+* valueBoolean ^sliceName = "valueBoolean"
+* valueBoolean ^short = "Indicator of address of residency"
 
 Extension: ExtensionEEBaseEHAK
 Id: ee-ehak
@@ -77,11 +99,14 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension ^min = 0
 * extension contains
     ExtensionEEBaseADS named ads 0..1 MS and
-    ExtensionEEBaseEHAK named ehak 0..1 MS
+    ExtensionEEBaseEHAK named ehak 0..1 MS and
+    ExtensionEEBaseAddressOfResidency named residency 0..1 MS
 * extension[ads] ^short = "ADR-ID"
 * extension[ads] ^isModifier = false
 * extension[ehak] ^short = "EHAK code"
 * extension[ehak] ^isModifier = false
+* extension[residency] ^short = "Indicator of address of residency"
+* extension[residency] ^isModifier = false
 * country 1..1 MS 
 * country ^short = "Should use a 2 digit ISO 3166 code"
 * country ^definition = "Riigi kood (lubatud ISO-3166-2 koodid)"
