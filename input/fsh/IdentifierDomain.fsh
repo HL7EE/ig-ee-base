@@ -1,39 +1,39 @@
-ValueSet: EEBaseOrganizationIdentity
-Id: ee-organization-identity
-Title: "Organization Identity System"
-Description: "Identity systems acceptable for organization identification"
+ValueSet: EEBaseOrganizationIdentifierDomain
+Id: ee-organization-identifier-domain
+Title: "Organization Identifier Domain"
+Description: "Identifier systems acceptable for organization identification"
 * ^experimental = false
-* EEBaseIdentitySystem#https://fhir.ee/sid/org/est/fi
-* EEBaseIdentitySystem#https://fhir.ee/sid/org/est/br
-* EEBaseIdentitySystem#https://fhir.ee/sid/org/vatin
+* EEBaseIdentifierDomain#https://fhir.ee/sid/org/est/fi
+* EEBaseIdentifierDomain#https://fhir.ee/sid/org/est/br
+* EEBaseIdentifierDomain#https://fhir.ee/sid/org/vatin
 
-ValueSet: EEBasePractitionerIdentity
-Id: ee-practitioner-identity
-Title: "Practitioner Identity System"
-Description: "Identity systems acceptable for practitioner identification"
+ValueSet: EEBasePractitionerIdentifierDomain
+Id: ee-practitioner-identifier-domain
+Title: "Practitioner Identifier Domain"
+Description: "Identifier systems acceptable for practitioner identification"
 * ^experimental = false
-* EEBaseIdentitySystem#https://fhir.ee/sid/pid/est/ni
-* EEBaseIdentitySystem#https://fhir.ee/sid/pro/est/pho
+* EEBaseIdentifierDomain#https://fhir.ee/sid/pid/est/ni
+* EEBaseIdentifierDomain#https://fhir.ee/sid/pro/est/pho
 
-ValueSet: EEBasePatientIdentity
-Id: ee-patient-identity
-Title: "Person Identity System"
+ValueSet: EEBasePatientIdentifierDomain
+Id: ee-patient-identifier-domain
+Title: "Patient Identifier Domain"
 Description: "Identity systems acceptable for patient identification"
 * ^experimental = false
-* include codes from system EEBaseIdentitySystem where concept is-a "https://fhir.ee/sid/pid" and notSelectable = "false"
+* include codes from system EEBaseIdentifierDomain where concept is-a "https://fhir.ee/sid/pid" and notSelectable = "false"
 
-ValueSet: EEBaseIdentitySystem
-Id: ee-identity-system
+ValueSet: EEBaseIdentifierDomain
+Id: ee-identifier-domain
 Title: "Identity System"
 Description: "All identification systems have ever been used for identification."
 * ^experimental = false
-* include codes from system EEBaseIdentitySystem 
+* include codes from system EEBaseIdentifierDomain 
 
 
-CodeSystem: EEBaseIdentitySystem
-Id: ee-identity-system
-Title: "Identity System"
-Description: "Description of the identity system concepts acceptable for entity identification"
+CodeSystem: EEBaseIdentifierDomain
+Id: ee-identifier-domain
+Title: "Identifier Domain"
+Description: "Description of the identifier systems acceptable for entity identification"
 * ^version = "0.9.0"
 * ^status = #active
 * ^experimental = false

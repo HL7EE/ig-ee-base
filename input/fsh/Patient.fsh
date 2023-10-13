@@ -47,7 +47,7 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * identifier 1.. MS
-* identifier.system from EEBasePatientIdentity (required)
+* identifier.system from EEBasePatientIdentifierDomain (required)
 * identifier.system 1.. MS
 * identifier.value 1.. MS
 * active 1.. MS
