@@ -50,6 +50,9 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * identifier.system from EEBasePatientIdentifierDomain (required)
 * identifier.system 1.. MS
 * identifier.value 1.. MS
+* identifier.value ^short = "Patient identification code or document number."
+* identifier.period ^short = "Validity period of the identifier of identification document."
+* identifier.assigner ^short = "Organization that issued the document. Can be used as a reference to an organization or as free text."
 * active 1.. MS
 * name MS
 * name.use 1..1 MS
