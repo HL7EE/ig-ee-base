@@ -51,6 +51,7 @@ Description:    "Blood Pressure example"
 Usage: #example
 * status = #final
 * code = $SCT#75367002 "Blood Pressure"
+* category = $obscat#vital-signs
 * subject = Reference(Patient/pat1)
 * effectiveDateTime = "2021-11-23"
 * performer = Reference(Organization/rh)
