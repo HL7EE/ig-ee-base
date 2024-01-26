@@ -115,7 +115,8 @@ Examples:
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | -------- | ------------- | -------- | -------- |
-| ExtensionEEBaseADS | ee-ads | https://fhir.ee/StructureDefinition/ee-ads | EEBase ADS | 
+| ExtensionEEBaseAdsAdrId | ee-ads-adr-id | https://fhir.ee/StructureDefinition/ee-ads-adr-id | EEBase ADS AdrId| 
+| ExtensionEEBaseAdsOid | ee-ads-oid | https://fhir.ee/StructureDefinition/ee-ads-oid | EEBase ADS Oid| 
 | ExtensionEEBaseModeOfArrival | ee-mode-of-arrival | https://fhir.ee/StructureDefinition/ee-mode-of-arrival | EEBase ModeOfArrival | 
 
 ---
@@ -170,8 +171,8 @@ Example:
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | -------- | ------------- | -------- | -------- |
-| EEBaseIdentitySystem | ee-identity-system | https://fhir.ee/CodeSystem/ee-identity-system | Identity System | 
-| EEBaseADS | ee-ads | https://fhir.ee/CodeSystem/ee-ads | ADS | 
+| EEBaseIdentitySystem | identity-system | https://fhir.ee/CodeSystem/identity-system | Identity System | 
+| EEBaseAdsAdrId | ads-adr-id | https://fhir.ee/CodeSystem/ads-adr-id | ADS AdrId | 
 | EEMPIEducationLevel | education-level | https://fhir.ee/CodeSystem/education-level | Education Level | 
 
 ---
@@ -188,8 +189,8 @@ Examples:
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | -------- | ------------- | -------- | -------- |
-| EEBasePatientIdentity | ee-patient-identity | https://fhir.ee/ValueSet/ee-patient-identity | Person Identity System | 
-| EEBaseADS | ee-ads | https://fhir.ee/ValueSet/ee-ads | ADS | 
+| EEBasePatientIdentity | patient-identity | https://fhir.ee/ValueSet/patient-identity | Person Identity System | 
+| EEBaseAdsAdrId | ads-adr-id | https://fhir.ee/ValueSet/ads-adr-id | ADS AdrId | 
 | EEMPIEducationLevel | education-level | https://fhir.ee/ValueSet/education-level | Education Level | 
 
 ---
@@ -213,7 +214,7 @@ Examples:
 
 | Resource Name | Resource Id | Resource Url | Resource Title |
 | -------- | ------------- | -------- | -------- |
-| ADS | ads | https://fhir.ee/NamingSystem/ads | ADS | 
+| EHAK | ehak | https://fhir.ee/NamingSystem/ehak | EHAK | 
 | PidEstNi | pid-est-ni | https://fhir.ee/NamingSystem/pid-est-ni | Estonian Personal National Identification Code | 
 | OrgVATIN | org-vatin | https://fhir.ee/NamingSystem/org-vatin | VAT identification number | 
 
