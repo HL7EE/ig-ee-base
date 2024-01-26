@@ -1,7 +1,7 @@
 Alias: $org-type = http://terminology.hl7.org/CodeSystem/organization-type
 
 ValueSet: EEBaseOrganizationType
-Id: ee-organization-type
+Id: organization-type
 Title: "Organization Types"
 Description: "Organization Types"
 * ^experimental = false

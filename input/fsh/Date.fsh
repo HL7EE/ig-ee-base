@@ -1,5 +1,5 @@
 CodeSystem: EEBaseDateAccuracyIndicator
-Id:         ee-date-accuracy-indicator
+Id:         date-accuracy-indicator
 Title:     "Date Accuracy Indicator"
 Description: "The Date Accuracy Indicator code system defines concepts that indicate the accuracy of components of a reported date. The concepts defined in this code system are equivalent to those defined in the METeOR value domains for Date—accuracy indicator, code AAA (http://meteor.aihw.gov.au/content/index.phtml/itemId/294429)."
 * ^experimental = true
@@ -33,7 +33,7 @@ Description: "The Date Accuracy Indicator code system defines concepts that indi
 * #UUU	"Day, month and year are unknown"
 
 ValueSet: EEBaseDateAccuracyIndicator
-Id: ee-date-accuracy-indicator
+Id: date-accuracy-indicator
 Title: "Date Accuracy Indicator"
 Description: "Date Accuracy Indicator"
 * ^experimental = true

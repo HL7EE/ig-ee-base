@@ -1,5 +1,5 @@
 ValueSet: EEBaseLocationForm
-Id: ee-location-form
+Id: location-form
 Title: "Location Form"
 Description: "Location Form"
 * ^experimental = false

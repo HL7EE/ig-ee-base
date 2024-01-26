@@ -2,7 +2,7 @@ Alias: $encounter-modeOfArrival = http://hl7.org/fhir/StructureDefinition/encoun
 Alias: $encounter-associatedEncounter = http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter
 
 CodeSystem: EEBaseModeOfArrival
-Id: ee-mode-of-arrival
+Id: mode-of-arrival
 Title: "Mode Of Arrival"
 Description: "The content of this code system is intended to supplement HL7's code system arrivalMode (version 2.1.0) with one additional code ('PV') for using in ValueSets"
 * ^experimental = false
@@ -16,7 +16,7 @@ Description: "The content of this code system is intended to supplement HL7's co
 
 
 ValueSet: EEBaseModeOfArrival
-Id: ee-mode-of-arrival
+Id: mode-of-arrival
 Title: "Mode Of Arrival"
 Description: "Mode Of Arrival"
 * ^experimental = false

@@ -1,6 +1,6 @@
 CodeSystem: EEBaseOccupation
-Id:         ee-occupation
-Title:     "Classification of Occupations"
+Id: occupation
+Title: "Classification of Occupations"
 Description: "Estonian Edition of International Standard Classification of Occupations. Based on ISCO-88"
 * ^experimental = true
 * ^caseSensitive = false
@@ -11,16 +11,16 @@ Description: "Estonian Edition of International Standard Classification of Occup
 * #22210502 "Õde"
 
 ValueSet: EEBaseOccupation
-Id: ee-occupation
+Id: occupation
 Title: "Occupation"
 Description: "Classification of Occupations"
 * ^experimental = true
 * include codes from system EEBaseOccupation
 
-CodeSystem: EEBaseMedreSpecialty
-Id:         ee-medre-specialty
-Title:     "Medre Specialty"
-Description: "Medre specialty (aka 'TAM erialade loend' in Estonian)"
+CodeSystem: EEBaseEriala
+Id: eriala
+Title: "Eriala"
+Description: "Medre specialty. TIS erialad."
 * ^experimental = true
 * ^caseSensitive = false
 * ^content = #fragment
@@ -32,15 +32,15 @@ Description: "Medre specialty (aka 'TAM erialade loend' in Estonian)"
 * #N300 "Terviseõendus"
 * #N500 "Õde"
 
-ValueSet: EEBaseMedreSpecialty
-Id: ee-medre-specialty
-Title: "Medre Specialty"
-Description: "Medre specialty (aka 'TAM eriala' in Estonian)."
+ValueSet: EEBaseEriala
+Id: eriala
+Title: "Eriala"
+Description: "Medre Specialty. TIS erialade loend."
 * ^experimental = true
-* include codes from system EEBaseMedreSpecialty
+* include codes from system EEBaseEriala
 
 ValueSet: EEBaseClinicalSpecialty
-Id: ee-clinical-specialty
+Id: clinical-specialty
 Title: "Clinical Specialty"
 Description: "Clinical specialty (aka 'tegevusvaldkond' in Estonian)"
 * ^experimental = true
@@ -48,7 +48,7 @@ Description: "Clinical specialty (aka 'tegevusvaldkond' in Estonian)"
 * include codes from system $SCT where concept descendent-of #394658006 "Clinical specialty"
 
 ValueSet: EEBasePractitionerRole
-Id: ee-practitioner-role
+Id: practitioner-role
 Title: "Practitioner Role"
 Description: "The role of practitioner in the healthcare facility."
 * ^experimental = false
@@ -85,7 +85,7 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
 * code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code[role] ^short = "Practitioner role"
 * code[role] from EEBasePractitionerRole (extensible)
-* code[tor].coding.system = "https://fhir.ee/CodeSystem/ee-occupation" (exactly)
+* code[tor].coding.system = "https://fhir.ee/CodeSystem/occupation" (exactly)
 * code[tor] ^short = "Official occupation at the national register"
 * code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"
 * code[tor] from EEBaseOccupation (extensible)
@@ -101,9 +101,9 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
 * specialty[specialty].coding.system = $SCT (exactly)
 * specialty[specialty] ^short = "Clinical specialty (Tegevusvaldkond)"
 * specialty[specialty] from EEBaseClinicalSpecialty (required)
-* specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/ee-medre-specialty" (exactly)
-* specialty[eriala] ^short = "Medre specialty (TAM eriala)"
-* specialty[eriala] from EEBaseMedreSpecialty (required)
+* specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/eriala" (exactly)
+* specialty[eriala] ^short = "Medre specialty (TIS erialade loend)"
+* specialty[eriala] from EEBaseEriala (required)
 
 
 
@@ -123,8 +123,8 @@ Description: "PractitionerRole D99876"
 * specialty[0] = $SCT#394537008 "Pediatric specialty"
 * specialty[+] = $SCT#418535003 "Pediatric immunology"
 * specialty[+] = $SCT#408439002 "Allergy - specialty"
-* specialty[+] = EEBaseMedreSpecialty#E290 "Pediaatria"
-* specialty[+] = EEBaseMedreSpecialty#E670 "Pediaatria allergoloogia lisapädevusega"
+* specialty[eriala] = EEBaseEriala#E290 "Pediaatria"
+* specialty[+] = EEBaseEriala#E670 "Pediaatria allergoloogia lisapädevusega"
 
 
 Instance: PractitionerRoleD98765
@@ -140,7 +140,7 @@ Description: "PractitionerRole D98765"
 * code[tor] = EEBaseOccupation#22120901 "Kardioloog"
 * specialty[0] = $SCT#394579002 "Cardiology"
 * specialty[+] = $SCT#1251549008 "Interventional cardiology"
-* specialty[+] = EEBaseMedreSpecialty#E170 "Kardioloogia"
+* specialty[eriala] = EEBaseEriala#E170 "Kardioloogia"
 
 
 
@@ -157,7 +157,7 @@ Description: "PractitionerRole N98765"
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = EEBaseOccupation#22210502 "Õde"
 * specialty[0] = $SCT#394810000 "Rheumatology"
-* specialty[+] = EEBaseMedreSpecialty#N200 "Kliiniline õendus"
+* specialty[eriala] = EEBaseEriala#N200 "Kliiniline õendus"
 
 
 Instance: PractitionerRoleN99876
@@ -173,4 +173,4 @@ Description: "PractitionerRole N99876"
 //* code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
 * code[tor] = EEBaseOccupation#22210502 "Õde"
 * specialty[0] = $SCT#773568002 "Emergency medicine"
-* specialty[+] = EEBaseMedreSpecialty#N100 "Intensiivõendus"
+* specialty[eriala] = EEBaseEriala#N100 "Intensiivõendus"

@@ -1,7 +1,7 @@
 Alias: $degreeLicenseCertificate = http://terminology.hl7.org/CodeSystem/v2-0360
 
 ValueSet: EEBaseDegreeLicenseCertificate
-Id: ee-degree-license-certificate
+Id: degree-license-certificate
 Title: "Qualification"
 Description: "Qualification based on the education"
 * ^experimental = true
