@@ -50,15 +50,15 @@ Title:          "Vital Signs - Blood pressure observation"
 Description:    "Blood Pressure example"
 Usage: #example
 * status = #final
-* code = $SCT#75367002 "Blood Pressure"
+* code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * category = $obscat#vital-signs
 * subject = Reference(Patient/pat1)
 * effectiveDateTime = "2021-11-23"
 * performer = Reference(Organization/rh)
-* component[0].code = $SCT#271649006 "Systolic Blood Pressure"
+* component[0].code = $loinc#8480-6 "Systolic blood pressure"
 * component[=].valueQuantity.value = 120
 * component[=].valueQuantity = UCUM#mm[Hg] "mmHg"
-* component[+].code = $SCT#271650006 "Diastolic Blood Pressure"
+* component[+].code = $loinc#8462-4 "Diastolic blood pressure"
 * component[=].valueQuantity.value = 80
 * component[=].valueQuantity = UCUM#mm[Hg] "mmHg"
 * component[+].code = $SCT#424724000 "Body position for blood pressure measurement"
