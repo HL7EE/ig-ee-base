@@ -18,7 +18,7 @@ Description: "Patient age measure and unit"
 
 
 ValueSet: EEBaseAdministrativeGender
-Id: ee-administrative-gender
+Id: administrative-gender
 Title: "Administrative Gender"
 Description: "Administrative Gender"
 * ^experimental = false
@@ -66,10 +66,10 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * name ^slicing.rules = #open
 * name ^short = "Patient name"
 * name ^definition = "Patsiendi nimi"
-* name contains official 0..1 MS  and nickname 0..1 MS //and other 0..1 
+* name contains official 0..1 MS  and nickname 0..1 MS //and other 0..1
 * name[official] ^short = "Ametlik nimi"
 * name[official].use = #official (exactly)
-* name[official].family 1..1 MS 
+* name[official].family 1..1 MS
 * name[official].family ^short = "Perekonnanimi"
 * name[official].given 1..1 MS
 * name[official].given ^short = "Eesnimi"
@@ -87,10 +87,10 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 // <<< added from MPI
 
 * telecom MS
-* telecom.system 1..1 MS 
-* telecom.value 1..1 MS 
+* telecom.system 1..1 MS
+* telecom.value 1..1 MS
 * telecom.use MS
-* telecom.period MS 
+* telecom.period MS
 
 * gender MS
 * gender ^isModifierReason = "Needed for proper reference ranges"
@@ -192,8 +192,9 @@ Usage: #example
   * city = "Tallinn"
   * postalCode = "14215"
   * text = "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-  * extension[ads].valueCoding = EEBaseADS#2280361
-  * extension[ehak].valueCoding = https://fhir.ee/sid/ehak#0387 
+  * extension[adsadrid].valueCoding = EEBaseAdsAdrId#2280361
+  * extension[adsoid].valueCoding = EEBaseAdsOid#ME03379409
+  * extension[ehak].valueCoding = https://fhir.ee/sid/ehak#0387
   * extension[official].valueBoolean = true
 
 Instance: PatientShadow
@@ -209,7 +210,7 @@ Usage: #example
 * name[nickname]
   * text = "Tundmatu naine"
 * gender = #female
-* birthDate 
+* birthDate
   * extension[accuracyIndicator].valueCoding = EEBaseDateAccuracyIndicator#UUU
   * extension[age].valueAge = $UCUM#a "years"
     * value = 40

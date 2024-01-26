@@ -1,43 +1,82 @@
-CodeSystem: EEBaseADS
-Id:         ee-ads
-Title:     "ADS"
-Description: "Estonian Address Data System."
+CodeSystem: EEBaseAdsAdrId
+Id: ads-adr-id
+Title: "ADS AdrId"
+Description: "Address identifiers in the Estonian Address."
 * ^experimental = true
 * ^caseSensitive = false
 * ^content = #fragment
 * #2103553 "Harju maakond, Tallinn"
 * #2103556 "Harju maakond, Tallinn, Lasnamäe linnaosa"
 * #2280361 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-* #3020414 "Tartu maakond, Tartu linn" "Tartu maakond, Tartu linn, Tartu linn"
+* #3020414 "Tartu maakond, Tartu linn"
 * #3066282 "Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4"
 * #3020415 "Tartu maakond, Tartu linn, Tähtvere küla"
 
 
-ValueSet: EEBaseADS
-Id: ee-ads
-Title: "ADS"
-Description: "Estonian Address Data System."
+ValueSet: EEBaseAdsAdrId
+Id: ads-adr-id
+Title: "ADS AdrId"
+Description: "Address identifiers in the Estonian Address."
 * ^experimental = true
-* include codes from system EEBaseADS 
+* include codes from system EEBaseAdsAdrId
 
 
-Extension: ExtensionEEBaseADS
-Id: ee-ads
-Title: "EEBase ADS"
-Description: "EEBase ADS extension"
+Extension: ExtensionEEBaseAdsAdrId
+Id: ee-ads-adr-id
+Title: "EEBase ADS AdrId"
+Description: "EEBase ADS AdrId extension"
 * ^version = "1.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * ^context.type = #element
 * ^context.expression = "Address"
-* . ^short = "ADS extension"
-* . ^definition = "Aadressiandmete süsteem (ADS) koosneb aadressiandmete süsteemi infosüsteemist ning erinevatest nõuetest. ADS-i eesmärk on tagada ühene aadressiandmete kogumine, registreerimine, töötlemine, säilitamine, identifitseerimine ning töötlemise funktsioonide ühetaoline korraldamine."
+* . ^short = "ADS ADR-ID extension"
+* . ^definition = "Aadressiandmete süsteemi (ADS) aadressi versiooni unikaalne identifikaator"
 * value[x] only Coding
-* value[x] from EEBaseADS
-* value[x].system ^short = "Reference to ADR-ID (identifier of address object and its version)"
+* value[x] from EEBaseAdsAdrId
+* value[x].system ^short = "Reference to ADS AdrId (address identifier)"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
 
+CodeSystem: EEBaseAdsOid
+Id: ads-oid
+Title: "ADS Oid"
+Description: "Address objects in the Estonian Address System."
+* ^experimental = true
+* ^caseSensitive = false
+* ^content = #fragment
+* #OV00000784 "Harju maakond, Tallinn"
+* #LO00000339 "Harju maakond, Tallinn, Lasnamäe linnaosa"
+* #ME03379409 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
+* #AY03658881 "Tartu maakond, Tartu linn"
+* #EE00752500 "Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4"
+* #AY00008560 "Tartu maakond, Tartu linn, Tähtvere küla"
+
+ValueSet: EEBaseAdsOid
+Id: ads-oid
+Title: "ADS Oid"
+Description: "Address objects in the Estonian Address System."
+* ^experimental = true
+* include codes from system EEBaseAdsOid
+
+Extension: ExtensionEEBaseAdsOid
+Id: ee-ads-oid
+Title: "EEBase ADS Oid"
+Description: "EEBase ADS Oid extension"
+* ^version = "1.0.0"
+* ^status = #draft
+* ^publisher = "HL7 Estonia"
+* ^context.type = #element
+* ^context.expression = "Address"
+* . ^short = "ADS OID extension"
+* . ^definition = "Aadressiandmete süsteemi (ADS) aadressi objekti identifikaator. Omab sama väärtust erinevate versioonide (ehk aadressite identifikaatorite lõikes)."
+* value[x] only Coding
+* value[x] from EEBaseAdsOid
+* value[x].system ^short = "Reference to ADS Oid (address object)"
+* value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
+* value[x].code 1..
+
+// OfficialAddress extension should be deleted from EEBase after it will be added to the official FHIR extension registry
 Extension: OfficialAddress
 Id: address-official
 Title: "Official Address"
@@ -59,7 +98,7 @@ Description: "Indicate that this address is meant to be the 'official' address f
 * value[x] ^meaningWhenMissing = "Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address."
 
 
-Extension: ExtensionEEBaseEHAK
+Extension: ExtensionEEBaseEhak
 Id: ee-ehak
 Title: "EEBase EHAK"
 Description: "EEBase EHAK extension"
@@ -96,16 +135,19 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    ExtensionEEBaseADS named ads 0..1 MS and
-    ExtensionEEBaseEHAK named ehak 0..1 MS and
+    ExtensionEEBaseAdsAdrId named adsadrid 0..1 MS and
+    ExtensionEEBaseAdsOid named adsoid 0..1 MS and
+    ExtensionEEBaseEhak named ehak 0..1 MS and
     OfficialAddress named official 0..1 MS
-* extension[ads] ^short = "ADR-ID"
-* extension[ads] ^isModifier = false
+* extension[adsadrid] ^short = "ADS AdrId"
+* extension[adsadrid] ^isModifier = false
+* extension[adsoid] ^short = "ADS Oid"
+* extension[adsoid] ^isModifier = false
 * extension[ehak] ^short = "EHAK code"
 * extension[ehak] ^isModifier = false
 * extension[official] ^short = "Indicator of address of residency"
 * extension[official] ^isModifier = false
-* country 1..1 MS 
+* country 1..1 MS
 * country ^short = "Should use a 2 digit ISO 3166 code"
 * country ^definition = "Riigi kood (lubatud ISO-3166-2 koodid)"
 * country from $country2
@@ -181,7 +223,7 @@ Title: "Foreigner Address"
 Description: "This profile defines an address structure for non Estonian patients."
 * ^jurisdiction = urn:iso:std:iso:3166#EE
 * . ^short = "Välismaalase aadress"
-* text 1..1 MS 
+* text 1..1 MS
 * text ^short = "Täisaadressi visuaalne esitlus"
 * country ^short = "Should use non 'EE' a 2 digit ISO 3166 code"
 * obeys inv-add-3

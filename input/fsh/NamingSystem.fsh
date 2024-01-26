@@ -1,3 +1,4 @@
+/*
 Instance: ads
 InstanceOf: NamingSystem
 Usage: #definition
@@ -15,6 +16,7 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://fhir.ee/sid/ads"
 * uniqueId[=].preferred = true
+*/
 
 Instance: ehak
 InstanceOf: NamingSystem
@@ -36,7 +38,6 @@ Usage: #definition
 * uniqueId[+].type = #oid
 * uniqueId[=].value = "1.3.6.1.4.1.28284.6.2.3.2"
 * uniqueId[=].preferred = false 
-
 
 Instance: org-est-fi
 InstanceOf: NamingSystem
