@@ -135,14 +135,14 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    ExtensionEEBaseAdsAdrId named adsadrid 0..1 MS and
-    ExtensionEEBaseAdsOid named adsoid 0..1 MS and
+    ExtensionEEBaseAdsAdrId named adsAdrId 0..1 MS and
+    ExtensionEEBaseAdsOid named adsOid 0..1 MS and
     ExtensionEEBaseEhak named ehak 0..1 MS and
     OfficialAddress named official 0..1 MS
-* extension[adsadrid] ^short = "ADS AdrId"
-* extension[adsadrid] ^isModifier = false
-* extension[adsoid] ^short = "ADS Oid"
-* extension[adsoid] ^isModifier = false
+* extension[adsAdrId] ^short = "ADS AdrId"
+* extension[adsAdrId] ^isModifier = false
+* extension[adsOid] ^short = "ADS Oid"
+* extension[adsOid] ^isModifier = false
 * extension[ehak] ^short = "EHAK code"
 * extension[ehak] ^isModifier = false
 * extension[official] ^short = "Indicator of address of residency"

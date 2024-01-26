@@ -192,8 +192,8 @@ Usage: #example
   * city = "Tallinn"
   * postalCode = "14215"
   * text = "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-  * extension[adsadrid].valueCoding = EEBaseAdsAdrId#2280361
-  * extension[adsoid].valueCoding = EEBaseAdsOid#ME03379409
+  * extension[adsAdrId].valueCoding = EEBaseAdsAdrId#2280361
+  * extension[adsOid].valueCoding = EEBaseAdsOid#ME03379409
   * extension[ehak].valueCoding = https://fhir.ee/sid/ehak#0387
   * extension[official].valueBoolean = true
 
