@@ -45,7 +45,7 @@ Description: "Description of the identifier systems acceptable for entity identi
 * ^copyright = "Apache-2.0"
 * ^caseSensitive = false
 * ^hierarchyMeaning = #is-a
-* ^content = #fragment
+//* ^content = #fragment
 * ^property[0].code = #idtype
 * ^property[=].uri = "http://fhir.ee/CodeSystem/concept-properties#idtype"
 * ^property[=].description = "Identifier type of concept according to http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -220,7 +220,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/afg #https://fhir.ee/sid/pid/afg/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/afg #https://fhir.ee/sid/pid/afg/ppn ^property[=].valueCode = #AFG
   * #https://fhir.ee/sid/pid/afg #https://fhir.ee/sid/pid/afg/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/afg #https://fhir.ee/sid/pid/afg/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AFG
+  * #https://fhir.ee/sid/pid/afg #https://fhir.ee/sid/pid/afg/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AFG
   * #https://fhir.ee/sid/pid/ala "Root identifier for person identification of country Åland Islands" "Ahvenamaa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ala ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ala ^property[=].valueBoolean = true
@@ -234,7 +234,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ala #https://fhir.ee/sid/pid/ala/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ala #https://fhir.ee/sid/pid/ala/ppn ^property[=].valueCode = #ALA
   * #https://fhir.ee/sid/pid/ala #https://fhir.ee/sid/pid/ala/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ala #https://fhir.ee/sid/pid/ala/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ALA
+  * #https://fhir.ee/sid/pid/ala #https://fhir.ee/sid/pid/ala/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ALA
   * #https://fhir.ee/sid/pid/alb "Root identifier for person identification of country Albania" "Albaania identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/alb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/alb ^property[=].valueBoolean = true
@@ -248,7 +248,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #ALB
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ALB
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ALB
     * #https://fhir.ee/sid/pid/alb/ni "National identifier of Albania" "Albaania personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -269,7 +269,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/dza #https://fhir.ee/sid/pid/dza/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/dza #https://fhir.ee/sid/pid/dza/ppn ^property[=].valueCode = #DZA
   * #https://fhir.ee/sid/pid/dza #https://fhir.ee/sid/pid/dza/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/dza #https://fhir.ee/sid/pid/dza/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-DZA
+  * #https://fhir.ee/sid/pid/dza #https://fhir.ee/sid/pid/dza/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-DZA
   * #https://fhir.ee/sid/pid/asm "Root identifier for person identification of country American Samoa" "Ameerika Samoa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/asm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/asm ^property[=].valueBoolean = true
@@ -283,7 +283,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/asm #https://fhir.ee/sid/pid/asm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/asm #https://fhir.ee/sid/pid/asm/ppn ^property[=].valueCode = #ASM
   * #https://fhir.ee/sid/pid/asm #https://fhir.ee/sid/pid/asm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/asm #https://fhir.ee/sid/pid/asm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ASM
+  * #https://fhir.ee/sid/pid/asm #https://fhir.ee/sid/pid/asm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ASM
   * #https://fhir.ee/sid/pid/usa "Root identifier for person identification of country United States of America" "Ameerika Ühendriigid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/usa ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/usa ^property[=].valueBoolean = true
@@ -297,7 +297,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/usa #https://fhir.ee/sid/pid/usa/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/usa #https://fhir.ee/sid/pid/usa/ppn ^property[=].valueCode = #USA
   * #https://fhir.ee/sid/pid/usa #https://fhir.ee/sid/pid/usa/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/usa #https://fhir.ee/sid/pid/usa/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-USA
+  * #https://fhir.ee/sid/pid/usa #https://fhir.ee/sid/pid/usa/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-USA
   * #https://fhir.ee/sid/pid/and "Root identifier for person identification of country Andorra" "Andorra identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/and ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/and ^property[=].valueBoolean = true
@@ -311,7 +311,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/and #https://fhir.ee/sid/pid/and/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/and #https://fhir.ee/sid/pid/and/ppn ^property[=].valueCode = #AND
   * #https://fhir.ee/sid/pid/and #https://fhir.ee/sid/pid/and/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/and #https://fhir.ee/sid/pid/and/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AND
+  * #https://fhir.ee/sid/pid/and #https://fhir.ee/sid/pid/and/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AND
   * #https://fhir.ee/sid/pid/ago "Root identifier for person identification of country Angola" "Angola identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ago ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ago ^property[=].valueBoolean = true
@@ -325,7 +325,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ago #https://fhir.ee/sid/pid/ago/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ago #https://fhir.ee/sid/pid/ago/ppn ^property[=].valueCode = #AGO
   * #https://fhir.ee/sid/pid/ago #https://fhir.ee/sid/pid/ago/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ago #https://fhir.ee/sid/pid/ago/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AGO
+  * #https://fhir.ee/sid/pid/ago #https://fhir.ee/sid/pid/ago/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AGO
   * #https://fhir.ee/sid/pid/aia "Root identifier for person identification of country Anguilla" "Anguilla identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/aia ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/aia ^property[=].valueBoolean = true
@@ -339,7 +339,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/aia #https://fhir.ee/sid/pid/aia/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/aia #https://fhir.ee/sid/pid/aia/ppn ^property[=].valueCode = #AIA
   * #https://fhir.ee/sid/pid/aia #https://fhir.ee/sid/pid/aia/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/aia #https://fhir.ee/sid/pid/aia/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AIA
+  * #https://fhir.ee/sid/pid/aia #https://fhir.ee/sid/pid/aia/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AIA
   * #https://fhir.ee/sid/pid/ata "Root identifier for person identification of country Antarctica" "Antarktis identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ata ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ata ^property[=].valueBoolean = true
@@ -353,7 +353,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ata #https://fhir.ee/sid/pid/ata/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ata #https://fhir.ee/sid/pid/ata/ppn ^property[=].valueCode = #ATA
   * #https://fhir.ee/sid/pid/ata #https://fhir.ee/sid/pid/ata/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ata #https://fhir.ee/sid/pid/ata/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ATA
+  * #https://fhir.ee/sid/pid/ata #https://fhir.ee/sid/pid/ata/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ATA
   * #https://fhir.ee/sid/pid/atg "Root identifier for person identification of country Antigua and Barbuda" "Antigua ja Barbuda identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/atg ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/atg ^property[=].valueBoolean = true
@@ -367,7 +367,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/atg #https://fhir.ee/sid/pid/atg/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/atg #https://fhir.ee/sid/pid/atg/ppn ^property[=].valueCode = #ATG
   * #https://fhir.ee/sid/pid/atg #https://fhir.ee/sid/pid/atg/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/atg #https://fhir.ee/sid/pid/atg/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ATG
+  * #https://fhir.ee/sid/pid/atg #https://fhir.ee/sid/pid/atg/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ATG
   * #https://fhir.ee/sid/pid/are "Root identifier for person identification of country United Arab Emirates" "Araabia Ühendemiraadid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/are ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/are ^property[=].valueBoolean = true
@@ -381,7 +381,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/are #https://fhir.ee/sid/pid/are/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/are #https://fhir.ee/sid/pid/are/ppn ^property[=].valueCode = #ARE
   * #https://fhir.ee/sid/pid/are #https://fhir.ee/sid/pid/are/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/are #https://fhir.ee/sid/pid/are/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ARE
+  * #https://fhir.ee/sid/pid/are #https://fhir.ee/sid/pid/are/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ARE
   * #https://fhir.ee/sid/pid/arg "Root identifier for person identification of country Argentina" "Argentina identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/arg ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/arg ^property[=].valueBoolean = true
@@ -395,7 +395,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/arg #https://fhir.ee/sid/pid/arg/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/arg #https://fhir.ee/sid/pid/arg/ppn ^property[=].valueCode = #ARG
   * #https://fhir.ee/sid/pid/arg #https://fhir.ee/sid/pid/arg/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/arg #https://fhir.ee/sid/pid/arg/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ARG
+  * #https://fhir.ee/sid/pid/arg #https://fhir.ee/sid/pid/arg/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ARG
   * #https://fhir.ee/sid/pid/arm "Root identifier for person identification of country Armenia" "Armeenia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/arm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/arm ^property[=].valueBoolean = true
@@ -409,7 +409,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/arm #https://fhir.ee/sid/pid/arm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/arm #https://fhir.ee/sid/pid/arm/ppn ^property[=].valueCode = #ARM
   * #https://fhir.ee/sid/pid/arm #https://fhir.ee/sid/pid/arm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/arm #https://fhir.ee/sid/pid/arm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ARM
+  * #https://fhir.ee/sid/pid/arm #https://fhir.ee/sid/pid/arm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ARM
   * #https://fhir.ee/sid/pid/abw "Root identifier for person identification of country Aruba" "Aruba identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/abw ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/abw ^property[=].valueBoolean = true
@@ -423,7 +423,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/abw #https://fhir.ee/sid/pid/abw/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/abw #https://fhir.ee/sid/pid/abw/ppn ^property[=].valueCode = #ABW
   * #https://fhir.ee/sid/pid/abw #https://fhir.ee/sid/pid/abw/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/abw #https://fhir.ee/sid/pid/abw/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ABW
+  * #https://fhir.ee/sid/pid/abw #https://fhir.ee/sid/pid/abw/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ABW
   * #https://fhir.ee/sid/pid/aze "Root identifier for person identification of country Azerbaijan" "Aserbaidžaan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/aze ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/aze ^property[=].valueBoolean = true
@@ -437,7 +437,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/aze #https://fhir.ee/sid/pid/aze/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/aze #https://fhir.ee/sid/pid/aze/ppn ^property[=].valueCode = #AZE
   * #https://fhir.ee/sid/pid/aze #https://fhir.ee/sid/pid/aze/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/aze #https://fhir.ee/sid/pid/aze/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AZE
+  * #https://fhir.ee/sid/pid/aze #https://fhir.ee/sid/pid/aze/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AZE
   * #https://fhir.ee/sid/pid/aus "Root identifier for person identification of country Australia" "Austraalia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/aus ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/aus ^property[=].valueBoolean = true
@@ -451,7 +451,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/aus #https://fhir.ee/sid/pid/aus/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/aus #https://fhir.ee/sid/pid/aus/ppn ^property[=].valueCode = #AUS
   * #https://fhir.ee/sid/pid/aus #https://fhir.ee/sid/pid/aus/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/aus #https://fhir.ee/sid/pid/aus/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AUS
+  * #https://fhir.ee/sid/pid/aus #https://fhir.ee/sid/pid/aus/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AUS
   * #https://fhir.ee/sid/pid/aut "Root identifier for person identification of country Austria" "Austria identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/aut ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/aut ^property[=].valueBoolean = true
@@ -465,7 +465,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #AUT
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-AUT
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-AUT
     * #https://fhir.ee/sid/pid/aut/ni "National identifier of Austria" "Austria personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -493,7 +493,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bhs #https://fhir.ee/sid/pid/bhs/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bhs #https://fhir.ee/sid/pid/bhs/ppn ^property[=].valueCode = #BHS
   * #https://fhir.ee/sid/pid/bhs #https://fhir.ee/sid/pid/bhs/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bhs #https://fhir.ee/sid/pid/bhs/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BHS
+  * #https://fhir.ee/sid/pid/bhs #https://fhir.ee/sid/pid/bhs/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BHS
   * #https://fhir.ee/sid/pid/bhr "Root identifier for person identification of country Bahrain" "Bahrein identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bhr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bhr ^property[=].valueBoolean = true
@@ -507,7 +507,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bhr #https://fhir.ee/sid/pid/bhr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bhr #https://fhir.ee/sid/pid/bhr/ppn ^property[=].valueCode = #BHR
   * #https://fhir.ee/sid/pid/bhr #https://fhir.ee/sid/pid/bhr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bhr #https://fhir.ee/sid/pid/bhr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BHR
+  * #https://fhir.ee/sid/pid/bhr #https://fhir.ee/sid/pid/bhr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BHR
   * #https://fhir.ee/sid/pid/bgd "Root identifier for person identification of country Bangladesh" "Bangladesh identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bgd ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bgd ^property[=].valueBoolean = true
@@ -521,7 +521,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bgd #https://fhir.ee/sid/pid/bgd/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bgd #https://fhir.ee/sid/pid/bgd/ppn ^property[=].valueCode = #BGD
   * #https://fhir.ee/sid/pid/bgd #https://fhir.ee/sid/pid/bgd/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bgd #https://fhir.ee/sid/pid/bgd/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BGD
+  * #https://fhir.ee/sid/pid/bgd #https://fhir.ee/sid/pid/bgd/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BGD
   * #https://fhir.ee/sid/pid/brb "Root identifier for person identification of country Barbados" "Barbados identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/brb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/brb ^property[=].valueBoolean = true
@@ -535,7 +535,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/brb #https://fhir.ee/sid/pid/brb/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/brb #https://fhir.ee/sid/pid/brb/ppn ^property[=].valueCode = #BRB
   * #https://fhir.ee/sid/pid/brb #https://fhir.ee/sid/pid/brb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/brb #https://fhir.ee/sid/pid/brb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BRB
+  * #https://fhir.ee/sid/pid/brb #https://fhir.ee/sid/pid/brb/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BRB
   * #https://fhir.ee/sid/pid/plw "Root identifier for person identification of country Palau" "Belau identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/plw ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/plw ^property[=].valueBoolean = true
@@ -549,7 +549,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/plw #https://fhir.ee/sid/pid/plw/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/plw #https://fhir.ee/sid/pid/plw/ppn ^property[=].valueCode = #PLW
   * #https://fhir.ee/sid/pid/plw #https://fhir.ee/sid/pid/plw/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/plw #https://fhir.ee/sid/pid/plw/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PLW
+  * #https://fhir.ee/sid/pid/plw #https://fhir.ee/sid/pid/plw/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PLW
   * #https://fhir.ee/sid/pid/bel "Root identifier for person identification of country Belgium" "Belgia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bel ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bel ^property[=].valueBoolean = true
@@ -563,7 +563,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #BEL
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BEL
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BEL
     * #https://fhir.ee/sid/pid/bel/ni "National identifier of Belgium" "Belgia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -591,7 +591,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/blz #https://fhir.ee/sid/pid/blz/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/blz #https://fhir.ee/sid/pid/blz/ppn ^property[=].valueCode = #BLZ
   * #https://fhir.ee/sid/pid/blz #https://fhir.ee/sid/pid/blz/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/blz #https://fhir.ee/sid/pid/blz/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BLZ
+  * #https://fhir.ee/sid/pid/blz #https://fhir.ee/sid/pid/blz/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BLZ
   * #https://fhir.ee/sid/pid/ben "Root identifier for person identification of country Benin" "Benin identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ben ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ben ^property[=].valueBoolean = true
@@ -605,7 +605,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ben #https://fhir.ee/sid/pid/ben/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ben #https://fhir.ee/sid/pid/ben/ppn ^property[=].valueCode = #BEN
   * #https://fhir.ee/sid/pid/ben #https://fhir.ee/sid/pid/ben/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ben #https://fhir.ee/sid/pid/ben/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BEN
+  * #https://fhir.ee/sid/pid/ben #https://fhir.ee/sid/pid/ben/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BEN
   * #https://fhir.ee/sid/pid/bmu "Root identifier for person identification of country Bermuda" "Bermuda identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bmu ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bmu ^property[=].valueBoolean = true
@@ -619,7 +619,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bmu #https://fhir.ee/sid/pid/bmu/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bmu #https://fhir.ee/sid/pid/bmu/ppn ^property[=].valueCode = #BMU
   * #https://fhir.ee/sid/pid/bmu #https://fhir.ee/sid/pid/bmu/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bmu #https://fhir.ee/sid/pid/bmu/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BMU
+  * #https://fhir.ee/sid/pid/bmu #https://fhir.ee/sid/pid/bmu/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BMU
   * #https://fhir.ee/sid/pid/btn "Root identifier for person identification of country Bhutan" "Bhutan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/btn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/btn ^property[=].valueBoolean = true
@@ -633,7 +633,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/btn #https://fhir.ee/sid/pid/btn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/btn #https://fhir.ee/sid/pid/btn/ppn ^property[=].valueCode = #BTN
   * #https://fhir.ee/sid/pid/btn #https://fhir.ee/sid/pid/btn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/btn #https://fhir.ee/sid/pid/btn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BTN
+  * #https://fhir.ee/sid/pid/btn #https://fhir.ee/sid/pid/btn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BTN
   * #https://fhir.ee/sid/pid/bol "Root identifier for person identification of country Bolivia" "Boliivia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bol ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bol ^property[=].valueBoolean = true
@@ -647,7 +647,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bol #https://fhir.ee/sid/pid/bol/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bol #https://fhir.ee/sid/pid/bol/ppn ^property[=].valueCode = #BOL
   * #https://fhir.ee/sid/pid/bol #https://fhir.ee/sid/pid/bol/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bol #https://fhir.ee/sid/pid/bol/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BOL
+  * #https://fhir.ee/sid/pid/bol #https://fhir.ee/sid/pid/bol/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BOL
   * #https://fhir.ee/sid/pid/bih "Root identifier for person identification of country Bosnia and Hertzegovina" "Bosnia- ja Hertsegoviina identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bih ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bih ^property[=].valueBoolean = true
@@ -661,7 +661,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #BIH
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BIH
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BIH
     * #https://fhir.ee/sid/pid/bih/ni "National identifier of Bosnia and Hertzegovina" "Bosnia- ja Hertsegoviina personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -682,7 +682,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bwa #https://fhir.ee/sid/pid/bwa/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bwa #https://fhir.ee/sid/pid/bwa/ppn ^property[=].valueCode = #BWA
   * #https://fhir.ee/sid/pid/bwa #https://fhir.ee/sid/pid/bwa/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bwa #https://fhir.ee/sid/pid/bwa/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BWA
+  * #https://fhir.ee/sid/pid/bwa #https://fhir.ee/sid/pid/bwa/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BWA
   * #https://fhir.ee/sid/pid/bvt "Root identifier for person identification of country Bouvet Island" "Bouvet' saar identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bvt ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bvt ^property[=].valueBoolean = true
@@ -696,7 +696,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bvt #https://fhir.ee/sid/pid/bvt/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bvt #https://fhir.ee/sid/pid/bvt/ppn ^property[=].valueCode = #BVT
   * #https://fhir.ee/sid/pid/bvt #https://fhir.ee/sid/pid/bvt/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bvt #https://fhir.ee/sid/pid/bvt/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BVT
+  * #https://fhir.ee/sid/pid/bvt #https://fhir.ee/sid/pid/bvt/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BVT
   * #https://fhir.ee/sid/pid/bra "Root identifier for person identification of country Brazil" "Brasiilia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bra ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bra ^property[=].valueBoolean = true
@@ -710,7 +710,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bra #https://fhir.ee/sid/pid/bra/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bra #https://fhir.ee/sid/pid/bra/ppn ^property[=].valueCode = #BRA
   * #https://fhir.ee/sid/pid/bra #https://fhir.ee/sid/pid/bra/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bra #https://fhir.ee/sid/pid/bra/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BRA
+  * #https://fhir.ee/sid/pid/bra #https://fhir.ee/sid/pid/bra/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BRA
   * #https://fhir.ee/sid/pid/iot "Root identifier for person identification of country British Indian Ocean Territory" "Briti India ookeani ala identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/iot ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/iot ^property[=].valueBoolean = true
@@ -724,7 +724,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/iot #https://fhir.ee/sid/pid/iot/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/iot #https://fhir.ee/sid/pid/iot/ppn ^property[=].valueCode = #IOT
   * #https://fhir.ee/sid/pid/iot #https://fhir.ee/sid/pid/iot/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/iot #https://fhir.ee/sid/pid/iot/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IOT
+  * #https://fhir.ee/sid/pid/iot #https://fhir.ee/sid/pid/iot/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IOT
   * #https://fhir.ee/sid/pid/vgb "Root identifier for person identification of country Virgin Islands (British)" "Briti Neitsisaared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/vgb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/vgb ^property[=].valueBoolean = true
@@ -738,7 +738,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/vgb #https://fhir.ee/sid/pid/vgb/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/vgb #https://fhir.ee/sid/pid/vgb/ppn ^property[=].valueCode = #VGB
   * #https://fhir.ee/sid/pid/vgb #https://fhir.ee/sid/pid/vgb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/vgb #https://fhir.ee/sid/pid/vgb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VGB
+  * #https://fhir.ee/sid/pid/vgb #https://fhir.ee/sid/pid/vgb/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VGB
   * #https://fhir.ee/sid/pid/brn "Root identifier for person identification of country Brunei Darussalam" "Brunei Darussalam identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/brn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/brn ^property[=].valueBoolean = true
@@ -752,7 +752,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/brn #https://fhir.ee/sid/pid/brn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/brn #https://fhir.ee/sid/pid/brn/ppn ^property[=].valueCode = #BRN
   * #https://fhir.ee/sid/pid/brn #https://fhir.ee/sid/pid/brn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/brn #https://fhir.ee/sid/pid/brn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BRN
+  * #https://fhir.ee/sid/pid/brn #https://fhir.ee/sid/pid/brn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BRN
   * #https://fhir.ee/sid/pid/bgr "Root identifier for person identification of country Bulgaria" "Bulgaaria identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bgr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bgr ^property[=].valueBoolean = true
@@ -766,7 +766,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #BGR
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BGR
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BGR
     * #https://fhir.ee/sid/pid/bgr/ni "National identifier of Bulgaria" "Bulgaaria personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -794,7 +794,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bfa #https://fhir.ee/sid/pid/bfa/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bfa #https://fhir.ee/sid/pid/bfa/ppn ^property[=].valueCode = #BFA
   * #https://fhir.ee/sid/pid/bfa #https://fhir.ee/sid/pid/bfa/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bfa #https://fhir.ee/sid/pid/bfa/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BFA
+  * #https://fhir.ee/sid/pid/bfa #https://fhir.ee/sid/pid/bfa/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BFA
   * #https://fhir.ee/sid/pid/bdi "Root identifier for person identification of country Burundi" "Burundi identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/bdi ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/bdi ^property[=].valueBoolean = true
@@ -808,7 +808,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/bdi #https://fhir.ee/sid/pid/bdi/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/bdi #https://fhir.ee/sid/pid/bdi/ppn ^property[=].valueCode = #BDI
   * #https://fhir.ee/sid/pid/bdi #https://fhir.ee/sid/pid/bdi/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/bdi #https://fhir.ee/sid/pid/bdi/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BDI
+  * #https://fhir.ee/sid/pid/bdi #https://fhir.ee/sid/pid/bdi/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BDI
   * #https://fhir.ee/sid/pid/cpv "Root identifier for person identification of country Cape Verde" "Cabo Verde identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cpv ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cpv ^property[=].valueBoolean = true
@@ -822,7 +822,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cpv #https://fhir.ee/sid/pid/cpv/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cpv #https://fhir.ee/sid/pid/cpv/ppn ^property[=].valueCode = #CPV
   * #https://fhir.ee/sid/pid/cpv #https://fhir.ee/sid/pid/cpv/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cpv #https://fhir.ee/sid/pid/cpv/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CPV
+  * #https://fhir.ee/sid/pid/cpv #https://fhir.ee/sid/pid/cpv/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CPV
   * #https://fhir.ee/sid/pid/col "Root identifier for person identification of country Colombia" "Colombia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/col ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/col ^property[=].valueBoolean = true
@@ -836,7 +836,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/col #https://fhir.ee/sid/pid/col/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/col #https://fhir.ee/sid/pid/col/ppn ^property[=].valueCode = #COL
   * #https://fhir.ee/sid/pid/col #https://fhir.ee/sid/pid/col/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/col #https://fhir.ee/sid/pid/col/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-COL
+  * #https://fhir.ee/sid/pid/col #https://fhir.ee/sid/pid/col/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-COL
   * #https://fhir.ee/sid/pid/cok "Root identifier for person identification of country Cook Islands" "Cooki saared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cok ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cok ^property[=].valueBoolean = true
@@ -850,7 +850,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cok #https://fhir.ee/sid/pid/cok/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cok #https://fhir.ee/sid/pid/cok/ppn ^property[=].valueCode = #COK
   * #https://fhir.ee/sid/pid/cok #https://fhir.ee/sid/pid/cok/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cok #https://fhir.ee/sid/pid/cok/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-COK
+  * #https://fhir.ee/sid/pid/cok #https://fhir.ee/sid/pid/cok/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-COK
   * #https://fhir.ee/sid/pid/cri "Root identifier for person identification of country Costa Rica" "Costa Rica identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cri ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cri ^property[=].valueBoolean = true
@@ -864,7 +864,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cri #https://fhir.ee/sid/pid/cri/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cri #https://fhir.ee/sid/pid/cri/ppn ^property[=].valueCode = #CRI
   * #https://fhir.ee/sid/pid/cri #https://fhir.ee/sid/pid/cri/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cri #https://fhir.ee/sid/pid/cri/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CRI
+  * #https://fhir.ee/sid/pid/cri #https://fhir.ee/sid/pid/cri/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CRI
   * #https://fhir.ee/sid/pid/civ "Root identifier for person identification of country Cote d'Ivoire" "Cote d'Ivoire identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/civ ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/civ ^property[=].valueBoolean = true
@@ -878,7 +878,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/civ #https://fhir.ee/sid/pid/civ/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/civ #https://fhir.ee/sid/pid/civ/ppn ^property[=].valueCode = #CIV
   * #https://fhir.ee/sid/pid/civ #https://fhir.ee/sid/pid/civ/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/civ #https://fhir.ee/sid/pid/civ/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CIV
+  * #https://fhir.ee/sid/pid/civ #https://fhir.ee/sid/pid/civ/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CIV
   * #https://fhir.ee/sid/pid/dji "Root identifier for person identification of country Djibouti" "Djibouti identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/dji ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/dji ^property[=].valueBoolean = true
@@ -892,7 +892,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/dji #https://fhir.ee/sid/pid/dji/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/dji #https://fhir.ee/sid/pid/dji/ppn ^property[=].valueCode = #DJI
   * #https://fhir.ee/sid/pid/dji #https://fhir.ee/sid/pid/dji/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/dji #https://fhir.ee/sid/pid/dji/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-DJI
+  * #https://fhir.ee/sid/pid/dji #https://fhir.ee/sid/pid/dji/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-DJI
   * #https://fhir.ee/sid/pid/dma "Root identifier for person identification of country Dominica" "Dominica identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/dma ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/dma ^property[=].valueBoolean = true
@@ -906,7 +906,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/dma #https://fhir.ee/sid/pid/dma/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/dma #https://fhir.ee/sid/pid/dma/ppn ^property[=].valueCode = #DMA
   * #https://fhir.ee/sid/pid/dma #https://fhir.ee/sid/pid/dma/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/dma #https://fhir.ee/sid/pid/dma/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-DMA
+  * #https://fhir.ee/sid/pid/dma #https://fhir.ee/sid/pid/dma/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-DMA
   * #https://fhir.ee/sid/pid/dom "Root identifier for person identification of country Dominican Republic" "Dominikaani Vabariik identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/dom ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/dom ^property[=].valueBoolean = true
@@ -920,7 +920,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/dom #https://fhir.ee/sid/pid/dom/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/dom #https://fhir.ee/sid/pid/dom/ppn ^property[=].valueCode = #DOM
   * #https://fhir.ee/sid/pid/dom #https://fhir.ee/sid/pid/dom/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/dom #https://fhir.ee/sid/pid/dom/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-DOM
+  * #https://fhir.ee/sid/pid/dom #https://fhir.ee/sid/pid/dom/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-DOM
   * #https://fhir.ee/sid/pid/ecu "Root identifier for person identification of country Ecuador" "Ecuador identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ecu ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ecu ^property[=].valueBoolean = true
@@ -934,7 +934,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ecu #https://fhir.ee/sid/pid/ecu/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ecu #https://fhir.ee/sid/pid/ecu/ppn ^property[=].valueCode = #ECU
   * #https://fhir.ee/sid/pid/ecu #https://fhir.ee/sid/pid/ecu/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ecu #https://fhir.ee/sid/pid/ecu/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ECU
+  * #https://fhir.ee/sid/pid/ecu #https://fhir.ee/sid/pid/ecu/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ECU
   * #https://fhir.ee/sid/pid/egy "Root identifier for person identification of country Egypt" "Egiptus identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/egy ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/egy ^property[=].valueBoolean = true
@@ -948,7 +948,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/egy #https://fhir.ee/sid/pid/egy/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/egy #https://fhir.ee/sid/pid/egy/ppn ^property[=].valueCode = #EGY
   * #https://fhir.ee/sid/pid/egy #https://fhir.ee/sid/pid/egy/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/egy #https://fhir.ee/sid/pid/egy/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-EGY
+  * #https://fhir.ee/sid/pid/egy #https://fhir.ee/sid/pid/egy/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-EGY
   * #https://fhir.ee/sid/pid/gnq "Root identifier for person identification of country Equatorial Guinea" "Ekvatoriaal-Guinea identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gnq ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gnq ^property[=].valueBoolean = true
@@ -962,7 +962,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gnq #https://fhir.ee/sid/pid/gnq/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gnq #https://fhir.ee/sid/pid/gnq/ppn ^property[=].valueCode = #GNQ
   * #https://fhir.ee/sid/pid/gnq #https://fhir.ee/sid/pid/gnq/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gnq #https://fhir.ee/sid/pid/gnq/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GNQ
+  * #https://fhir.ee/sid/pid/gnq #https://fhir.ee/sid/pid/gnq/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GNQ
   * #https://fhir.ee/sid/pid/slv "Root identifier for person identification of country El Salvador" "El Salvador identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/slv ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/slv ^property[=].valueBoolean = true
@@ -976,7 +976,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/slv #https://fhir.ee/sid/pid/slv/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/slv #https://fhir.ee/sid/pid/slv/ppn ^property[=].valueCode = #SLV
   * #https://fhir.ee/sid/pid/slv #https://fhir.ee/sid/pid/slv/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/slv #https://fhir.ee/sid/pid/slv/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SLV
+  * #https://fhir.ee/sid/pid/slv #https://fhir.ee/sid/pid/slv/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SLV
   * #https://fhir.ee/sid/pid/eri "Root identifier for person identification of country Eritrea" "Eritrea identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/eri ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/eri ^property[=].valueBoolean = true
@@ -990,7 +990,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/eri #https://fhir.ee/sid/pid/eri/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/eri #https://fhir.ee/sid/pid/eri/ppn ^property[=].valueCode = #ERI
   * #https://fhir.ee/sid/pid/eri #https://fhir.ee/sid/pid/eri/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/eri #https://fhir.ee/sid/pid/eri/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ERI
+  * #https://fhir.ee/sid/pid/eri #https://fhir.ee/sid/pid/eri/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ERI
   * #https://fhir.ee/sid/pid/eth "Root identifier for person identification of country Ethiopia" "Etioopia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/eth ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/eth ^property[=].valueBoolean = true
@@ -1004,7 +1004,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/eth #https://fhir.ee/sid/pid/eth/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/eth #https://fhir.ee/sid/pid/eth/ppn ^property[=].valueCode = #ETH
   * #https://fhir.ee/sid/pid/eth #https://fhir.ee/sid/pid/eth/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/eth #https://fhir.ee/sid/pid/eth/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ETH
+  * #https://fhir.ee/sid/pid/eth #https://fhir.ee/sid/pid/eth/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ETH
   * #https://fhir.ee/sid/pid/flk "Root identifier for person identification of country Falkland Islands (Malvinas)" "Falklandi (Malviini) saared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/flk ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/flk ^property[=].valueBoolean = true
@@ -1018,7 +1018,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/flk #https://fhir.ee/sid/pid/flk/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/flk #https://fhir.ee/sid/pid/flk/ppn ^property[=].valueCode = #FLK
   * #https://fhir.ee/sid/pid/flk #https://fhir.ee/sid/pid/flk/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/flk #https://fhir.ee/sid/pid/flk/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-FLK
+  * #https://fhir.ee/sid/pid/flk #https://fhir.ee/sid/pid/flk/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-FLK
   * #https://fhir.ee/sid/pid/fji "Root identifier for person identification of country Fiji" "Fidži identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/fji ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/fji ^property[=].valueBoolean = true
@@ -1032,7 +1032,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/fji #https://fhir.ee/sid/pid/fji/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/fji #https://fhir.ee/sid/pid/fji/ppn ^property[=].valueCode = #FJI
   * #https://fhir.ee/sid/pid/fji #https://fhir.ee/sid/pid/fji/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/fji #https://fhir.ee/sid/pid/fji/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-FJI
+  * #https://fhir.ee/sid/pid/fji #https://fhir.ee/sid/pid/fji/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-FJI
   * #https://fhir.ee/sid/pid/phl "Root identifier for person identification of country Philippines" "Filipiinid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/phl ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/phl ^property[=].valueBoolean = true
@@ -1046,7 +1046,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/phl #https://fhir.ee/sid/pid/phl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/phl #https://fhir.ee/sid/pid/phl/ppn ^property[=].valueCode = #PHL
   * #https://fhir.ee/sid/pid/phl #https://fhir.ee/sid/pid/phl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/phl #https://fhir.ee/sid/pid/phl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PHL
+  * #https://fhir.ee/sid/pid/phl #https://fhir.ee/sid/pid/phl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PHL
   * #https://fhir.ee/sid/pid/fro "Root identifier for person identification of country Faroe Islands" "Fääri saared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/fro ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/fro ^property[=].valueBoolean = true
@@ -1060,7 +1060,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/fro #https://fhir.ee/sid/pid/fro/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/fro #https://fhir.ee/sid/pid/fro/ppn ^property[=].valueCode = #FRO
   * #https://fhir.ee/sid/pid/fro #https://fhir.ee/sid/pid/fro/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/fro #https://fhir.ee/sid/pid/fro/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-FRO
+  * #https://fhir.ee/sid/pid/fro #https://fhir.ee/sid/pid/fro/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-FRO
   * #https://fhir.ee/sid/pid/gab "Root identifier for person identification of country Gabon" "Gabon identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gab ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gab ^property[=].valueBoolean = true
@@ -1074,7 +1074,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gab #https://fhir.ee/sid/pid/gab/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gab #https://fhir.ee/sid/pid/gab/ppn ^property[=].valueCode = #GAB
   * #https://fhir.ee/sid/pid/gab #https://fhir.ee/sid/pid/gab/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gab #https://fhir.ee/sid/pid/gab/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GAB
+  * #https://fhir.ee/sid/pid/gab #https://fhir.ee/sid/pid/gab/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GAB
   * #https://fhir.ee/sid/pid/gmb "Root identifier for person identification of country Gambia" "Gambia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gmb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gmb ^property[=].valueBoolean = true
@@ -1088,7 +1088,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gmb #https://fhir.ee/sid/pid/gmb/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gmb #https://fhir.ee/sid/pid/gmb/ppn ^property[=].valueCode = #GMB
   * #https://fhir.ee/sid/pid/gmb #https://fhir.ee/sid/pid/gmb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gmb #https://fhir.ee/sid/pid/gmb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GMB
+  * #https://fhir.ee/sid/pid/gmb #https://fhir.ee/sid/pid/gmb/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GMB
   * #https://fhir.ee/sid/pid/gha "Root identifier for person identification of country Ghana" "Ghana identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gha ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gha ^property[=].valueBoolean = true
@@ -1102,7 +1102,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gha #https://fhir.ee/sid/pid/gha/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gha #https://fhir.ee/sid/pid/gha/ppn ^property[=].valueCode = #GHA
   * #https://fhir.ee/sid/pid/gha #https://fhir.ee/sid/pid/gha/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gha #https://fhir.ee/sid/pid/gha/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GHA
+  * #https://fhir.ee/sid/pid/gha #https://fhir.ee/sid/pid/gha/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GHA
   * #https://fhir.ee/sid/pid/gib "Root identifier for person identification of country Gibraltar" "Gibraltar identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gib ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gib ^property[=].valueBoolean = true
@@ -1116,7 +1116,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gib #https://fhir.ee/sid/pid/gib/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gib #https://fhir.ee/sid/pid/gib/ppn ^property[=].valueCode = #GIB
   * #https://fhir.ee/sid/pid/gib #https://fhir.ee/sid/pid/gib/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gib #https://fhir.ee/sid/pid/gib/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GIB
+  * #https://fhir.ee/sid/pid/gib #https://fhir.ee/sid/pid/gib/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GIB
   * #https://fhir.ee/sid/pid/grd "Root identifier for person identification of country Grenada" "Grenada identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/grd ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/grd ^property[=].valueBoolean = true
@@ -1130,7 +1130,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/grd #https://fhir.ee/sid/pid/grd/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/grd #https://fhir.ee/sid/pid/grd/ppn ^property[=].valueCode = #GRD
   * #https://fhir.ee/sid/pid/grd #https://fhir.ee/sid/pid/grd/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/grd #https://fhir.ee/sid/pid/grd/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GRD
+  * #https://fhir.ee/sid/pid/grd #https://fhir.ee/sid/pid/grd/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GRD
   * #https://fhir.ee/sid/pid/geo "Root identifier for person identification of country Georgia" "Gruusia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/geo ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/geo ^property[=].valueBoolean = true
@@ -1144,7 +1144,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #GEO
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GEO
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GEO
     * #https://fhir.ee/sid/pid/geo/ni "National identifier of Georgia" "Gruusia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1165,7 +1165,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/grl #https://fhir.ee/sid/pid/grl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/grl #https://fhir.ee/sid/pid/grl/ppn ^property[=].valueCode = #GRL
   * #https://fhir.ee/sid/pid/grl #https://fhir.ee/sid/pid/grl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/grl #https://fhir.ee/sid/pid/grl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GRL
+  * #https://fhir.ee/sid/pid/grl #https://fhir.ee/sid/pid/grl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GRL
   * #https://fhir.ee/sid/pid/glp "Root identifier for person identification of country Guadeloupe" "Guadeloupe identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/glp ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/glp ^property[=].valueBoolean = true
@@ -1179,7 +1179,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/glp #https://fhir.ee/sid/pid/glp/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/glp #https://fhir.ee/sid/pid/glp/ppn ^property[=].valueCode = #GLP
   * #https://fhir.ee/sid/pid/glp #https://fhir.ee/sid/pid/glp/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/glp #https://fhir.ee/sid/pid/glp/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GLP
+  * #https://fhir.ee/sid/pid/glp #https://fhir.ee/sid/pid/glp/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GLP
   * #https://fhir.ee/sid/pid/guf "Root identifier for person identification of country French Guiana" "Prantsuse Guajaana identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/guf ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/guf ^property[=].valueBoolean = true
@@ -1193,7 +1193,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/guf #https://fhir.ee/sid/pid/guf/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/guf #https://fhir.ee/sid/pid/guf/ppn ^property[=].valueCode = #GUF
   * #https://fhir.ee/sid/pid/guf #https://fhir.ee/sid/pid/guf/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/guf #https://fhir.ee/sid/pid/guf/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GUF
+  * #https://fhir.ee/sid/pid/guf #https://fhir.ee/sid/pid/guf/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GUF
   * #https://fhir.ee/sid/pid/gum "Root identifier for person identification of country Guam" "Guam identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gum ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gum ^property[=].valueBoolean = true
@@ -1207,7 +1207,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gum #https://fhir.ee/sid/pid/gum/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gum #https://fhir.ee/sid/pid/gum/ppn ^property[=].valueCode = #GUM
   * #https://fhir.ee/sid/pid/gum #https://fhir.ee/sid/pid/gum/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gum #https://fhir.ee/sid/pid/gum/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GUM
+  * #https://fhir.ee/sid/pid/gum #https://fhir.ee/sid/pid/gum/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GUM
   * #https://fhir.ee/sid/pid/gtm "Root identifier for person identification of country Guatemala" "Guatemala identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gtm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gtm ^property[=].valueBoolean = true
@@ -1221,7 +1221,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gtm #https://fhir.ee/sid/pid/gtm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gtm #https://fhir.ee/sid/pid/gtm/ppn ^property[=].valueCode = #GTM
   * #https://fhir.ee/sid/pid/gtm #https://fhir.ee/sid/pid/gtm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gtm #https://fhir.ee/sid/pid/gtm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GTM
+  * #https://fhir.ee/sid/pid/gtm #https://fhir.ee/sid/pid/gtm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GTM
   * #https://fhir.ee/sid/pid/ggy "Root identifier for person identification of country Guernsey" "Guernsey identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ggy ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ggy ^property[=].valueBoolean = true
@@ -1235,7 +1235,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ggy #https://fhir.ee/sid/pid/ggy/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ggy #https://fhir.ee/sid/pid/ggy/ppn ^property[=].valueCode = #GGY
   * #https://fhir.ee/sid/pid/ggy #https://fhir.ee/sid/pid/ggy/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ggy #https://fhir.ee/sid/pid/ggy/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GGY
+  * #https://fhir.ee/sid/pid/ggy #https://fhir.ee/sid/pid/ggy/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GGY
   * #https://fhir.ee/sid/pid/gin "Root identifier for person identification of country Guinea" "Guinea identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gin ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gin ^property[=].valueBoolean = true
@@ -1249,7 +1249,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gin #https://fhir.ee/sid/pid/gin/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gin #https://fhir.ee/sid/pid/gin/ppn ^property[=].valueCode = #GIN
   * #https://fhir.ee/sid/pid/gin #https://fhir.ee/sid/pid/gin/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gin #https://fhir.ee/sid/pid/gin/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GIN
+  * #https://fhir.ee/sid/pid/gin #https://fhir.ee/sid/pid/gin/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GIN
   * #https://fhir.ee/sid/pid/gnb "Root identifier for person identification of country Guinea-Bissau" "Guinea-Bissau identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gnb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gnb ^property[=].valueBoolean = true
@@ -1263,7 +1263,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gnb #https://fhir.ee/sid/pid/gnb/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gnb #https://fhir.ee/sid/pid/gnb/ppn ^property[=].valueCode = #GNB
   * #https://fhir.ee/sid/pid/gnb #https://fhir.ee/sid/pid/gnb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gnb #https://fhir.ee/sid/pid/gnb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GNB
+  * #https://fhir.ee/sid/pid/gnb #https://fhir.ee/sid/pid/gnb/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GNB
   * #https://fhir.ee/sid/pid/guy "Root identifier for person identification of country Guyana" "Guyana identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/guy ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/guy ^property[=].valueBoolean = true
@@ -1277,7 +1277,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/guy #https://fhir.ee/sid/pid/guy/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/guy #https://fhir.ee/sid/pid/guy/ppn ^property[=].valueCode = #GUY
   * #https://fhir.ee/sid/pid/guy #https://fhir.ee/sid/pid/guy/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/guy #https://fhir.ee/sid/pid/guy/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GUY
+  * #https://fhir.ee/sid/pid/guy #https://fhir.ee/sid/pid/guy/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GUY
   * #https://fhir.ee/sid/pid/hti "Root identifier for person identification of country Haiti" "Haiti identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/hti ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/hti ^property[=].valueBoolean = true
@@ -1291,7 +1291,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/hti #https://fhir.ee/sid/pid/hti/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/hti #https://fhir.ee/sid/pid/hti/ppn ^property[=].valueCode = #HTI
   * #https://fhir.ee/sid/pid/hti #https://fhir.ee/sid/pid/hti/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/hti #https://fhir.ee/sid/pid/hti/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-HTI
+  * #https://fhir.ee/sid/pid/hti #https://fhir.ee/sid/pid/hti/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-HTI
   * #https://fhir.ee/sid/pid/hmd "Root identifier for person identification of country Heard and McDonald Islands" "Heard ja McDonald identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/hmd ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/hmd ^property[=].valueBoolean = true
@@ -1305,7 +1305,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/hmd #https://fhir.ee/sid/pid/hmd/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/hmd #https://fhir.ee/sid/pid/hmd/ppn ^property[=].valueCode = #HMD
   * #https://fhir.ee/sid/pid/hmd #https://fhir.ee/sid/pid/hmd/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/hmd #https://fhir.ee/sid/pid/hmd/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-HMD
+  * #https://fhir.ee/sid/pid/hmd #https://fhir.ee/sid/pid/hmd/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-HMD
   * #https://fhir.ee/sid/pid/mac "Root identifier for person identification of country Macao" "Aomen identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mac ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mac ^property[=].valueBoolean = true
@@ -1319,7 +1319,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mac #https://fhir.ee/sid/pid/mac/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mac #https://fhir.ee/sid/pid/mac/ppn ^property[=].valueCode = #MAC
   * #https://fhir.ee/sid/pid/mac #https://fhir.ee/sid/pid/mac/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mac #https://fhir.ee/sid/pid/mac/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MAC
+  * #https://fhir.ee/sid/pid/mac #https://fhir.ee/sid/pid/mac/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MAC
   * #https://fhir.ee/sid/pid/hkg "Root identifier for person identification of country Hong Kong" "Hongkong identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/hkg ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/hkg ^property[=].valueBoolean = true
@@ -1333,7 +1333,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/hkg #https://fhir.ee/sid/pid/hkg/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/hkg #https://fhir.ee/sid/pid/hkg/ppn ^property[=].valueCode = #HKG
   * #https://fhir.ee/sid/pid/hkg #https://fhir.ee/sid/pid/hkg/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/hkg #https://fhir.ee/sid/pid/hkg/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-HKG
+  * #https://fhir.ee/sid/pid/hkg #https://fhir.ee/sid/pid/hkg/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-HKG
   * #https://fhir.ee/sid/pid/chn "Root identifier for person identification of country China" "Hiina identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/chn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/chn ^property[=].valueBoolean = true
@@ -1347,7 +1347,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/chn #https://fhir.ee/sid/pid/chn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/chn #https://fhir.ee/sid/pid/chn/ppn ^property[=].valueCode = #CHN
   * #https://fhir.ee/sid/pid/chn #https://fhir.ee/sid/pid/chn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/chn #https://fhir.ee/sid/pid/chn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CHN
+  * #https://fhir.ee/sid/pid/chn #https://fhir.ee/sid/pid/chn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CHN
   * #https://fhir.ee/sid/pid/esp "Root identifier for person identification of country Spain" "Hispaania identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -1361,7 +1361,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #ESP
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ESP
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ESP
     * #https://fhir.ee/sid/pid/esp/ni "National identifier of Spain" "Hispaania personaalne identifier"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1389,7 +1389,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ant #https://fhir.ee/sid/pid/ant/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ant #https://fhir.ee/sid/pid/ant/ppn ^property[=].valueCode = #ANT
   * #https://fhir.ee/sid/pid/ant #https://fhir.ee/sid/pid/ant/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ant #https://fhir.ee/sid/pid/ant/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ANT
+  * #https://fhir.ee/sid/pid/ant #https://fhir.ee/sid/pid/ant/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ANT
   * #https://fhir.ee/sid/pid/hnd "Root identifier for person identification of country Honduras" "Honduras identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/hnd ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/hnd ^property[=].valueBoolean = true
@@ -1403,7 +1403,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/hnd #https://fhir.ee/sid/pid/hnd/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/hnd #https://fhir.ee/sid/pid/hnd/ppn ^property[=].valueCode = #HND
   * #https://fhir.ee/sid/pid/hnd #https://fhir.ee/sid/pid/hnd/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/hnd #https://fhir.ee/sid/pid/hnd/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-HND
+  * #https://fhir.ee/sid/pid/hnd #https://fhir.ee/sid/pid/hnd/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-HND
   * #https://fhir.ee/sid/pid/hrv "Root identifier for person identification of country Croatia" "Horvaatia identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -1417,7 +1417,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #HRV
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-HRV
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-HRV
     * #https://fhir.ee/sid/pid/hrv/ni "National identifier of Croatia" "Horvaatia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1445,7 +1445,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #IRL
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRL
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRL
     * #https://fhir.ee/sid/pid/irl/ni "National identifier of Ireland" "Iirimaa personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1473,7 +1473,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/isr #https://fhir.ee/sid/pid/isr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/isr #https://fhir.ee/sid/pid/isr/ppn ^property[=].valueCode = #ISR
   * #https://fhir.ee/sid/pid/isr #https://fhir.ee/sid/pid/isr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/isr #https://fhir.ee/sid/pid/isr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ISR
+  * #https://fhir.ee/sid/pid/isr #https://fhir.ee/sid/pid/isr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ISR
   * #https://fhir.ee/sid/pid/ind "Root identifier for person identification of country India" "India identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ind ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ind ^property[=].valueBoolean = true
@@ -1487,7 +1487,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ind #https://fhir.ee/sid/pid/ind/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ind #https://fhir.ee/sid/pid/ind/ppn ^property[=].valueCode = #IND
   * #https://fhir.ee/sid/pid/ind #https://fhir.ee/sid/pid/ind/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ind #https://fhir.ee/sid/pid/ind/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IND
+  * #https://fhir.ee/sid/pid/ind #https://fhir.ee/sid/pid/ind/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IND
   * #https://fhir.ee/sid/pid/idn "Root identifier for person identification of country Indonesia" "Indoneesia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/idn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/idn ^property[=].valueBoolean = true
@@ -1501,7 +1501,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/idn #https://fhir.ee/sid/pid/idn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/idn #https://fhir.ee/sid/pid/idn/ppn ^property[=].valueCode = #IDN
   * #https://fhir.ee/sid/pid/idn #https://fhir.ee/sid/pid/idn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/idn #https://fhir.ee/sid/pid/idn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IDN
+  * #https://fhir.ee/sid/pid/idn #https://fhir.ee/sid/pid/idn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IDN
   * #https://fhir.ee/sid/pid/irq "Root identifier for person identification of country Iraq" "Iraak identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/irq ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/irq ^property[=].valueBoolean = true
@@ -1515,7 +1515,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/irq #https://fhir.ee/sid/pid/irq/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/irq #https://fhir.ee/sid/pid/irq/ppn ^property[=].valueCode = #IRQ
   * #https://fhir.ee/sid/pid/irq #https://fhir.ee/sid/pid/irq/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/irq #https://fhir.ee/sid/pid/irq/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRQ
+  * #https://fhir.ee/sid/pid/irq #https://fhir.ee/sid/pid/irq/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRQ
   * #https://fhir.ee/sid/pid/irn "Root identifier for person identification of country Iran" "Iraan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/irn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/irn ^property[=].valueBoolean = true
@@ -1529,7 +1529,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[=].valueCode = #IRN
   * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRN
+  * #https://fhir.ee/sid/pid/irn #https://fhir.ee/sid/pid/irn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IRN
   * #https://fhir.ee/sid/pid/isl "Root identifier for person identification of country Iceland" "Island identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -1543,7 +1543,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #ISL
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ISL
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ISL
     * #https://fhir.ee/sid/pid/isl/ni "National identifier of Iceland" "Islandi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1571,7 +1571,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #ITA
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ITA
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ITA
     * #https://fhir.ee/sid/pid/ita/ni "National identifier of Italy" "Itaalia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1599,7 +1599,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/jpn #https://fhir.ee/sid/pid/jpn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/jpn #https://fhir.ee/sid/pid/jpn/ppn ^property[=].valueCode = #JPN
   * #https://fhir.ee/sid/pid/jpn #https://fhir.ee/sid/pid/jpn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/jpn #https://fhir.ee/sid/pid/jpn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-JPN
+  * #https://fhir.ee/sid/pid/jpn #https://fhir.ee/sid/pid/jpn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-JPN
   * #https://fhir.ee/sid/pid/jam "Root identifier for person identification of country Jamaica" "Jamaica identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/jam ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/jam ^property[=].valueBoolean = true
@@ -1613,7 +1613,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/jam #https://fhir.ee/sid/pid/jam/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/jam #https://fhir.ee/sid/pid/jam/ppn ^property[=].valueCode = #JAM
   * #https://fhir.ee/sid/pid/jam #https://fhir.ee/sid/pid/jam/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/jam #https://fhir.ee/sid/pid/jam/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-JAM
+  * #https://fhir.ee/sid/pid/jam #https://fhir.ee/sid/pid/jam/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-JAM
   * #https://fhir.ee/sid/pid/yem "Root identifier for person identification of country Yemen" "Jeemen identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/yem ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/yem ^property[=].valueBoolean = true
@@ -1627,7 +1627,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/yem #https://fhir.ee/sid/pid/yem/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/yem #https://fhir.ee/sid/pid/yem/ppn ^property[=].valueCode = #YEM
   * #https://fhir.ee/sid/pid/yem #https://fhir.ee/sid/pid/yem/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/yem #https://fhir.ee/sid/pid/yem/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-YEM
+  * #https://fhir.ee/sid/pid/yem #https://fhir.ee/sid/pid/yem/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-YEM
   * #https://fhir.ee/sid/pid/jey "Root identifier for person identification of country Jersey" "Jersey identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/jey ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/jey ^property[=].valueBoolean = true
@@ -1641,7 +1641,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/jey #https://fhir.ee/sid/pid/jey/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/jey #https://fhir.ee/sid/pid/jey/ppn ^property[=].valueCode = #JEY
   * #https://fhir.ee/sid/pid/jey #https://fhir.ee/sid/pid/jey/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/jey #https://fhir.ee/sid/pid/jey/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-JEY
+  * #https://fhir.ee/sid/pid/jey #https://fhir.ee/sid/pid/jey/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-JEY
   * #https://fhir.ee/sid/pid/jor "Root identifier for person identification of country Jordan" "Jordaania identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/jor ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/jor ^property[=].valueBoolean = true
@@ -1655,7 +1655,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/jor #https://fhir.ee/sid/pid/jor/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/jor #https://fhir.ee/sid/pid/jor/ppn ^property[=].valueCode = #JOR
   * #https://fhir.ee/sid/pid/jor #https://fhir.ee/sid/pid/jor/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/jor #https://fhir.ee/sid/pid/jor/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-JOR
+  * #https://fhir.ee/sid/pid/jor #https://fhir.ee/sid/pid/jor/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-JOR
   * #https://fhir.ee/sid/pid/cxr "Root identifier for person identification of country Christmas Island" "Jõulusaar identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cxr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cxr ^property[=].valueBoolean = true
@@ -1669,7 +1669,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cxr #https://fhir.ee/sid/pid/cxr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cxr #https://fhir.ee/sid/pid/cxr/ppn ^property[=].valueCode = #CXR
   * #https://fhir.ee/sid/pid/cxr #https://fhir.ee/sid/pid/cxr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cxr #https://fhir.ee/sid/pid/cxr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CXR
+  * #https://fhir.ee/sid/pid/cxr #https://fhir.ee/sid/pid/cxr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CXR
   * #https://fhir.ee/sid/pid/cym "Root identifier for person identification of country Cayman Islands" "Kaimanisaared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cym ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cym ^property[=].valueBoolean = true
@@ -1683,7 +1683,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cym #https://fhir.ee/sid/pid/cym/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cym #https://fhir.ee/sid/pid/cym/ppn ^property[=].valueCode = #CYM
   * #https://fhir.ee/sid/pid/cym #https://fhir.ee/sid/pid/cym/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cym #https://fhir.ee/sid/pid/cym/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CYM
+  * #https://fhir.ee/sid/pid/cym #https://fhir.ee/sid/pid/cym/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CYM
   * #https://fhir.ee/sid/pid/khm "Root identifier for person identification of country Cambodia" "Kambodža identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/khm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/khm ^property[=].valueBoolean = true
@@ -1697,7 +1697,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/khm #https://fhir.ee/sid/pid/khm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/khm #https://fhir.ee/sid/pid/khm/ppn ^property[=].valueCode = #KHM
   * #https://fhir.ee/sid/pid/khm #https://fhir.ee/sid/pid/khm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/khm #https://fhir.ee/sid/pid/khm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KHM
+  * #https://fhir.ee/sid/pid/khm #https://fhir.ee/sid/pid/khm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KHM
   * #https://fhir.ee/sid/pid/cmr "Root identifier for person identification of country Cameroon" "Kamerun identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cmr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cmr ^property[=].valueBoolean = true
@@ -1711,7 +1711,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cmr #https://fhir.ee/sid/pid/cmr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cmr #https://fhir.ee/sid/pid/cmr/ppn ^property[=].valueCode = #CMR
   * #https://fhir.ee/sid/pid/cmr #https://fhir.ee/sid/pid/cmr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cmr #https://fhir.ee/sid/pid/cmr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CMR
+  * #https://fhir.ee/sid/pid/cmr #https://fhir.ee/sid/pid/cmr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CMR
   * #https://fhir.ee/sid/pid/can "Root identifier for person identification of country Canada" "Kanada identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/can ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/can ^property[=].valueBoolean = true
@@ -1725,7 +1725,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/can #https://fhir.ee/sid/pid/can/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/can #https://fhir.ee/sid/pid/can/ppn ^property[=].valueCode = #CAN
   * #https://fhir.ee/sid/pid/can #https://fhir.ee/sid/pid/can/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/can #https://fhir.ee/sid/pid/can/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CAN
+  * #https://fhir.ee/sid/pid/can #https://fhir.ee/sid/pid/can/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CAN
   * #https://fhir.ee/sid/pid/kaz "Root identifier for person identification of country Kazakhstan" "Kasahstan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/kaz ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/kaz ^property[=].valueBoolean = true
@@ -1739,7 +1739,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/kaz #https://fhir.ee/sid/pid/kaz/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/kaz #https://fhir.ee/sid/pid/kaz/ppn ^property[=].valueCode = #KAZ
   * #https://fhir.ee/sid/pid/kaz #https://fhir.ee/sid/pid/kaz/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/kaz #https://fhir.ee/sid/pid/kaz/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KAZ
+  * #https://fhir.ee/sid/pid/kaz #https://fhir.ee/sid/pid/kaz/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KAZ
   * #https://fhir.ee/sid/pid/qat "Root identifier for person identification of country Qatar" "Katar identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/qat ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/qat ^property[=].valueBoolean = true
@@ -1753,7 +1753,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/qat #https://fhir.ee/sid/pid/qat/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/qat #https://fhir.ee/sid/pid/qat/ppn ^property[=].valueCode = #QAT
   * #https://fhir.ee/sid/pid/qat #https://fhir.ee/sid/pid/qat/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/qat #https://fhir.ee/sid/pid/qat/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-QAT
+  * #https://fhir.ee/sid/pid/qat #https://fhir.ee/sid/pid/qat/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-QAT
   * #https://fhir.ee/sid/pid/ken "Root identifier for person identification of country Kenya" "Kenya identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ken ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ken ^property[=].valueBoolean = true
@@ -1767,7 +1767,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ken #https://fhir.ee/sid/pid/ken/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ken #https://fhir.ee/sid/pid/ken/ppn ^property[=].valueCode = #KEN
   * #https://fhir.ee/sid/pid/ken #https://fhir.ee/sid/pid/ken/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ken #https://fhir.ee/sid/pid/ken/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KEN
+  * #https://fhir.ee/sid/pid/ken #https://fhir.ee/sid/pid/ken/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KEN
   * #https://fhir.ee/sid/pid/caf "Root identifier for person identification of country Central African Republik" "Kesk-Aafrika Vabariik identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/caf ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/caf ^property[=].valueBoolean = true
@@ -1781,7 +1781,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/caf #https://fhir.ee/sid/pid/caf/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/caf #https://fhir.ee/sid/pid/caf/ppn ^property[=].valueCode = #CAF
   * #https://fhir.ee/sid/pid/caf #https://fhir.ee/sid/pid/caf/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/caf #https://fhir.ee/sid/pid/caf/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CAF
+  * #https://fhir.ee/sid/pid/caf #https://fhir.ee/sid/pid/caf/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CAF
   * #https://fhir.ee/sid/pid/kgz "Root identifier for person identification of country Kyrgyzstan" "Kõrgõzstan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/kgz ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/kgz ^property[=].valueBoolean = true
@@ -1795,7 +1795,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/kgz #https://fhir.ee/sid/pid/kgz/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/kgz #https://fhir.ee/sid/pid/kgz/ppn ^property[=].valueCode = #KGZ
   * #https://fhir.ee/sid/pid/kgz #https://fhir.ee/sid/pid/kgz/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/kgz #https://fhir.ee/sid/pid/kgz/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KGZ
+  * #https://fhir.ee/sid/pid/kgz #https://fhir.ee/sid/pid/kgz/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KGZ
   * #https://fhir.ee/sid/pid/kir "Root identifier for person identification of country Kiribati" "Kiribati identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/kir ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/kir ^property[=].valueBoolean = true
@@ -1809,7 +1809,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/kir #https://fhir.ee/sid/pid/kir/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/kir #https://fhir.ee/sid/pid/kir/ppn ^property[=].valueCode = #KIR
   * #https://fhir.ee/sid/pid/kir #https://fhir.ee/sid/pid/kir/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/kir #https://fhir.ee/sid/pid/kir/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KIR
+  * #https://fhir.ee/sid/pid/kir #https://fhir.ee/sid/pid/kir/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KIR
   * #https://fhir.ee/sid/pid/com "Root identifier for person identification of country Comoros" "Komoorid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/com ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/com ^property[=].valueBoolean = true
@@ -1823,7 +1823,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/com #https://fhir.ee/sid/pid/com/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/com #https://fhir.ee/sid/pid/com/ppn ^property[=].valueCode = #COM
   * #https://fhir.ee/sid/pid/com #https://fhir.ee/sid/pid/com/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/com #https://fhir.ee/sid/pid/com/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-COM
+  * #https://fhir.ee/sid/pid/com #https://fhir.ee/sid/pid/com/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-COM
   * #https://fhir.ee/sid/pid/cod "Root identifier for person identification of country Congo, the Democratic Republik of the" "Kongo DV identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cod ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cod ^property[=].valueBoolean = true
@@ -1837,7 +1837,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cod #https://fhir.ee/sid/pid/cod/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cod #https://fhir.ee/sid/pid/cod/ppn ^property[=].valueCode = #COD
   * #https://fhir.ee/sid/pid/cod #https://fhir.ee/sid/pid/cod/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cod #https://fhir.ee/sid/pid/cod/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-COD
+  * #https://fhir.ee/sid/pid/cod #https://fhir.ee/sid/pid/cod/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-COD
   * #https://fhir.ee/sid/pid/cog "Root identifier for person identification of country Congo" "Kongo identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cog ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cog ^property[=].valueBoolean = true
@@ -1851,7 +1851,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cog #https://fhir.ee/sid/pid/cog/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cog #https://fhir.ee/sid/pid/cog/ppn ^property[=].valueCode = #COG
   * #https://fhir.ee/sid/pid/cog #https://fhir.ee/sid/pid/cog/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cog #https://fhir.ee/sid/pid/cog/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-COG
+  * #https://fhir.ee/sid/pid/cog #https://fhir.ee/sid/pid/cog/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-COG
   * #https://fhir.ee/sid/pid/cck "Root identifier for person identification of country Cocos (Keeling) Islands" "Kookossaared (Keelingi saared) identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/cck ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/cck ^property[=].valueBoolean = true
@@ -1865,7 +1865,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cck #https://fhir.ee/sid/pid/cck/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cck #https://fhir.ee/sid/pid/cck/ppn ^property[=].valueCode = #CCK
   * #https://fhir.ee/sid/pid/cck #https://fhir.ee/sid/pid/cck/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cck #https://fhir.ee/sid/pid/cck/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CCK
+  * #https://fhir.ee/sid/pid/cck #https://fhir.ee/sid/pid/cck/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CCK
   * #https://fhir.ee/sid/pid/prk "Root identifier for person identification of country Korea, Democratic People's Republic of" "Korea RDV identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/prk ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/prk ^property[=].valueBoolean = true
@@ -1879,7 +1879,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/prk #https://fhir.ee/sid/pid/prk/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/prk #https://fhir.ee/sid/pid/prk/ppn ^property[=].valueCode = #PRK
   * #https://fhir.ee/sid/pid/prk #https://fhir.ee/sid/pid/prk/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/prk #https://fhir.ee/sid/pid/prk/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRK
+  * #https://fhir.ee/sid/pid/prk #https://fhir.ee/sid/pid/prk/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRK
   * #https://fhir.ee/sid/pid/kor "Root identifier for person identification of country Korea, Republic of" "Korea Vabariik identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/kor ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/kor ^property[=].valueBoolean = true
@@ -1893,7 +1893,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/kor #https://fhir.ee/sid/pid/kor/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/kor #https://fhir.ee/sid/pid/kor/ppn ^property[=].valueCode = #KOR
   * #https://fhir.ee/sid/pid/kor #https://fhir.ee/sid/pid/kor/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/kor #https://fhir.ee/sid/pid/kor/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KOR
+  * #https://fhir.ee/sid/pid/kor #https://fhir.ee/sid/pid/kor/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KOR
   * #https://fhir.ee/sid/pid/grc "Root identifier for person identification of country Greece" "Kreeka identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -1907,7 +1907,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #GRC
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GRC
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GRC
     * #https://fhir.ee/sid/pid/grc/ni "National identifier of Greece" "Kreeka personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -1935,7 +1935,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/cub #https://fhir.ee/sid/pid/cub/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/cub #https://fhir.ee/sid/pid/cub/ppn ^property[=].valueCode = #CUB
   * #https://fhir.ee/sid/pid/cub #https://fhir.ee/sid/pid/cub/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/cub #https://fhir.ee/sid/pid/cub/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CUB
+  * #https://fhir.ee/sid/pid/cub #https://fhir.ee/sid/pid/cub/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CUB
   * #https://fhir.ee/sid/pid/kwt "Root identifier for person identification of country Kuwait" "Kuveit identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/kwt ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/kwt ^property[=].valueBoolean = true
@@ -1949,7 +1949,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/kwt #https://fhir.ee/sid/pid/kwt/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/kwt #https://fhir.ee/sid/pid/kwt/ppn ^property[=].valueCode = #KWT
   * #https://fhir.ee/sid/pid/kwt #https://fhir.ee/sid/pid/kwt/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/kwt #https://fhir.ee/sid/pid/kwt/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KWT
+  * #https://fhir.ee/sid/pid/kwt #https://fhir.ee/sid/pid/kwt/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KWT
   * #https://fhir.ee/sid/pid/cyp "Root identifier for person identification of country Cyprus" "Küpros identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -1963,7 +1963,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #CYP
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CYP
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CYP
     * #https://fhir.ee/sid/pid/cyp/cz "ID Card of Cyprus" "Küprose ID-kaart"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
@@ -1984,7 +1984,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lao #https://fhir.ee/sid/pid/lao/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lao #https://fhir.ee/sid/pid/lao/ppn ^property[=].valueCode = #LAO
   * #https://fhir.ee/sid/pid/lao #https://fhir.ee/sid/pid/lao/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lao #https://fhir.ee/sid/pid/lao/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LAO
+  * #https://fhir.ee/sid/pid/lao #https://fhir.ee/sid/pid/lao/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LAO
   * #https://fhir.ee/sid/pid/ltu "Root identifier for person identification of country Lithuania" "Leedu identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -1998,7 +1998,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #LTU
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LTU
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LTU
     * #https://fhir.ee/sid/pid/ltu/ni "National identifier of Lithuania" "Leedu personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2026,7 +2026,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lso #https://fhir.ee/sid/pid/lso/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lso #https://fhir.ee/sid/pid/lso/ppn ^property[=].valueCode = #LSO
   * #https://fhir.ee/sid/pid/lso #https://fhir.ee/sid/pid/lso/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lso #https://fhir.ee/sid/pid/lso/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LSO
+  * #https://fhir.ee/sid/pid/lso #https://fhir.ee/sid/pid/lso/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LSO
   * #https://fhir.ee/sid/pid/lbr "Root identifier for person identification of country Liberia" "Libeeria identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/lbr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/lbr ^property[=].valueBoolean = true
@@ -2040,7 +2040,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lbr #https://fhir.ee/sid/pid/lbr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lbr #https://fhir.ee/sid/pid/lbr/ppn ^property[=].valueCode = #LBR
   * #https://fhir.ee/sid/pid/lbr #https://fhir.ee/sid/pid/lbr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lbr #https://fhir.ee/sid/pid/lbr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LBR
+  * #https://fhir.ee/sid/pid/lbr #https://fhir.ee/sid/pid/lbr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LBR
   * #https://fhir.ee/sid/pid/lie "Root identifier for person identification of country Liechtenstein" "Liechtenstein identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/lie ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/lie ^property[=].valueBoolean = true
@@ -2054,7 +2054,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lie #https://fhir.ee/sid/pid/lie/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lie #https://fhir.ee/sid/pid/lie/ppn ^property[=].valueCode = #LIE
   * #https://fhir.ee/sid/pid/lie #https://fhir.ee/sid/pid/lie/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lie #https://fhir.ee/sid/pid/lie/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LIE
+  * #https://fhir.ee/sid/pid/lie #https://fhir.ee/sid/pid/lie/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LIE
   * #https://fhir.ee/sid/pid/lbn "Root identifier for person identification of country Lebanon" "Liibanon identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/lbn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/lbn ^property[=].valueBoolean = true
@@ -2068,7 +2068,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lbn #https://fhir.ee/sid/pid/lbn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lbn #https://fhir.ee/sid/pid/lbn/ppn ^property[=].valueCode = #LBN
   * #https://fhir.ee/sid/pid/lbn #https://fhir.ee/sid/pid/lbn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lbn #https://fhir.ee/sid/pid/lbn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LBN
+  * #https://fhir.ee/sid/pid/lbn #https://fhir.ee/sid/pid/lbn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LBN
   * #https://fhir.ee/sid/pid/lux "Root identifier for person identification of country Luxembourg" "Luksemburg identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2082,7 +2082,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #LUX
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LUX
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LUX
     * #https://fhir.ee/sid/pid/lux/ni "National identifier of Luxembourg" "Luksemburgi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2110,7 +2110,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/zaf #https://fhir.ee/sid/pid/zaf/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/zaf #https://fhir.ee/sid/pid/zaf/ppn ^property[=].valueCode = #ZAF
   * #https://fhir.ee/sid/pid/zaf #https://fhir.ee/sid/pid/zaf/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/zaf #https://fhir.ee/sid/pid/zaf/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZAF
+  * #https://fhir.ee/sid/pid/zaf #https://fhir.ee/sid/pid/zaf/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZAF
   * #https://fhir.ee/sid/pid/sgs "Root identifier for person identification of country South Georgia and the South Sandwich Islands" "Lõuna-Georgia ja Lõuna-Sandwich identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sgs ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sgs ^property[=].valueBoolean = true
@@ -2124,7 +2124,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sgs #https://fhir.ee/sid/pid/sgs/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sgs #https://fhir.ee/sid/pid/sgs/ppn ^property[=].valueCode = #SGS
   * #https://fhir.ee/sid/pid/sgs #https://fhir.ee/sid/pid/sgs/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sgs #https://fhir.ee/sid/pid/sgs/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SGS
+  * #https://fhir.ee/sid/pid/sgs #https://fhir.ee/sid/pid/sgs/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SGS
   * #https://fhir.ee/sid/pid/lva "Root identifier for person identification of country Latvia" "Läti identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2138,7 +2138,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #LVA
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LVA
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LVA
     * #https://fhir.ee/sid/pid/lva/ni "National identifier of Latvia" "Läti personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2166,7 +2166,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/esh #https://fhir.ee/sid/pid/esh/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/esh #https://fhir.ee/sid/pid/esh/ppn ^property[=].valueCode = #ESH
   * #https://fhir.ee/sid/pid/esh #https://fhir.ee/sid/pid/esh/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/esh #https://fhir.ee/sid/pid/esh/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ESH
+  * #https://fhir.ee/sid/pid/esh #https://fhir.ee/sid/pid/esh/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ESH
   * #https://fhir.ee/sid/pid/mdg "Root identifier for person identification of country Madagascar" "Madagaskar identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mdg ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mdg ^property[=].valueBoolean = true
@@ -2180,7 +2180,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mdg #https://fhir.ee/sid/pid/mdg/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mdg #https://fhir.ee/sid/pid/mdg/ppn ^property[=].valueCode = #MDG
   * #https://fhir.ee/sid/pid/mdg #https://fhir.ee/sid/pid/mdg/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mdg #https://fhir.ee/sid/pid/mdg/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MDG
+  * #https://fhir.ee/sid/pid/mdg #https://fhir.ee/sid/pid/mdg/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MDG
   * #https://fhir.ee/sid/pid/nld "Root identifier for person identification of country Netherlands" "Holland identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2194,7 +2194,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #NLD
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NLD
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NLD
     * #https://fhir.ee/sid/pid/nld/ni "National identifier of Netherlands" "Hollandi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2222,7 +2222,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #MKD
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MKD
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MKD
     * #https://fhir.ee/sid/pid/mkd/ni "National identifier of North Macedonia" "Makedoonia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2243,7 +2243,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mys #https://fhir.ee/sid/pid/mys/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mys #https://fhir.ee/sid/pid/mys/ppn ^property[=].valueCode = #MYS
   * #https://fhir.ee/sid/pid/mys #https://fhir.ee/sid/pid/mys/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mys #https://fhir.ee/sid/pid/mys/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MYS
+  * #https://fhir.ee/sid/pid/mys #https://fhir.ee/sid/pid/mys/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MYS
   * #https://fhir.ee/sid/pid/mwi "Root identifier for person identification of country Malawi" "Malawi identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mwi ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mwi ^property[=].valueBoolean = true
@@ -2257,7 +2257,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mwi #https://fhir.ee/sid/pid/mwi/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mwi #https://fhir.ee/sid/pid/mwi/ppn ^property[=].valueCode = #MWI
   * #https://fhir.ee/sid/pid/mwi #https://fhir.ee/sid/pid/mwi/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mwi #https://fhir.ee/sid/pid/mwi/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MWI
+  * #https://fhir.ee/sid/pid/mwi #https://fhir.ee/sid/pid/mwi/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MWI
   * #https://fhir.ee/sid/pid/mdv "Root identifier for person identification of country Maldives" "Maldiivid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mdv ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mdv ^property[=].valueBoolean = true
@@ -2271,7 +2271,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mdv #https://fhir.ee/sid/pid/mdv/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mdv #https://fhir.ee/sid/pid/mdv/ppn ^property[=].valueCode = #MDV
   * #https://fhir.ee/sid/pid/mdv #https://fhir.ee/sid/pid/mdv/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mdv #https://fhir.ee/sid/pid/mdv/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MDV
+  * #https://fhir.ee/sid/pid/mdv #https://fhir.ee/sid/pid/mdv/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MDV
   * #https://fhir.ee/sid/pid/mli "Root identifier for person identification of country Mali" "Mali identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mli ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mli ^property[=].valueBoolean = true
@@ -2285,7 +2285,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mli #https://fhir.ee/sid/pid/mli/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mli #https://fhir.ee/sid/pid/mli/ppn ^property[=].valueCode = #MLI
   * #https://fhir.ee/sid/pid/mli #https://fhir.ee/sid/pid/mli/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mli #https://fhir.ee/sid/pid/mli/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MLI
+  * #https://fhir.ee/sid/pid/mli #https://fhir.ee/sid/pid/mli/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MLI
   * #https://fhir.ee/sid/pid/mlt "Root identifier for person identification of country Malta" "Malta identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2299,7 +2299,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #MLT
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MLT
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MLT
     * #https://fhir.ee/sid/pid/mlt/cz "ID Card of Malta" "Malta ID-kaart"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
@@ -2308,7 +2308,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #MLT
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MLT
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MLT
   * #https://fhir.ee/sid/pid/imn "Root identifier for person identification of country Isle of Man" "Mani saar identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/imn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/imn ^property[=].valueBoolean = true
@@ -2322,7 +2322,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[=].valueCode = #IMN
   * #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-IMM
+  * #https://fhir.ee/sid/pid/imn #https://fhir.ee/sid/pid/imn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-IMM
   * #https://fhir.ee/sid/pid/mar "Root identifier for person identification of country Morocco" "Maroko identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mar ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mar ^property[=].valueBoolean = true
@@ -2336,7 +2336,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mar #https://fhir.ee/sid/pid/mar/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mar #https://fhir.ee/sid/pid/mar/ppn ^property[=].valueCode = #MAR
   * #https://fhir.ee/sid/pid/mar #https://fhir.ee/sid/pid/mar/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mar #https://fhir.ee/sid/pid/mar/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MAR
+  * #https://fhir.ee/sid/pid/mar #https://fhir.ee/sid/pid/mar/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MAR
   * #https://fhir.ee/sid/pid/mhl "Root identifier for person identification of country Marshall Islands" "Marshalli Saared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mhl ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mhl ^property[=].valueBoolean = true
@@ -2350,7 +2350,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mhl #https://fhir.ee/sid/pid/mhl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mhl #https://fhir.ee/sid/pid/mhl/ppn ^property[=].valueCode = #MHL
   * #https://fhir.ee/sid/pid/mhl #https://fhir.ee/sid/pid/mhl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mhl #https://fhir.ee/sid/pid/mhl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MHL
+  * #https://fhir.ee/sid/pid/mhl #https://fhir.ee/sid/pid/mhl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MHL
   * #https://fhir.ee/sid/pid/mtq "Root identifier for person identification of country Martinique" "Martinique identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mtq ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mtq ^property[=].valueBoolean = true
@@ -2364,7 +2364,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mtq #https://fhir.ee/sid/pid/mtq/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mtq #https://fhir.ee/sid/pid/mtq/ppn ^property[=].valueCode = #MTQ
   * #https://fhir.ee/sid/pid/mtq #https://fhir.ee/sid/pid/mtq/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mtq #https://fhir.ee/sid/pid/mtq/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MTQ
+  * #https://fhir.ee/sid/pid/mtq #https://fhir.ee/sid/pid/mtq/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MTQ
   * #https://fhir.ee/sid/pid/mrt "Root identifier for person identification of country Mauritania" "Mauritaania identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mrt ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mrt ^property[=].valueBoolean = true
@@ -2378,7 +2378,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mrt #https://fhir.ee/sid/pid/mrt/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mrt #https://fhir.ee/sid/pid/mrt/ppn ^property[=].valueCode = #MRT
   * #https://fhir.ee/sid/pid/mrt #https://fhir.ee/sid/pid/mrt/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mrt #https://fhir.ee/sid/pid/mrt/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MRT
+  * #https://fhir.ee/sid/pid/mrt #https://fhir.ee/sid/pid/mrt/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MRT
   * #https://fhir.ee/sid/pid/mus "Root identifier for person identification of country Mauritius" "Mauritius identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mus ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mus ^property[=].valueBoolean = true
@@ -2392,7 +2392,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mus #https://fhir.ee/sid/pid/mus/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mus #https://fhir.ee/sid/pid/mus/ppn ^property[=].valueCode = #MUS
   * #https://fhir.ee/sid/pid/mus #https://fhir.ee/sid/pid/mus/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mus #https://fhir.ee/sid/pid/mus/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MUS
+  * #https://fhir.ee/sid/pid/mus #https://fhir.ee/sid/pid/mus/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MUS
   * #https://fhir.ee/sid/pid/myt "Root identifier for person identification of country Mayotte" "Mayotte identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/myt ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/myt ^property[=].valueBoolean = true
@@ -2406,7 +2406,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/myt #https://fhir.ee/sid/pid/myt/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/myt #https://fhir.ee/sid/pid/myt/ppn ^property[=].valueCode = #MYT
   * #https://fhir.ee/sid/pid/myt #https://fhir.ee/sid/pid/myt/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/myt #https://fhir.ee/sid/pid/myt/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MYT
+  * #https://fhir.ee/sid/pid/myt #https://fhir.ee/sid/pid/myt/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MYT
   * #https://fhir.ee/sid/pid/mex "Root identifier for person identification of country Mexico" "Mehhiko identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mex ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mex ^property[=].valueBoolean = true
@@ -2420,7 +2420,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mex #https://fhir.ee/sid/pid/mex/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mex #https://fhir.ee/sid/pid/mex/ppn ^property[=].valueCode = #MEX
   * #https://fhir.ee/sid/pid/mex #https://fhir.ee/sid/pid/mex/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mex #https://fhir.ee/sid/pid/mex/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MEX
+  * #https://fhir.ee/sid/pid/mex #https://fhir.ee/sid/pid/mex/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MEX
   * #https://fhir.ee/sid/pid/fsm "Root identifier for person identification of country Micronesia" "Mikroneesia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/fsm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/fsm ^property[=].valueBoolean = true
@@ -2434,7 +2434,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/fsm #https://fhir.ee/sid/pid/fsm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/fsm #https://fhir.ee/sid/pid/fsm/ppn ^property[=].valueCode = #FSM
   * #https://fhir.ee/sid/pid/fsm #https://fhir.ee/sid/pid/fsm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/fsm #https://fhir.ee/sid/pid/fsm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-FSM
+  * #https://fhir.ee/sid/pid/fsm #https://fhir.ee/sid/pid/fsm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-FSM
   * #https://fhir.ee/sid/pid/mda "Root identifier for person identification of country Moldova, Republic of" "Moldova identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mda ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mda ^property[=].valueBoolean = true
@@ -2448,7 +2448,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #MDA
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MDA
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MDA
     * #https://fhir.ee/sid/pid/mda/ni "National identifier of Moldova, Republic of" "Moldova personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2469,7 +2469,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mco #https://fhir.ee/sid/pid/mco/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mco #https://fhir.ee/sid/pid/mco/ppn ^property[=].valueCode = #MCO
   * #https://fhir.ee/sid/pid/mco #https://fhir.ee/sid/pid/mco/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mco #https://fhir.ee/sid/pid/mco/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MCO
+  * #https://fhir.ee/sid/pid/mco #https://fhir.ee/sid/pid/mco/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MCO
   * #https://fhir.ee/sid/pid/mng "Root identifier for person identification of country Mongolia" "Mongoolia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mng ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mng ^property[=].valueBoolean = true
@@ -2483,7 +2483,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mng #https://fhir.ee/sid/pid/mng/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mng #https://fhir.ee/sid/pid/mng/ppn ^property[=].valueCode = #MNG
   * #https://fhir.ee/sid/pid/mng #https://fhir.ee/sid/pid/mng/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mng #https://fhir.ee/sid/pid/mng/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MNG
+  * #https://fhir.ee/sid/pid/mng #https://fhir.ee/sid/pid/mng/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MNG
   * #https://fhir.ee/sid/pid/mne "Root identifier for person identification of country Montenegro" "Montenegro identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mne ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mne ^property[=].valueBoolean = true
@@ -2497,7 +2497,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #MNE
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MNE
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MNE
     * #https://fhir.ee/sid/pid/mne/ni "National identifier of Montenegro" "Montenegro personaalne identifier"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2518,7 +2518,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/msr #https://fhir.ee/sid/pid/msr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/msr #https://fhir.ee/sid/pid/msr/ppn ^property[=].valueCode = #MSR
   * #https://fhir.ee/sid/pid/msr #https://fhir.ee/sid/pid/msr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/msr #https://fhir.ee/sid/pid/msr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MSR
+  * #https://fhir.ee/sid/pid/msr #https://fhir.ee/sid/pid/msr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MSR
   * #https://fhir.ee/sid/pid/moz "Root identifier for person identification of country Mozambique" "Mosambiik identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/moz ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/moz ^property[=].valueBoolean = true
@@ -2532,7 +2532,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/moz #https://fhir.ee/sid/pid/moz/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/moz #https://fhir.ee/sid/pid/moz/ppn ^property[=].valueCode = #MOZ
   * #https://fhir.ee/sid/pid/moz #https://fhir.ee/sid/pid/moz/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/moz #https://fhir.ee/sid/pid/moz/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MOZ
+  * #https://fhir.ee/sid/pid/moz #https://fhir.ee/sid/pid/moz/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MOZ
 /*
   * #https://fhir.ee/sid/pid/xyy "Root identifier for person identification of country Areas not elsewhere specified" "Mujal nimetamata territooriumid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/xyy ^property[0].code = #notSelectable
@@ -2547,7 +2547,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/xyy #https://fhir.ee/sid/pid/xyy/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/xyy #https://fhir.ee/sid/pid/xyy/ppn ^property[=].valueCode = #XYY
   * #https://fhir.ee/sid/pid/xyy #https://fhir.ee/sid/pid/xyy/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/xyy #https://fhir.ee/sid/pid/xyy/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-XYY
+  * #https://fhir.ee/sid/pid/xyy #https://fhir.ee/sid/pid/xyy/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-XYY
 */
 /*
   * #https://fhir.ee/sid/pid/xxx "Root identifier for person identification of country Not specified" "Määramata identifikaatorid isikutele"
@@ -2563,7 +2563,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/xxx #https://fhir.ee/sid/pid/xxx/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/xxx #https://fhir.ee/sid/pid/xxx/ppn ^property[=].valueCode = #XXX
   * #https://fhir.ee/sid/pid/xxx #https://fhir.ee/sid/pid/xxx/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/xxx #https://fhir.ee/sid/pid/xxx/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-XXX
+  * #https://fhir.ee/sid/pid/xxx #https://fhir.ee/sid/pid/xxx/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-XXX
 */
   * #https://fhir.ee/sid/pid/mmr "Root identifier for person identification of country Myanmar" "Myanmar (Birma) identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mmr ^property[0].code = #notSelectable
@@ -2578,7 +2578,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mmr #https://fhir.ee/sid/pid/mmr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mmr #https://fhir.ee/sid/pid/mmr/ppn ^property[=].valueCode = #MMR
   * #https://fhir.ee/sid/pid/mmr #https://fhir.ee/sid/pid/mmr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mmr #https://fhir.ee/sid/pid/mmr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MMR
+  * #https://fhir.ee/sid/pid/mmr #https://fhir.ee/sid/pid/mmr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MMR
   * #https://fhir.ee/sid/pid/nam "Root identifier for person identification of country Namibia" "Namiibia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/nam ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/nam ^property[=].valueBoolean = true
@@ -2592,7 +2592,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/nam #https://fhir.ee/sid/pid/nam/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/nam #https://fhir.ee/sid/pid/nam/ppn ^property[=].valueCode = #NAM
   * #https://fhir.ee/sid/pid/nam #https://fhir.ee/sid/pid/nam/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/nam #https://fhir.ee/sid/pid/nam/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NAM
+  * #https://fhir.ee/sid/pid/nam #https://fhir.ee/sid/pid/nam/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NAM
   * #https://fhir.ee/sid/pid/nru "Root identifier for person identification of country Nauru" "Nauru identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/nru ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/nru ^property[=].valueBoolean = true
@@ -2606,7 +2606,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/nru #https://fhir.ee/sid/pid/nru/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/nru #https://fhir.ee/sid/pid/nru/ppn ^property[=].valueCode = #NRU
   * #https://fhir.ee/sid/pid/nru #https://fhir.ee/sid/pid/nru/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/nru #https://fhir.ee/sid/pid/nru/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NRU
+  * #https://fhir.ee/sid/pid/nru #https://fhir.ee/sid/pid/nru/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NRU
   * #https://fhir.ee/sid/pid/npl "Root identifier for person identification of country Nepal" "Nepal identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/npl ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/npl ^property[=].valueBoolean = true
@@ -2620,7 +2620,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/npl #https://fhir.ee/sid/pid/npl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/npl #https://fhir.ee/sid/pid/npl/ppn ^property[=].valueCode = #NPL
   * #https://fhir.ee/sid/pid/npl #https://fhir.ee/sid/pid/npl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/npl #https://fhir.ee/sid/pid/npl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NPL
+  * #https://fhir.ee/sid/pid/npl #https://fhir.ee/sid/pid/npl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NPL
   * #https://fhir.ee/sid/pid/nic "Root identifier for person identification of country Nicaragua" "Nicaragua identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/nic ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/nic ^property[=].valueBoolean = true
@@ -2634,7 +2634,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/nic #https://fhir.ee/sid/pid/nic/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/nic #https://fhir.ee/sid/pid/nic/ppn ^property[=].valueCode = #NIC
   * #https://fhir.ee/sid/pid/nic #https://fhir.ee/sid/pid/nic/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/nic #https://fhir.ee/sid/pid/nic/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NIC
+  * #https://fhir.ee/sid/pid/nic #https://fhir.ee/sid/pid/nic/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NIC
   * #https://fhir.ee/sid/pid/nga "Root identifier for person identification of country Nigeria" "Nigeeria identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/nga ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/nga ^property[=].valueBoolean = true
@@ -2648,7 +2648,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/nga #https://fhir.ee/sid/pid/nga/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/nga #https://fhir.ee/sid/pid/nga/ppn ^property[=].valueCode = #NGA
   * #https://fhir.ee/sid/pid/nga #https://fhir.ee/sid/pid/nga/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/nga #https://fhir.ee/sid/pid/nga/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NGA
+  * #https://fhir.ee/sid/pid/nga #https://fhir.ee/sid/pid/nga/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NGA
   * #https://fhir.ee/sid/pid/ner "Root identifier for person identification of country Niger" "Niger identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ner ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ner ^property[=].valueBoolean = true
@@ -2662,7 +2662,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ner #https://fhir.ee/sid/pid/ner/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ner #https://fhir.ee/sid/pid/ner/ppn ^property[=].valueCode = #NER
   * #https://fhir.ee/sid/pid/ner #https://fhir.ee/sid/pid/ner/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ner #https://fhir.ee/sid/pid/ner/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NER
+  * #https://fhir.ee/sid/pid/ner #https://fhir.ee/sid/pid/ner/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NER
   * #https://fhir.ee/sid/pid/niu "Root identifier for person identification of country Niue" "Niue identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/niu ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/niu ^property[=].valueBoolean = true
@@ -2676,7 +2676,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/niu #https://fhir.ee/sid/pid/niu/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/niu #https://fhir.ee/sid/pid/niu/ppn ^property[=].valueCode = #NIU
   * #https://fhir.ee/sid/pid/niu #https://fhir.ee/sid/pid/niu/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/niu #https://fhir.ee/sid/pid/niu/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NIU
+  * #https://fhir.ee/sid/pid/niu #https://fhir.ee/sid/pid/niu/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NIU
   * #https://fhir.ee/sid/pid/nfk "Root identifier for person identification of country Norfolk Island" "Norfolk identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/nfk ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/nfk ^property[=].valueBoolean = true
@@ -2690,7 +2690,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/nfk #https://fhir.ee/sid/pid/nfk/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/nfk #https://fhir.ee/sid/pid/nfk/ppn ^property[=].valueCode = #NFK
   * #https://fhir.ee/sid/pid/nfk #https://fhir.ee/sid/pid/nfk/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/nfk #https://fhir.ee/sid/pid/nfk/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NFK
+  * #https://fhir.ee/sid/pid/nfk #https://fhir.ee/sid/pid/nfk/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NFK
   * #https://fhir.ee/sid/pid/nor "Root identifier for person identification of country Norway" "Norra identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2704,7 +2704,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #NOR
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NOR
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NOR
     * #https://fhir.ee/sid/pid/nor/ni "National identifier of Norway" "Norra personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2732,7 +2732,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/omn #https://fhir.ee/sid/pid/omn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/omn #https://fhir.ee/sid/pid/omn/ppn ^property[=].valueCode = #OMN
   * #https://fhir.ee/sid/pid/omn #https://fhir.ee/sid/pid/omn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/omn #https://fhir.ee/sid/pid/omn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-OMN
+  * #https://fhir.ee/sid/pid/omn #https://fhir.ee/sid/pid/omn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-OMN
   * #https://fhir.ee/sid/pid/png "Root identifier for person identification of country Papua New Guinea" "Paapua Uus-Guinea identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/png ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/png ^property[=].valueBoolean = true
@@ -2746,7 +2746,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/png #https://fhir.ee/sid/pid/png/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/png #https://fhir.ee/sid/pid/png/ppn ^property[=].valueCode = #PNG
   * #https://fhir.ee/sid/pid/png #https://fhir.ee/sid/pid/png/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/png #https://fhir.ee/sid/pid/png/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PNG
+  * #https://fhir.ee/sid/pid/png #https://fhir.ee/sid/pid/png/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PNG
   * #https://fhir.ee/sid/pid/pak "Root identifier for person identification of country Pakistan" "Pakistan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/pak ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/pak ^property[=].valueBoolean = true
@@ -2760,7 +2760,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pak #https://fhir.ee/sid/pid/pak/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pak #https://fhir.ee/sid/pid/pak/ppn ^property[=].valueCode = #PAK
   * #https://fhir.ee/sid/pid/pak #https://fhir.ee/sid/pid/pak/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pak #https://fhir.ee/sid/pid/pak/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PAK
+  * #https://fhir.ee/sid/pid/pak #https://fhir.ee/sid/pid/pak/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PAK
   * #https://fhir.ee/sid/pid/pse "Root identifier for person identification of country Palestinian Territory, Occupied" "Palestiina okupeeritud alad identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/pse ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/pse ^property[=].valueBoolean = true
@@ -2774,7 +2774,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pse #https://fhir.ee/sid/pid/pse/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pse #https://fhir.ee/sid/pid/pse/ppn ^property[=].valueCode = #PSE
   * #https://fhir.ee/sid/pid/pse #https://fhir.ee/sid/pid/pse/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pse #https://fhir.ee/sid/pid/pse/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PSE
+  * #https://fhir.ee/sid/pid/pse #https://fhir.ee/sid/pid/pse/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PSE
   * #https://fhir.ee/sid/pid/pan "Root identifier for person identification of country Panama" "Panama identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/pan ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/pan ^property[=].valueBoolean = true
@@ -2788,7 +2788,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pan #https://fhir.ee/sid/pid/pan/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pan #https://fhir.ee/sid/pid/pan/ppn ^property[=].valueCode = #PAN
   * #https://fhir.ee/sid/pid/pan #https://fhir.ee/sid/pid/pan/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pan #https://fhir.ee/sid/pid/pan/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PAN
+  * #https://fhir.ee/sid/pid/pan #https://fhir.ee/sid/pid/pan/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PAN
   * #https://fhir.ee/sid/pid/pry "Root identifier for person identification of country Paraguay" "Paraguay identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/pry ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/pry ^property[=].valueBoolean = true
@@ -2802,7 +2802,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pry #https://fhir.ee/sid/pid/pry/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pry #https://fhir.ee/sid/pid/pry/ppn ^property[=].valueCode = #PRY
   * #https://fhir.ee/sid/pid/pry #https://fhir.ee/sid/pid/pry/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pry #https://fhir.ee/sid/pid/pry/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRY
+  * #https://fhir.ee/sid/pid/pry #https://fhir.ee/sid/pid/pry/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRY
   * #https://fhir.ee/sid/pid/per "Root identifier for person identification of country Peru" "Peruu identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/per ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/per ^property[=].valueBoolean = true
@@ -2816,7 +2816,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/per #https://fhir.ee/sid/pid/per/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/per #https://fhir.ee/sid/pid/per/ppn ^property[=].valueCode = #PER
   * #https://fhir.ee/sid/pid/per #https://fhir.ee/sid/pid/per/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/per #https://fhir.ee/sid/pid/per/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PER
+  * #https://fhir.ee/sid/pid/per #https://fhir.ee/sid/pid/per/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PER
   * #https://fhir.ee/sid/pid/pcn "Root identifier for person identification of country Pitcairn" "Pitcairn identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/pcn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/pcn ^property[=].valueBoolean = true
@@ -2830,7 +2830,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pcn #https://fhir.ee/sid/pid/pcn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pcn #https://fhir.ee/sid/pid/pcn/ppn ^property[=].valueCode = #PCN
   * #https://fhir.ee/sid/pid/pcn #https://fhir.ee/sid/pid/pcn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pcn #https://fhir.ee/sid/pid/pcn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PCN
+  * #https://fhir.ee/sid/pid/pcn #https://fhir.ee/sid/pid/pcn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PCN
   * #https://fhir.ee/sid/pid/pol "Root identifier for person identification of country Poland" "Poola identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2844,7 +2844,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #POL
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-POL
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-POL
     * #https://fhir.ee/sid/pid/pol/ni "National identifier of Poland" "Poola personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2872,7 +2872,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #PRT
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRT
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRT
     * #https://fhir.ee/sid/pid/prt/cz "ID Card of Portugal" "Portugal ID-kaart"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
@@ -2893,7 +2893,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/atf #https://fhir.ee/sid/pid/atf/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/atf #https://fhir.ee/sid/pid/atf/ppn ^property[=].valueCode = #ATF
   * #https://fhir.ee/sid/pid/atf #https://fhir.ee/sid/pid/atf/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/atf #https://fhir.ee/sid/pid/atf/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ATF
+  * #https://fhir.ee/sid/pid/atf #https://fhir.ee/sid/pid/atf/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ATF
   * #https://fhir.ee/sid/pid/pyf "Root identifier for person identification of country French Polynesia" "Prantsuse Polüneesia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/pyf ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/pyf ^property[=].valueBoolean = true
@@ -2907,7 +2907,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pyf #https://fhir.ee/sid/pid/pyf/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pyf #https://fhir.ee/sid/pid/pyf/ppn ^property[=].valueCode = #PYF
   * #https://fhir.ee/sid/pid/pyf #https://fhir.ee/sid/pid/pyf/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pyf #https://fhir.ee/sid/pid/pyf/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PYF
+  * #https://fhir.ee/sid/pid/pyf #https://fhir.ee/sid/pid/pyf/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PYF
   * #https://fhir.ee/sid/pid/fra "Root identifier for person identification of country France" "Prantsusmaa identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -2921,7 +2921,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #FRA
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-FRA
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-FRA
     * #https://fhir.ee/sid/pid/fra/ni "National identifier of France" "Prantsusmaa personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -2949,7 +2949,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/pri #https://fhir.ee/sid/pid/pri/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/pri #https://fhir.ee/sid/pid/pri/ppn ^property[=].valueCode = #PRI
   * #https://fhir.ee/sid/pid/pri #https://fhir.ee/sid/pid/pri/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/pri #https://fhir.ee/sid/pid/pri/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRI
+  * #https://fhir.ee/sid/pid/pri #https://fhir.ee/sid/pid/pri/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-PRI
   * #https://fhir.ee/sid/pid/mnp "Root identifier for person identification of country Northern Mariana Islands" "Põhja-Mariaanid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/mnp ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/mnp ^property[=].valueBoolean = true
@@ -2963,7 +2963,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/mnp #https://fhir.ee/sid/pid/mnp/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/mnp #https://fhir.ee/sid/pid/mnp/ppn ^property[=].valueCode = #MNP
   * #https://fhir.ee/sid/pid/mnp #https://fhir.ee/sid/pid/mnp/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/mnp #https://fhir.ee/sid/pid/mnp/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-MNP
+  * #https://fhir.ee/sid/pid/mnp #https://fhir.ee/sid/pid/mnp/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-MNP
   * #https://fhir.ee/sid/pid/vat "Root identifier for person identification of country Holy See (Vatican City State)" "Püha Tool (Vatikan) identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/vat ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/vat ^property[=].valueBoolean = true
@@ -2977,7 +2977,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/vat #https://fhir.ee/sid/pid/vat/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/vat #https://fhir.ee/sid/pid/vat/ppn ^property[=].valueCode = #VAT
   * #https://fhir.ee/sid/pid/vat #https://fhir.ee/sid/pid/vat/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/vat #https://fhir.ee/sid/pid/vat/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VAT
+  * #https://fhir.ee/sid/pid/vat #https://fhir.ee/sid/pid/vat/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VAT
   * #https://fhir.ee/sid/pid/reu "Root identifier for person identification of country Réunion" "Réunion identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/reu ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/reu ^property[=].valueBoolean = true
@@ -2991,7 +2991,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/reu #https://fhir.ee/sid/pid/reu/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/reu #https://fhir.ee/sid/pid/reu/ppn ^property[=].valueCode = #REU
   * #https://fhir.ee/sid/pid/reu #https://fhir.ee/sid/pid/reu/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/reu #https://fhir.ee/sid/pid/reu/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-REU
+  * #https://fhir.ee/sid/pid/reu #https://fhir.ee/sid/pid/reu/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-REU
   * #https://fhir.ee/sid/pid/swe "Root identifier for person identification of country Sweden" "Rootsi identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3005,7 +3005,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #SWE
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SWE
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SWE
     * #https://fhir.ee/sid/pid/swe/ni "National identifier of Sweden" "Rootsi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3033,7 +3033,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #ROU
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ROU
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ROU
     * #https://fhir.ee/sid/pid/rou/ni "National identifier of Romania" "Rumeenia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3061,7 +3061,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/rwa #https://fhir.ee/sid/pid/rwa/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/rwa #https://fhir.ee/sid/pid/rwa/ppn ^property[=].valueCode = #RWA
   * #https://fhir.ee/sid/pid/rwa #https://fhir.ee/sid/pid/rwa/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/rwa #https://fhir.ee/sid/pid/rwa/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-RWA
+  * #https://fhir.ee/sid/pid/rwa #https://fhir.ee/sid/pid/rwa/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-RWA
   * #https://fhir.ee/sid/pid/slb "Root identifier for person identification of country Solomon Islands" "Saalomoni Saared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/slb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/slb ^property[=].valueBoolean = true
@@ -3075,7 +3075,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/slb #https://fhir.ee/sid/pid/slb/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/slb #https://fhir.ee/sid/pid/slb/ppn ^property[=].valueCode = #SLB
   * #https://fhir.ee/sid/pid/slb #https://fhir.ee/sid/pid/slb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/slb #https://fhir.ee/sid/pid/slb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SLB
+  * #https://fhir.ee/sid/pid/slb #https://fhir.ee/sid/pid/slb/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SLB
   * #https://fhir.ee/sid/pid/kna "Root identifier for person identification of country Saint Kitts and Nevis" "Saint Kitts ja Nevis identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/kna ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/kna ^property[=].valueBoolean = true
@@ -3089,7 +3089,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/kna #https://fhir.ee/sid/pid/kna/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/kna #https://fhir.ee/sid/pid/kna/ppn ^property[=].valueCode = #KNA
   * #https://fhir.ee/sid/pid/kna #https://fhir.ee/sid/pid/kna/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/kna #https://fhir.ee/sid/pid/kna/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-KNA
+  * #https://fhir.ee/sid/pid/kna #https://fhir.ee/sid/pid/kna/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-KNA
   * #https://fhir.ee/sid/pid/shn "Root identifier for person identification of country Saint Helena" "Saint Helena identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/shn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/shn ^property[=].valueBoolean = true
@@ -3103,7 +3103,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/shn #https://fhir.ee/sid/pid/shn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/shn #https://fhir.ee/sid/pid/shn/ppn ^property[=].valueCode = #SHN
   * #https://fhir.ee/sid/pid/shn #https://fhir.ee/sid/pid/shn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/shn #https://fhir.ee/sid/pid/shn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SHN
+  * #https://fhir.ee/sid/pid/shn #https://fhir.ee/sid/pid/shn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SHN
   * #https://fhir.ee/sid/pid/lca "Root identifier for person identification of country Saint Lucia" "Saint Lucia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/lca ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/lca ^property[=].valueBoolean = true
@@ -3117,7 +3117,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lca #https://fhir.ee/sid/pid/lca/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lca #https://fhir.ee/sid/pid/lca/ppn ^property[=].valueCode = #LCA
   * #https://fhir.ee/sid/pid/lca #https://fhir.ee/sid/pid/lca/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lca #https://fhir.ee/sid/pid/lca/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LCA
+  * #https://fhir.ee/sid/pid/lca #https://fhir.ee/sid/pid/lca/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LCA
   * #https://fhir.ee/sid/pid/spm "Root identifier for person identification of country Saint Pierre and Miquelon" "Saint Pierre ja Miquelon identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/spm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/spm ^property[=].valueBoolean = true
@@ -3131,7 +3131,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/spm #https://fhir.ee/sid/pid/spm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/spm #https://fhir.ee/sid/pid/spm/ppn ^property[=].valueCode = #SPM
   * #https://fhir.ee/sid/pid/spm #https://fhir.ee/sid/pid/spm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/spm #https://fhir.ee/sid/pid/spm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SPM
+  * #https://fhir.ee/sid/pid/spm #https://fhir.ee/sid/pid/spm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SPM
   * #https://fhir.ee/sid/pid/vct "Root identifier for person identification of country Saint Vincent and the Grenadines" "Saint Vincent ja Grenadiinid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/vct ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/vct ^property[=].valueBoolean = true
@@ -3145,7 +3145,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/vct #https://fhir.ee/sid/pid/vct/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/vct #https://fhir.ee/sid/pid/vct/ppn ^property[=].valueCode = #VCT
   * #https://fhir.ee/sid/pid/vct #https://fhir.ee/sid/pid/vct/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/vct #https://fhir.ee/sid/pid/vct/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VCT
+  * #https://fhir.ee/sid/pid/vct #https://fhir.ee/sid/pid/vct/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VCT
   * #https://fhir.ee/sid/pid/deu "Root identifier for person identification of country Germany" "Saksamaa identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3159,7 +3159,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #DEU
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-DEU
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-DEU
     * #https://fhir.ee/sid/pid/deu/cz "ID Card of Germany" "Saksamaa ID-kaart"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
@@ -3180,7 +3180,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/zmb #https://fhir.ee/sid/pid/zmb/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/zmb #https://fhir.ee/sid/pid/zmb/ppn ^property[=].valueCode = #ZMB
   * #https://fhir.ee/sid/pid/zmb #https://fhir.ee/sid/pid/zmb/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/zmb #https://fhir.ee/sid/pid/zmb/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZMB
+  * #https://fhir.ee/sid/pid/zmb #https://fhir.ee/sid/pid/zmb/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZMB
   * #https://fhir.ee/sid/pid/wsm "Root identifier for person identification of country Samoa" "Samoa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/wsm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/wsm ^property[=].valueBoolean = true
@@ -3194,7 +3194,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/wsm #https://fhir.ee/sid/pid/wsm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/wsm #https://fhir.ee/sid/pid/wsm/ppn ^property[=].valueCode = #WSM
   * #https://fhir.ee/sid/pid/wsm #https://fhir.ee/sid/pid/wsm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/wsm #https://fhir.ee/sid/pid/wsm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-WSM
+  * #https://fhir.ee/sid/pid/wsm #https://fhir.ee/sid/pid/wsm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-WSM
   * #https://fhir.ee/sid/pid/smr "Root identifier for person identification of country San Marino" "San Marino identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/smr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/smr ^property[=].valueBoolean = true
@@ -3208,7 +3208,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #SMR
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SMR
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SMR
     * #https://fhir.ee/sid/pid/smr/ni "National identifier of San Marino" "San Marino personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3229,7 +3229,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/stp #https://fhir.ee/sid/pid/stp/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/stp #https://fhir.ee/sid/pid/stp/ppn ^property[=].valueCode = #STP
   * #https://fhir.ee/sid/pid/stp #https://fhir.ee/sid/pid/stp/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/stp #https://fhir.ee/sid/pid/stp/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-STP
+  * #https://fhir.ee/sid/pid/stp #https://fhir.ee/sid/pid/stp/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-STP
   * #https://fhir.ee/sid/pid/sau "Root identifier for person identification of country Saudi Arabia" "Saudi Araabia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sau ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sau ^property[=].valueBoolean = true
@@ -3243,7 +3243,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sau #https://fhir.ee/sid/pid/sau/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sau #https://fhir.ee/sid/pid/sau/ppn ^property[=].valueCode = #SAU
   * #https://fhir.ee/sid/pid/sau #https://fhir.ee/sid/pid/sau/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sau #https://fhir.ee/sid/pid/sau/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SAU
+  * #https://fhir.ee/sid/pid/sau #https://fhir.ee/sid/pid/sau/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SAU
   * #https://fhir.ee/sid/pid/syc "Root identifier for person identification of country Seychelles" "Seišellid identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/syc ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/syc ^property[=].valueBoolean = true
@@ -3257,7 +3257,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/syc #https://fhir.ee/sid/pid/syc/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/syc #https://fhir.ee/sid/pid/syc/ppn ^property[=].valueCode = #SYC
   * #https://fhir.ee/sid/pid/syc #https://fhir.ee/sid/pid/syc/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/syc #https://fhir.ee/sid/pid/syc/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SYC
+  * #https://fhir.ee/sid/pid/syc #https://fhir.ee/sid/pid/syc/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SYC
   * #https://fhir.ee/sid/pid/sen "Root identifier for person identification of country Senegal" "Senegal identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sen ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sen ^property[=].valueBoolean = true
@@ -3271,7 +3271,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sen #https://fhir.ee/sid/pid/sen/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sen #https://fhir.ee/sid/pid/sen/ppn ^property[=].valueCode = #SEN
   * #https://fhir.ee/sid/pid/sen #https://fhir.ee/sid/pid/sen/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sen #https://fhir.ee/sid/pid/sen/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SEN
+  * #https://fhir.ee/sid/pid/sen #https://fhir.ee/sid/pid/sen/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SEN
   * #https://fhir.ee/sid/pid/srb "Root identifier for person identification of country Serbia" "Serbia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/srb ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/srb ^property[=].valueBoolean = true
@@ -3285,7 +3285,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #SRB
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SRB
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SRB
     * #https://fhir.ee/sid/pid/srb/ni "National identifier of Serbia" "Serbia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3306,7 +3306,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sle #https://fhir.ee/sid/pid/sle/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sle #https://fhir.ee/sid/pid/sle/ppn ^property[=].valueCode = #SLE
   * #https://fhir.ee/sid/pid/sle #https://fhir.ee/sid/pid/sle/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sle #https://fhir.ee/sid/pid/sle/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SLE
+  * #https://fhir.ee/sid/pid/sle #https://fhir.ee/sid/pid/sle/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SLE
   * #https://fhir.ee/sid/pid/sgp "Root identifier for person identification of country Singapore" "Singapur identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sgp ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sgp ^property[=].valueBoolean = true
@@ -3320,7 +3320,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sgp #https://fhir.ee/sid/pid/sgp/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sgp #https://fhir.ee/sid/pid/sgp/ppn ^property[=].valueCode = #SGP
   * #https://fhir.ee/sid/pid/sgp #https://fhir.ee/sid/pid/sgp/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sgp #https://fhir.ee/sid/pid/sgp/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SGP
+  * #https://fhir.ee/sid/pid/sgp #https://fhir.ee/sid/pid/sgp/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SGP
   * #https://fhir.ee/sid/pid/svk "Root identifier for person identification of country Slovakia" "Slovakkia identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3334,7 +3334,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #SVK
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SVK
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SVK
     * #https://fhir.ee/sid/pid/svk/cz "Citizenship card of Slovakia" "Slovakkia id-kaart"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #CZ
@@ -3355,7 +3355,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #SVN
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SVN
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SVN
     * #https://fhir.ee/sid/pid/svn/ni "National identifier of Slovenia" "Sloveenia personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3383,7 +3383,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/som #https://fhir.ee/sid/pid/som/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/som #https://fhir.ee/sid/pid/som/ppn ^property[=].valueCode = #SOM
   * #https://fhir.ee/sid/pid/som #https://fhir.ee/sid/pid/som/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/som #https://fhir.ee/sid/pid/som/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SOM
+  * #https://fhir.ee/sid/pid/som #https://fhir.ee/sid/pid/som/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SOM
   * #https://fhir.ee/sid/pid/fin "Root identifier for person identification of country Finland" "Soome identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3397,7 +3397,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #FIN
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-FIN
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-FIN
     * #https://fhir.ee/sid/pid/fin/ni "National identifier of Finland" "Soome personaalne isdentifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3425,7 +3425,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lka #https://fhir.ee/sid/pid/lka/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lka #https://fhir.ee/sid/pid/lka/ppn ^property[=].valueCode = #LKA
   * #https://fhir.ee/sid/pid/lka #https://fhir.ee/sid/pid/lka/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lka #https://fhir.ee/sid/pid/lka/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LKA
+  * #https://fhir.ee/sid/pid/lka #https://fhir.ee/sid/pid/lka/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LKA
   * #https://fhir.ee/sid/pid/sdn "Root identifier for person identification of country Sudan" "Sudaan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sdn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sdn ^property[=].valueBoolean = true
@@ -3439,7 +3439,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sdn #https://fhir.ee/sid/pid/sdn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sdn #https://fhir.ee/sid/pid/sdn/ppn ^property[=].valueCode = #SDN
   * #https://fhir.ee/sid/pid/sdn #https://fhir.ee/sid/pid/sdn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sdn #https://fhir.ee/sid/pid/sdn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SDN
+  * #https://fhir.ee/sid/pid/sdn #https://fhir.ee/sid/pid/sdn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SDN
   * #https://fhir.ee/sid/pid/sur "Root identifier for person identification of country Suriname" "Suriname identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sur ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sur ^property[=].valueBoolean = true
@@ -3453,7 +3453,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sur #https://fhir.ee/sid/pid/sur/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sur #https://fhir.ee/sid/pid/sur/ppn ^property[=].valueCode = #SUR
   * #https://fhir.ee/sid/pid/sur #https://fhir.ee/sid/pid/sur/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sur #https://fhir.ee/sid/pid/sur/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SUR
+  * #https://fhir.ee/sid/pid/sur #https://fhir.ee/sid/pid/sur/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SUR
   * #https://fhir.ee/sid/pid/lby "Root identifier for person identification of country Libyan Arab Jamahiriya" "Liibüa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/lby ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/lby ^property[=].valueBoolean = true
@@ -3467,7 +3467,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/lby #https://fhir.ee/sid/pid/lby/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/lby #https://fhir.ee/sid/pid/lby/ppn ^property[=].valueCode = #LBY
   * #https://fhir.ee/sid/pid/lby #https://fhir.ee/sid/pid/lby/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/lby #https://fhir.ee/sid/pid/lby/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-LBY
+  * #https://fhir.ee/sid/pid/lby #https://fhir.ee/sid/pid/lby/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-LBY
   * #https://fhir.ee/sid/pid/gbr "Root identifier for person identification of country United Kingdom" "Suurbritannia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/gbr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/gbr ^property[=].valueBoolean = true
@@ -3481,7 +3481,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/gbr #https://fhir.ee/sid/pid/gbr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/gbr #https://fhir.ee/sid/pid/gbr/ppn ^property[=].valueCode = #GBR
   * #https://fhir.ee/sid/pid/gbr #https://fhir.ee/sid/pid/gbr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/gbr #https://fhir.ee/sid/pid/gbr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-GBR
+  * #https://fhir.ee/sid/pid/gbr #https://fhir.ee/sid/pid/gbr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-GBR
   * #https://fhir.ee/sid/pid/swz "Root identifier for person identification of country Swaziland" "Svaasimaa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/swz ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/swz ^property[=].valueBoolean = true
@@ -3495,7 +3495,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/swz #https://fhir.ee/sid/pid/swz/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/swz #https://fhir.ee/sid/pid/swz/ppn ^property[=].valueCode = #SWZ
   * #https://fhir.ee/sid/pid/swz #https://fhir.ee/sid/pid/swz/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/swz #https://fhir.ee/sid/pid/swz/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SWZ
+  * #https://fhir.ee/sid/pid/swz #https://fhir.ee/sid/pid/swz/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SWZ
   * #https://fhir.ee/sid/pid/sjm "Root identifier for person identification of country Svalbard and Jan Mayen" "Svalbard ja Jan Mayen identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/sjm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/sjm ^property[=].valueBoolean = true
@@ -3509,7 +3509,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/sjm #https://fhir.ee/sid/pid/sjm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/sjm #https://fhir.ee/sid/pid/sjm/ppn ^property[=].valueCode = #SJM
   * #https://fhir.ee/sid/pid/sjm #https://fhir.ee/sid/pid/sjm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/sjm #https://fhir.ee/sid/pid/sjm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SJM
+  * #https://fhir.ee/sid/pid/sjm #https://fhir.ee/sid/pid/sjm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SJM
   * #https://fhir.ee/sid/pid/syr "Root identifier for person identification of country Syrian Arab Republic" "Süüria identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/syr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/syr ^property[=].valueBoolean = true
@@ -3523,7 +3523,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/syr #https://fhir.ee/sid/pid/syr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/syr #https://fhir.ee/sid/pid/syr/ppn ^property[=].valueCode = #SYR
   * #https://fhir.ee/sid/pid/syr #https://fhir.ee/sid/pid/syr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/syr #https://fhir.ee/sid/pid/syr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-SYR
+  * #https://fhir.ee/sid/pid/syr #https://fhir.ee/sid/pid/syr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-SYR
   * #https://fhir.ee/sid/pid/che "Root identifier for person identification of country Switzerland" "Šveits identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3537,7 +3537,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #CHE
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CHE
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CHE
     * #https://fhir.ee/sid/pid/che/ni "National identifier of Switzerland" "Šveitsi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3565,7 +3565,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[=].valueCode = #ZWE
   * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZWE
+  * #https://fhir.ee/sid/pid/zwe #https://fhir.ee/sid/pid/zwe/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-ZWE
   * #https://fhir.ee/sid/pid/dnk "Root identifier for person identification of country Denmark" "Taani identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3579,7 +3579,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #DNK
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-DNK
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-DNK
     * #https://fhir.ee/sid/pid/dnk/ni "National identifier of Denmark" "Taani personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3607,7 +3607,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tjk #https://fhir.ee/sid/pid/tjk/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tjk #https://fhir.ee/sid/pid/tjk/ppn ^property[=].valueCode = #TJK
   * #https://fhir.ee/sid/pid/tjk #https://fhir.ee/sid/pid/tjk/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tjk #https://fhir.ee/sid/pid/tjk/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TJK
+  * #https://fhir.ee/sid/pid/tjk #https://fhir.ee/sid/pid/tjk/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TJK
   * #https://fhir.ee/sid/pid/tha "Root identifier for person identification of country Thailand" "Tai identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tha ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tha ^property[=].valueBoolean = true
@@ -3621,7 +3621,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tha #https://fhir.ee/sid/pid/tha/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tha #https://fhir.ee/sid/pid/tha/ppn ^property[=].valueCode = #THA
   * #https://fhir.ee/sid/pid/tha #https://fhir.ee/sid/pid/tha/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tha #https://fhir.ee/sid/pid/tha/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-THA
+  * #https://fhir.ee/sid/pid/tha #https://fhir.ee/sid/pid/tha/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-THA
   * #https://fhir.ee/sid/pid/twn "Root identifier for person identification of country Taiwan" "Taiwan identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/twn ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/twn ^property[=].valueBoolean = true
@@ -3635,7 +3635,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/twn #https://fhir.ee/sid/pid/twn/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/twn #https://fhir.ee/sid/pid/twn/ppn ^property[=].valueCode = #TWN
   * #https://fhir.ee/sid/pid/twn #https://fhir.ee/sid/pid/twn/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/twn #https://fhir.ee/sid/pid/twn/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TWN
+  * #https://fhir.ee/sid/pid/twn #https://fhir.ee/sid/pid/twn/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TWN
   * #https://fhir.ee/sid/pid/tza "Root identifier for person identification of country Tanzania, United Republic of" "Tansaania identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tza ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tza ^property[=].valueBoolean = true
@@ -3649,7 +3649,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tza #https://fhir.ee/sid/pid/tza/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tza #https://fhir.ee/sid/pid/tza/ppn ^property[=].valueCode = #TZA
   * #https://fhir.ee/sid/pid/tza #https://fhir.ee/sid/pid/tza/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tza #https://fhir.ee/sid/pid/tza/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TZA
+  * #https://fhir.ee/sid/pid/tza #https://fhir.ee/sid/pid/tza/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TZA
   * #https://fhir.ee/sid/pid/tls "Root identifier for person identification of country Timor-Leste" "Timor-Leste identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tls ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tls ^property[=].valueBoolean = true
@@ -3663,7 +3663,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tls #https://fhir.ee/sid/pid/tls/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tls #https://fhir.ee/sid/pid/tls/ppn ^property[=].valueCode = #TLS
   * #https://fhir.ee/sid/pid/tls #https://fhir.ee/sid/pid/tls/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tls #https://fhir.ee/sid/pid/tls/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TLS
+  * #https://fhir.ee/sid/pid/tls #https://fhir.ee/sid/pid/tls/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TLS
   * #https://fhir.ee/sid/pid/tgo "Root identifier for person identification of country Togo" "Togo identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tgo ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tgo ^property[=].valueBoolean = true
@@ -3677,7 +3677,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tgo #https://fhir.ee/sid/pid/tgo/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tgo #https://fhir.ee/sid/pid/tgo/ppn ^property[=].valueCode = #TGO
   * #https://fhir.ee/sid/pid/tgo #https://fhir.ee/sid/pid/tgo/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tgo #https://fhir.ee/sid/pid/tgo/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TGO
+  * #https://fhir.ee/sid/pid/tgo #https://fhir.ee/sid/pid/tgo/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TGO
   * #https://fhir.ee/sid/pid/tkl "Root identifier for person identification of country Tokelau" "Tokelau identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tkl ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tkl ^property[=].valueBoolean = true
@@ -3691,7 +3691,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tkl #https://fhir.ee/sid/pid/tkl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tkl #https://fhir.ee/sid/pid/tkl/ppn ^property[=].valueCode = #TKL
   * #https://fhir.ee/sid/pid/tkl #https://fhir.ee/sid/pid/tkl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tkl #https://fhir.ee/sid/pid/tkl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TKL
+  * #https://fhir.ee/sid/pid/tkl #https://fhir.ee/sid/pid/tkl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TKL
   * #https://fhir.ee/sid/pid/ton "Root identifier for person identification of country Tonga" "Tonga identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ton ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ton ^property[=].valueBoolean = true
@@ -3705,7 +3705,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ton #https://fhir.ee/sid/pid/ton/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ton #https://fhir.ee/sid/pid/ton/ppn ^property[=].valueCode = #TON
   * #https://fhir.ee/sid/pid/ton #https://fhir.ee/sid/pid/ton/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ton #https://fhir.ee/sid/pid/ton/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TON
+  * #https://fhir.ee/sid/pid/ton #https://fhir.ee/sid/pid/ton/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TON
   * #https://fhir.ee/sid/pid/tto "Root identifier for person identification of country Trinidad and Tobago" "Trinidad ja Tobago identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tto ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tto ^property[=].valueBoolean = true
@@ -3719,7 +3719,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tto #https://fhir.ee/sid/pid/tto/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tto #https://fhir.ee/sid/pid/tto/ppn ^property[=].valueCode = #TTO
   * #https://fhir.ee/sid/pid/tto #https://fhir.ee/sid/pid/tto/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tto #https://fhir.ee/sid/pid/tto/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TTO
+  * #https://fhir.ee/sid/pid/tto #https://fhir.ee/sid/pid/tto/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TTO
   * #https://fhir.ee/sid/pid/tcd "Root identifier for person identification of country Chad" "Tšaad identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tcd ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tcd ^property[=].valueBoolean = true
@@ -3733,7 +3733,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tcd #https://fhir.ee/sid/pid/tcd/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tcd #https://fhir.ee/sid/pid/tcd/ppn ^property[=].valueCode = #TCD
   * #https://fhir.ee/sid/pid/tcd #https://fhir.ee/sid/pid/tcd/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tcd #https://fhir.ee/sid/pid/tcd/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TCD
+  * #https://fhir.ee/sid/pid/tcd #https://fhir.ee/sid/pid/tcd/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TCD
   * #https://fhir.ee/sid/pid/cze "Root identifier for person identification of country Czech Republic" "Tšehhi identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3747,7 +3747,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #CZE
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CZE
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CZE
     * #https://fhir.ee/sid/pid/cze/ni "National identifier of Czech Republic" "Tšehhi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3775,7 +3775,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/chl #https://fhir.ee/sid/pid/chl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/chl #https://fhir.ee/sid/pid/chl/ppn ^property[=].valueCode = #CHL
   * #https://fhir.ee/sid/pid/chl #https://fhir.ee/sid/pid/chl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/chl #https://fhir.ee/sid/pid/chl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-CHL
+  * #https://fhir.ee/sid/pid/chl #https://fhir.ee/sid/pid/chl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-CHL
   * #https://fhir.ee/sid/pid/tun "Root identifier for person identification of country Tunisia" "Tuneesia identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tun ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tun ^property[=].valueBoolean = true
@@ -3789,7 +3789,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tun #https://fhir.ee/sid/pid/tun/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tun #https://fhir.ee/sid/pid/tun/ppn ^property[=].valueCode = #TUN
   * #https://fhir.ee/sid/pid/tun #https://fhir.ee/sid/pid/tun/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tun #https://fhir.ee/sid/pid/tun/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TUN
+  * #https://fhir.ee/sid/pid/tun #https://fhir.ee/sid/pid/tun/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TUN
   * #https://fhir.ee/sid/pid/tca "Root identifier for person identification of country Turks and Caicos Islands" "Turks ja Caicos identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tca ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tca ^property[=].valueBoolean = true
@@ -3803,7 +3803,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tca #https://fhir.ee/sid/pid/tca/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tca #https://fhir.ee/sid/pid/tca/ppn ^property[=].valueCode = #TCA
   * #https://fhir.ee/sid/pid/tca #https://fhir.ee/sid/pid/tca/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tca #https://fhir.ee/sid/pid/tca/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TCA
+  * #https://fhir.ee/sid/pid/tca #https://fhir.ee/sid/pid/tca/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TCA
   * #https://fhir.ee/sid/pid/tuv "Root identifier for person identification of country Tuvalu" "Tuvalu identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tuv ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tuv ^property[=].valueBoolean = true
@@ -3817,7 +3817,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tuv #https://fhir.ee/sid/pid/tuv/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tuv #https://fhir.ee/sid/pid/tuv/ppn ^property[=].valueCode = #TUV
   * #https://fhir.ee/sid/pid/tuv #https://fhir.ee/sid/pid/tuv/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tuv #https://fhir.ee/sid/pid/tuv/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TUV
+  * #https://fhir.ee/sid/pid/tuv #https://fhir.ee/sid/pid/tuv/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TUV
   * #https://fhir.ee/sid/pid/tur "Root identifier for person identification of country Turkey" "Türgi identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/tur ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/tur ^property[=].valueBoolean = true
@@ -3831,7 +3831,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #TUR
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TUR
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TUR
     * #https://fhir.ee/sid/pid/tur/ni "National identifier of Turkey" "Türgi personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3852,7 +3852,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/tkm #https://fhir.ee/sid/pid/tkm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/tkm #https://fhir.ee/sid/pid/tkm/ppn ^property[=].valueCode = #TKM
   * #https://fhir.ee/sid/pid/tkm #https://fhir.ee/sid/pid/tkm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/tkm #https://fhir.ee/sid/pid/tkm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-TKM
+  * #https://fhir.ee/sid/pid/tkm #https://fhir.ee/sid/pid/tkm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-TKM
   * #https://fhir.ee/sid/pid/uga "Root identifier for person identification of country Uganda" "Uganda identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/uga ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/uga ^property[=].valueBoolean = true
@@ -3866,7 +3866,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/uga #https://fhir.ee/sid/pid/uga/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/uga #https://fhir.ee/sid/pid/uga/ppn ^property[=].valueCode = #UGA
   * #https://fhir.ee/sid/pid/uga #https://fhir.ee/sid/pid/uga/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/uga #https://fhir.ee/sid/pid/uga/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-UGA
+  * #https://fhir.ee/sid/pid/uga #https://fhir.ee/sid/pid/uga/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-UGA
   * #https://fhir.ee/sid/pid/ukr "Root identifier for person identification of country Ukraine" "Ukraina identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3880,7 +3880,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #UKR
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-UKR
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-UKR
     * #https://fhir.ee/sid/pid/ukr/ni "National identifier of Ukraine" "Ukraina personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3908,7 +3908,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #HUN
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-HUN
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-HUN
     * #https://fhir.ee/sid/pid/hun/ni "National identifier of Hungary" "Ungari personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3936,7 +3936,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[=].valueCode = #URY
   * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-URY
+  * #https://fhir.ee/sid/pid/ury #https://fhir.ee/sid/pid/ury/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-URY
   * #https://fhir.ee/sid/pid/uzb "Root identifier for person identification of country Uzbekistan" "Usbekistan identifikaatorid isikutele"
     * ^property[0].code = #notSelectable
     * ^property[=].valueBoolean = true
@@ -3950,7 +3950,7 @@ Description: "Description of the identifier systems acceptable for entity identi
       * ^property[+].code = #country
       * ^property[=].valueCode = #UZB
       * ^property[+].code = #naming-system
-      * ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-UZB
+      * ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-UZB
     * #https://fhir.ee/sid/pid/uzb/ni "National identifier of Uzbekistan" "Usbekistan personaalne identifikaator"
       * ^property[0].code = #idtype
       * ^property[=].valueCode = #NI
@@ -3971,7 +3971,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ncl #https://fhir.ee/sid/pid/ncl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ncl #https://fhir.ee/sid/pid/ncl/ppn ^property[=].valueCode = #NCL
   * #https://fhir.ee/sid/pid/ncl #https://fhir.ee/sid/pid/ncl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ncl #https://fhir.ee/sid/pid/ncl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NCL
+  * #https://fhir.ee/sid/pid/ncl #https://fhir.ee/sid/pid/ncl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NCL
   * #https://fhir.ee/sid/pid/nzl "Root identifier for person identification of country New Zealand" "Uus-Meremaa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/nzl ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/nzl ^property[=].valueBoolean = true
@@ -3985,7 +3985,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/nzl #https://fhir.ee/sid/pid/nzl/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/nzl #https://fhir.ee/sid/pid/nzl/ppn ^property[=].valueCode = #NZL
   * #https://fhir.ee/sid/pid/nzl #https://fhir.ee/sid/pid/nzl/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/nzl #https://fhir.ee/sid/pid/nzl/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-NZL
+  * #https://fhir.ee/sid/pid/nzl #https://fhir.ee/sid/pid/nzl/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-NZL
   * #https://fhir.ee/sid/pid/blr "Root identifier for person identification of country Belarus" "Valgevene identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/blr ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/blr ^property[=].valueBoolean = true
@@ -3999,7 +3999,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/blr #https://fhir.ee/sid/pid/blr/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/blr #https://fhir.ee/sid/pid/blr/ppn ^property[=].valueCode = #BLR
   * #https://fhir.ee/sid/pid/blr #https://fhir.ee/sid/pid/blr/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/blr #https://fhir.ee/sid/pid/blr/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-BLR
+  * #https://fhir.ee/sid/pid/blr #https://fhir.ee/sid/pid/blr/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-BLR
   * #https://fhir.ee/sid/pid/wlf "Root identifier for person identification of country Wallis and Futuna Islands" "Wallis ja Futuna identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/wlf ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/wlf ^property[=].valueBoolean = true
@@ -4013,7 +4013,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/wlf #https://fhir.ee/sid/pid/wlf/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/wlf #https://fhir.ee/sid/pid/wlf/ppn ^property[=].valueCode = #WLF
   * #https://fhir.ee/sid/pid/wlf #https://fhir.ee/sid/pid/wlf/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/wlf #https://fhir.ee/sid/pid/wlf/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-WLF
+  * #https://fhir.ee/sid/pid/wlf #https://fhir.ee/sid/pid/wlf/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-WLF
   * #https://fhir.ee/sid/pid/vut "Root identifier for person identification of country Vanuatu" "Vanuatu identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/vut ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/vut ^property[=].valueBoolean = true
@@ -4027,7 +4027,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/vut #https://fhir.ee/sid/pid/vut/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/vut #https://fhir.ee/sid/pid/vut/ppn ^property[=].valueCode = #VUT
   * #https://fhir.ee/sid/pid/vut #https://fhir.ee/sid/pid/vut/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/vut #https://fhir.ee/sid/pid/vut/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VUT
+  * #https://fhir.ee/sid/pid/vut #https://fhir.ee/sid/pid/vut/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VUT
   * #https://fhir.ee/sid/pid/rus "Root identifier for person identification of country Russian Federation" "Venemaa identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/rus ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/rus ^property[=].valueBoolean = true
@@ -4041,7 +4041,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/rus #https://fhir.ee/sid/pid/rus/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/rus #https://fhir.ee/sid/pid/rus/ppn ^property[=].valueCode = #RUS
   * #https://fhir.ee/sid/pid/rus #https://fhir.ee/sid/pid/rus/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/rus #https://fhir.ee/sid/pid/rus/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-RUS
+  * #https://fhir.ee/sid/pid/rus #https://fhir.ee/sid/pid/rus/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-RUS
   * #https://fhir.ee/sid/pid/ven "Root identifier for person identification of country Venezuela" "Venezuela identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/ven ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/ven ^property[=].valueBoolean = true
@@ -4055,7 +4055,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/ven #https://fhir.ee/sid/pid/ven/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/ven #https://fhir.ee/sid/pid/ven/ppn ^property[=].valueCode = #VEN
   * #https://fhir.ee/sid/pid/ven #https://fhir.ee/sid/pid/ven/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/ven #https://fhir.ee/sid/pid/ven/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VEN
+  * #https://fhir.ee/sid/pid/ven #https://fhir.ee/sid/pid/ven/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VEN
   * #https://fhir.ee/sid/pid/vnm "Root identifier for person identification of country Viet Nam" "Vietnam identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/vnm ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/vnm ^property[=].valueBoolean = true
@@ -4069,7 +4069,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/vnm #https://fhir.ee/sid/pid/vnm/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/vnm #https://fhir.ee/sid/pid/vnm/ppn ^property[=].valueCode = #VNM
   * #https://fhir.ee/sid/pid/vnm #https://fhir.ee/sid/pid/vnm/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/vnm #https://fhir.ee/sid/pid/vnm/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VNM
+  * #https://fhir.ee/sid/pid/vnm #https://fhir.ee/sid/pid/vnm/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VNM
   * #https://fhir.ee/sid/pid/vir "Root identifier for person identification of country Virgin Islands (U.S.)" "USA Neitsisaared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/vir ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/vir ^property[=].valueBoolean = true
@@ -4083,7 +4083,7 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/vir #https://fhir.ee/sid/pid/vir/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/vir #https://fhir.ee/sid/pid/vir/ppn ^property[=].valueCode = #VIR
   * #https://fhir.ee/sid/pid/vir #https://fhir.ee/sid/pid/vir/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/vir #https://fhir.ee/sid/pid/vir/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-VIR
+  * #https://fhir.ee/sid/pid/vir #https://fhir.ee/sid/pid/vir/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-VIR
   * #https://fhir.ee/sid/pid/umi "Root identifier for person identification of country United States Minor Outlying Islands" "Ühendriikide hajasaared identifikaatorid isikutele"
   * #https://fhir.ee/sid/pid/umi ^property[0].code = #notSelectable
   * #https://fhir.ee/sid/pid/umi ^property[=].valueBoolean = true
@@ -4097,4 +4097,4 @@ Description: "Description of the identifier systems acceptable for entity identi
   * #https://fhir.ee/sid/pid/umi #https://fhir.ee/sid/pid/umi/ppn ^property[+].code = #country
   * #https://fhir.ee/sid/pid/umi #https://fhir.ee/sid/pid/umi/ppn ^property[=].valueCode = #UMI
   * #https://fhir.ee/sid/pid/umi #https://fhir.ee/sid/pid/umi/ppn ^property[+].code = #naming-system
-  * #https://fhir.ee/sid/pid/umi #https://fhir.ee/sid/pid/umi/ppn ^property[=].valueCode = #http://terminology.hl7.org/NamingSystem/passportNumNS-UMI
+  * #https://fhir.ee/sid/pid/umi #https://fhir.ee/sid/pid/umi/ppn ^property[=].valueString = #http://terminology.hl7.org/NamingSystem/passportNumNS-UMI
