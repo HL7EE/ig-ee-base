@@ -79,7 +79,7 @@ For detailed definitions of concepts discussed within this guidance document, re
 #### FHIR-NAME-01: **Convention for Profile definition**
 FHIR Profile name **MUST** follow an agreed format. 
 The FHIR profile name consists of several logical name segments:
-- **Base URL**: The **URL** used for standard publishing. For example, [hl7.org](http://fhir.hl7.org) for HL7 International and [fhir.ee](https://fhir.ee) for HL7 Estonia. **Mandatory**.
+- **Base URL**: The **URL** used for standard publishing. For example, [hl7.org](http://fhir.hl7.org) for HL7 International and [fhir.ee](https://fhir.ee/index.html) for HL7 Estonia. **Mandatory**.
   - Check the full [list](#health-services) of providers. 
   - You can register your project with fhir.ee namespace through [HL7 Estonia Board](contact.html).
 - **Base**: The provider name. May differ for *resource name* and for *id*. **Mandatory**. 
@@ -235,7 +235,7 @@ Examples:
 
 #### FHIR-ID-03 **Logical references**
 - References in FHIR messaging **SHOULD** be logical references.
-- When using the FHIR Messaging Paradigm, messages will likely include references to external resources. These references **SHOULD** use an identifier from a known NamingSystem. This is known as a logical reference in the FHIR standard. The NamingSystem URI **SHOULD** be searchable on a FHIR Reference server to return the NamingSystem resource that describes the identifiers used (for example, [https://fhir.ee/NamingSystem](https://fhir.ee/NamingSystem)).
+- When using the FHIR Messaging Paradigm, messages will likely include references to external resources. These references **SHOULD** use an identifier from a known NamingSystem. This is known as a logical reference in the FHIR standard. The NamingSystem URI **SHOULD** be searchable on a FHIR Reference server to return the NamingSystem resource that describes the identifiers used (for example, [https://fhir.ee/NamingSystem](https://fhir.ee/NamingSystem/index.html)).
 
 ---
 
@@ -258,7 +258,7 @@ Examples:
 
 #### FHIR-PUB-05 **Packaging**
 - All FHIR resources **MUST** be made publicly available as FHIR Implementation Guide and released as a FHIR package.
-- All FHIR packages that may be used as dependecy for other packages **SHOULD** uploaded to [Estonian FHIR Packages Repository](https://fhir.ee/packages) through [GitHub fhir.ee project](https://github.com/HL7EE/fhir.ee).
+- All FHIR packages that may be used as dependecy for other packages **SHOULD** uploaded to [Estonian FHIR Packages Repository](https://fhir.ee/packages/) through [GitHub fhir.ee project](https://github.com/HL7EE/fhir.ee).
 
 ---
 
