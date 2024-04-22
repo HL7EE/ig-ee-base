@@ -1,3 +1,19 @@
+Extension: ExtensionEEBaseAddressNotice
+Id: ee-address-notice
+Title: "EEBase Address Notice"
+Description: "EEBase Address Notice"
+* ^version = "1.0.0"
+* ^status = #draft
+* ^publisher = "HL7 Estonia"
+* ^context.type = #element
+* ^context.expression = "Address"
+* . ^short = "Address notice or warning"
+* . ^definition = "Aadressi hoiused või märkused"
+* value[x] only Coding
+* value[x].system ^short = "Address notice or warning"
+* value[x].code 1..
+
+
 CodeSystem: EEBaseAdsAdrId
 Id: ads-adr-id
 Title: "ADS AdrId"
@@ -138,7 +154,8 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
     ExtensionEEBaseAdsAdrId named adsAdrId 0..1 MS and
     ExtensionEEBaseAdsOid named adsOid 0..1 MS and
     ExtensionEEBaseEhak named ehak 0..1 MS and
-    OfficialAddress named official 0..1 MS
+    OfficialAddress named official 0..1 MS and
+    ExtensionEEBaseAddressNotice named notice 0..* MS
 * extension[adsAdrId] ^short = "ADS AdrId"
 * extension[adsAdrId] ^isModifier = false
 * extension[adsOid] ^short = "ADS Oid"
@@ -147,6 +164,8 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension[ehak] ^isModifier = false
 * extension[official] ^short = "Indicator of address of residency"
 * extension[official] ^isModifier = false
+* extension[notice] ^short = "Address notices and warnings"
+* extension[notice] ^isModifier = false
 * country 1..1 MS
 * country ^short = "Should use a 2 digit ISO 3166 code"
 * country ^definition = "Riigi kood (lubatud ISO-3166-2 koodid)"

@@ -1,6 +1,6 @@
 # User-specific files
 .DS_Store
-
+.idea
 .gradle
 Thumbs.db
 /fsh-generated
