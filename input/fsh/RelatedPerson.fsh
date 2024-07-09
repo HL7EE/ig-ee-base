@@ -20,7 +20,7 @@ Description: "Suhe patsiendiga"
 * ^compose.include.concept[+].code = #127848009
 * ^compose.include.concept[=].designation[+].language = #et
 * ^compose.include.concept[=].designation[=].value = "Abikaasa"
-* ^compose.include.concept[+].code = #444210007
+* ^compose.include.concept[+].code = #394921008
 * ^compose.include.concept[=].designation[+].language = #et
 * ^compose.include.concept[=].designation[=].value = "Elukaaslane"
 * ^compose.include.concept[+].code = #125677006
