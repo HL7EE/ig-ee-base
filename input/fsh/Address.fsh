@@ -14,29 +14,6 @@ Description: "EEBase Address Notice"
 * value[x].code 1..
 
 
-CodeSystem: EEBaseAdsAdrId
-Id: ads-adr-id
-Title: "ADS AdrId"
-Description: "Address identifiers in the Estonian Address."
-* ^experimental = true
-* ^caseSensitive = false
-* ^content = #fragment
-* #2103553 "Harju maakond, Tallinn"
-* #2103556 "Harju maakond, Tallinn, Lasnamäe linnaosa"
-* #2280361 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-* #3020414 "Tartu maakond, Tartu linn"
-* #3066282 "Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4"
-* #3020415 "Tartu maakond, Tartu linn, Tähtvere küla"
-
-
-ValueSet: EEBaseAdsAdrId
-Id: ads-adr-id
-Title: "ADS AdrId"
-Description: "Address identifiers in the Estonian Address."
-* ^experimental = true
-* include codes from system EEBaseAdsAdrId
-
-
 Extension: ExtensionEEBaseAdsAdrId
 Id: ee-ads-adr-id
 Title: "EEBase ADS AdrId"
@@ -49,31 +26,11 @@ Description: "EEBase ADS AdrId extension"
 * . ^short = "ADS ADR-ID extension"
 * . ^definition = "Aadressiandmete süsteemi (ADS) aadressi versiooni unikaalne identifikaator"
 * value[x] only Coding
-* value[x] from EEBaseAdsAdrId
+* value[x] from EEAdsAdrId
 * value[x].system ^short = "Reference to ADS AdrId (address identifier)"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..
 
-CodeSystem: EEBaseAdsOid
-Id: ads-oid
-Title: "ADS Oid"
-Description: "Address objects in the Estonian Address System."
-* ^experimental = true
-* ^caseSensitive = false
-* ^content = #fragment
-* #OV00000784 "Harju maakond, Tallinn"
-* #LO00000339 "Harju maakond, Tallinn, Lasnamäe linnaosa"
-* #ME03379409 "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-* #AY03658881 "Tartu maakond, Tartu linn"
-* #EE00752500 "Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4"
-* #AY00008560 "Tartu maakond, Tartu linn, Tähtvere küla"
-
-ValueSet: EEBaseAdsOid
-Id: ads-oid
-Title: "ADS Oid"
-Description: "Address objects in the Estonian Address System."
-* ^experimental = true
-* include codes from system EEBaseAdsOid
 
 Extension: ExtensionEEBaseAdsOid
 Id: ee-ads-oid
@@ -87,7 +44,7 @@ Description: "EEBase ADS Oid extension"
 * . ^short = "ADS OID extension"
 * . ^definition = "Aadressiandmete süsteemi (ADS) aadressi objekti identifikaator. Omab sama väärtust erinevate versioonide (ehk aadressite identifikaatorite lõikes)."
 * value[x] only Coding
-* value[x] from EEBaseAdsOid
+* value[x] from EEAdsOid
 * value[x].system ^short = "Reference to ADS Oid (address object)"
 * value[x].system ^definition = "https://geoportaal.maaamet.ee/est/Ruumiandmed/Aadressiandmed-p112.html"
 * value[x].code 1..

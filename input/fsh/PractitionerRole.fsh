@@ -1,60 +1,3 @@
-CodeSystem: EEBaseOccupation
-Id: occupation
-Title: "Classification of Occupations"
-Description: "Estonian Edition of International Standard Classification of Occupations. Based on ISCO-88"
-* ^experimental = true
-* ^caseSensitive = false
-* ^content = #fragment
-* #22122501 "Pediaater"
-* #22121101 "Allergoloog-immunoloog"
-* #22120901 "Kardioloog"
-* #22210502 "Õde"
-
-ValueSet: EEBaseOccupation
-Id: occupation
-Title: "Occupation"
-Description: "Classification of Occupations"
-* ^experimental = true
-* include codes from system EEBaseOccupation
-
-CodeSystem: EEBaseEriala
-Id: eriala
-Title: "Eriala"
-Description: "Medre specialty. TIS erialad."
-* ^experimental = true
-* ^caseSensitive = false
-* ^content = #fragment
-* #E170 "Kardioloogia"
-* #E290 "Pediaatria"
-* #E670 "Pediaatria allergoloogia lisapädevusega"
-* #N100 "Intensiivõendus"
-* #N200 "Kliiniline õendus"
-* #N300 "Terviseõendus"
-* #N500 "Õde"
-
-ValueSet: EEBaseEriala
-Id: eriala
-Title: "Eriala"
-Description: "Medre Specialty. TIS erialade loend."
-* ^experimental = true
-* include codes from system EEBaseEriala
-
-ValueSet: EEBaseClinicalSpecialty
-Id: clinical-specialty
-Title: "Clinical Specialty"
-Description: "Clinical specialty (aka 'tegevusvaldkond' in Estonian)"
-* ^experimental = true
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* include codes from system $SCT where concept descendent-of #394658006 "Clinical specialty"
-
-ValueSet: EEBasePractitionerRole
-Id: practitioner-role
-Title: "Practitioner Role"
-Description: "The role of practitioner in the healthcare facility."
-* ^experimental = false
-* include codes from system http://terminology.hl7.org/CodeSystem/practitioner-role
-
-
 Profile: EEBasePractitionerRole
 Parent: PractitionerRole
 Id: ee-practitioner-role
@@ -84,11 +27,11 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
     tor 0..1 MS
 * code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code[role] ^short = "Practitioner role"
-* code[role] from EEBasePractitionerRole (extensible)
+* code[role] from EEPractitionerRole (extensible)
 * code[tor].coding.system = "https://fhir.ee/CodeSystem/occupation" (exactly)
 * code[tor] ^short = "Official occupation at the national register"
 * code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"
-* code[tor] from EEBaseOccupation (extensible)
+* code[tor] from EEOccupation (extensible)
 
 * specialty MS
 * specialty ^short = "Clinical ja MEDRE specialties"
@@ -100,10 +43,10 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
     eriala 0..* MS
 * specialty[specialty].coding.system = $SCT (exactly)
 * specialty[specialty] ^short = "Clinical specialty (Tegevusvaldkond)"
-* specialty[specialty] from EEBaseClinicalSpecialty (required)
+* specialty[specialty] from EEClinicalSpecialty (required)
 * specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/eriala" (exactly)
 * specialty[eriala] ^short = "Medre specialty (TIS erialade loend)"
-* specialty[eriala] from EEBaseEriala (required)
+* specialty[eriala] from EEEriala (required)
 
 
 
@@ -119,12 +62,12 @@ Description: "PractitionerRole D99876"
 * practitioner = Reference(Practitioner/D99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
-* code[tor] = EEBaseOccupation#22122501 "Pediaater"
+* code[tor] = EEOccupation#22122501 "Pediaater"
 * specialty[0] = $SCT#394537008 "Pediatric specialty"
 * specialty[+] = $SCT#418535003 "Pediatric immunology"
 * specialty[+] = $SCT#408439002 "Allergy - specialty"
-* specialty[eriala] = EEBaseEriala#E290 "Pediaatria"
-* specialty[+] = EEBaseEriala#E670 "Pediaatria allergoloogia lisapädevusega"
+* specialty[eriala] = EEEriala#E290 "Pediaatria"
+* specialty[+] = EEEriala#E670 "Pediaatria allergoloogia lisapädevusega"
 
 
 Instance: PractitionerRoleD98765
@@ -137,10 +80,10 @@ Description: "PractitionerRole D98765"
 * practitioner = Reference(Practitioner/D98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
-* code[tor] = EEBaseOccupation#22120901 "Kardioloog"
+* code[tor] = EEOccupation#22120901 "Kardioloog"
 * specialty[0] = $SCT#394579002 "Cardiology"
 * specialty[+] = $SCT#1251549008 "Interventional cardiology"
-* specialty[eriala] = EEBaseEriala#E170 "Kardioloogia"
+* specialty[eriala] = EEEriala#E170 "Kardioloogia"
 
 
 
@@ -155,9 +98,9 @@ Description: "PractitionerRole N98765"
 * practitioner = Reference(Practitioner/N98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEBaseOccupation#22210502 "Õde"
+* code[tor] = EEOccupation#22210502 "Õde"
 * specialty[0] = $SCT#394810000 "Rheumatology"
-* specialty[eriala] = EEBaseEriala#N200 "Kliiniline õendus"
+* specialty[eriala] = EEEriala#N200 "Kliiniline õendus"
 
 
 Instance: PractitionerRoleN99876
@@ -170,7 +113,6 @@ Description: "PractitionerRole N99876"
 * practitioner = Reference(Practitioner/N99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-//* code[tor] = EEBaseOccupation#PN "Advanced Practice Nurse"
-* code[tor] = EEBaseOccupation#22210502 "Õde"
+* code[tor] = EEOccupation#22210502 "Õde"
 * specialty[0] = $SCT#773568002 "Emergency medicine"
-* specialty[eriala] = EEBaseEriala#N100 "Intensiivõendus"
+* specialty[eriala] = EEEriala#N100 "Intensiivõendus"

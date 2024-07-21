@@ -17,27 +17,6 @@ Description: "Patient age measure and unit"
 * value[x].code 1..
 
 
-ValueSet: EEBaseAdministrativeGender
-Id: administrative-gender
-Title: "Administrative Gender"
-Description: "Administrative Gender"
-* ^experimental = false
-* ^compose.include.system = $administrative-gender
-
-* ^compose.include.concept[+].code = #male
-* ^compose.include.concept[=].designation[+].language = #et
-* ^compose.include.concept[=].designation[=].value = "Mees"
-* ^compose.include.concept[+].code = #female
-* ^compose.include.concept[=].designation[+].language = #et
-* ^compose.include.concept[=].designation[=].value = "Naine"
-* ^compose.include.concept[+].code = #other
-* ^compose.include.concept[=].designation[+].language = #et
-* ^compose.include.concept[=].designation[=].value = "Muu"
-* ^compose.include.concept[+].code = #unknown
-* ^compose.include.concept[=].designation[+].language = #et
-* ^compose.include.concept[=].designation[=].value = "Tundmatu"
-
-
 Profile: EEBasePatient
 Parent: Patient
 Id: ee-patient
@@ -94,7 +73,7 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 
 * gender MS
 * gender ^isModifierReason = "Needed for proper reference ranges"
-* gender from EEBaseAdministrativeGender (required)
+* gender from EEAdministrativeGender (required)
 * birthDate MS
 * birthDate.extension ^slicing.discriminator.type = #value
 * birthDate.extension ^slicing.discriminator.path = "url"
@@ -184,7 +163,7 @@ Usage: #example
   * family = "Mets"
 * gender = #male
 * birthDate = "1973-02-10"
-  * extension[accuracyIndicator].valueCoding = EEBaseDateAccuracyIndicator#AAA "Day, month and year are accurate"
+  * extension[accuracyIndicator].valueCoding = EEDateAccuracyIndicator#AAA "Day, month and year are accurate"
 * address[0]
   * use = #work
   * country = "EE"
@@ -192,8 +171,8 @@ Usage: #example
   * city = "Tallinn"
   * postalCode = "14215"
   * text = "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
-  * extension[adsAdrId].valueCoding = EEBaseAdsAdrId#2280361
-  * extension[adsOid].valueCoding = EEBaseAdsOid#ME03379409
+  * extension[adsAdrId].valueCoding = EEAdsAdrId#2280361
+  * extension[adsOid].valueCoding = EEAdsOid#ME03379409
   * extension[ehak].valueCoding = https://fhir.ee/sid/ehak#0387
   * extension[official].valueBoolean = true
 
@@ -211,6 +190,6 @@ Usage: #example
   * text = "Tundmatu naine"
 * gender = #female
 * birthDate
-  * extension[accuracyIndicator].valueCoding = EEBaseDateAccuracyIndicator#UUU
+  * extension[accuracyIndicator].valueCoding = EEDateAccuracyIndicator#UUU
   * extension[age].valueAge = $UCUM#a "years"
     * value = 40

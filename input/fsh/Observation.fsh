@@ -1,13 +1,5 @@
 Alias: $obscat = http://terminology.hl7.org/CodeSystem/observation-category
 
-ValueSet: EEBaseObservationCategory
-Id: ee-observation-category
-Title: "Observation Category"
-Description: "Observation category"
-* ^experimental = true
-* include codes from system $obscat
-
-
 Profile: EEBaseObservation
 Parent: Observation
 Id: ee-observation
@@ -23,7 +15,7 @@ Description: "Observation represents one of the most important and central units
 * category.coding ^slicing.rules = #open
 * category.coding contains obscat 0..* MS 
 * category.coding[obscat].system = $obscat (exactly)
-* category.coding[obscat] from EEBaseObservationCategory (required)
+* category.coding[obscat] from EEObservationCategory (required)
 * code MS
 * subject only Reference(EEBasePatient or Group or Device or EEBaseLocation or EEBaseOrganization or Procedure or EEBasePractitioner or Medication or Substance or BiologicallyDerivedProduct or NutritionProduct)
 * subject MS

@@ -3,16 +3,18 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.ee.base
-canonical: https://fhir.ee
+#packageId: base
+id: ee.fhir.base
+canonical: https://fhir.ee/base
+#url: https://fhir.ee/base/1.1.0
+version: 1.1.0
 name: EEBase
 title: Estonian Base Implementation Guide
 description: Eesti FHIR standardi baas juurutusjuhend
-status: draft # draft | active | retired | unknown
-version: 1.0.0
+status: active # draft | active | retired | unknown
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: ballot # ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: trial-use # ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: MIT # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#EE "Estonia" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -25,7 +27,8 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.uv.extensions: current
+#  hl7.fhir.uv.extensions: current
+  ee.fhir.terminology: 0.0.1 #dev - local computer, current - latest (not suitable for publishing)
 # hl7.terminology.r5: 5.3.0 #version 5.1.0 for R4 only
 
 #   hl7.fhir.us.core: 3.1.0
