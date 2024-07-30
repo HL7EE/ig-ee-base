@@ -6,8 +6,7 @@
 #packageId: base
 id: ee.fhir.base
 canonical: https://fhir.ee/base
-#url: https://fhir.ee/base/1.1.0
-version: 1.1.0
+version: 1.1.1
 name: EEBase
 title: Estonian Base Implementation Guide
 description: Eesti FHIR standardi baas juurutusjuhend
@@ -27,9 +26,12 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-#  hl7.fhir.uv.extensions: current
-  ee.fhir.terminology: 0.0.1 #dev - local computer, current - latest (not suitable for publishing)
+  ee.fhir.terminology: 
+    id: terminology
+    version: 0.2.1 #dev - local computer, current - latest (not suitable for publishing)
+    uri: https://fhir.ee/ImplementationGuide/ee.fhir.terminology
 # hl7.terminology.r5: 5.3.0 #version 5.1.0 for R4 only
+# hl7.fhir.uv.extensions: current
 
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
