@@ -28,8 +28,7 @@ publisher:
 dependencies:
   ee.fhir.terminology: 
     id: terminology
-    version: 0.2.1 #dev - local computer, current - latest (not suitable for publishing)
-    uri: https://fhir.ee/ImplementationGuide/ee.fhir.terminology
+    version: 0.2.2 #dev - local computer, current - latest (not suitable for publishing)
 # hl7.terminology.r5: 5.3.0 #version 5.1.0 for R4 only
 # hl7.fhir.uv.extensions: current
 
