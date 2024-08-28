@@ -1,29 +1,6 @@
 Alias: $encounter-modeOfArrival = http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 Alias: $encounter-associatedEncounter = http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter
 
-CodeSystem: EEBaseModeOfArrival
-Id: mode-of-arrival
-Title: "Mode Of Arrival"
-Description: "The content of this code system is intended to supplement HL7's code system arrivalMode (version 2.1.0) with one additional code ('PV') for using in ValueSets"
-* ^experimental = false
-* ^version = "1.0.0"
-* ^status = #draft
-* ^publisher = "HL7 Estonia"
-* ^purpose = "Underlying Master Code System for V2 table 0430 (Mode of Arrival Code)"
-* ^caseSensitive = false
-* ^content = #complete
-* #PV "Police Vehicle" "Police Vehicle"
-
-
-ValueSet: EEBaseModeOfArrival
-Id: mode-of-arrival
-Title: "Mode Of Arrival"
-Description: "Mode Of Arrival"
-* ^experimental = false
-* ^copyright = "This value set includes content from HL7 Terminology, which is copyright © 2002+ HL7"
-* include codes from system http://terminology.hl7.org/CodeSystem/v2-0430
-* include codes from system EEBaseModeOfArrival
-
 Extension: ExtensionEEBaseModeOfArrival
 Id: ee-mode-of-arrival
 Title: "EEBase ModeOfArrival"
@@ -37,21 +14,8 @@ Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * . ^short = "The method that the patient arrived at the facility."
 * . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
 * value[x] only Coding
-* value[x] from EEBaseModeOfArrival (extensible)
+* value[x] from EEModeOfArrival (extensible)
 
-ValueSet: EEBaseActPriority
-Id: ee-act-priority
-Title: "Act Priority"
-Description: "Act Priority"
-* ^experimental = false
-* include codes from valueset http://terminology.hl7.org/ValueSet/v3-ActPriority
-
-ValueSet: EEBaseEncounterClass
-Id: ee-encounter-class
-Title: "Encounter Class"
-Description: "This value set defines a set of codes that can be used to indicate the class of encounter: a specific code indicating class of service provided."
-* ^experimental = false
-* include codes from valueset http://terminology.hl7.org/ValueSet/encounter-class
 
 /*
 Extension: EEBaseAssociatedEncounter
@@ -94,8 +58,8 @@ Description: "Encounter is an interaction between a patient and healthcare provi
     $encounter-associatedEncounter named associatedEncounter 0..1
 * status MS
 * class MS
-* class from EEBaseEncounterClass (extensible)
-* priority from EEBaseActPriority (extensible)
+* class from EEEncounterClass (extensible)
+* priority from EEActPriority (extensible)
 * subject only Reference(Group or EEBasePatient)
 * episodeOfCare only Reference(EEBaseEpisodeOfCare)
 * participant.actor only Reference(EEBasePractitioner or EEBasePractitionerRole or EEBaseRelatedPerson)

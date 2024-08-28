@@ -1,11 +1,5 @@
 Alias: $org-type = http://terminology.hl7.org/CodeSystem/organization-type
 
-ValueSet: EEBaseOrganizationType
-Id: organization-type
-Title: "Organization Types"
-Description: "Organization Types"
-* ^experimental = false
-* include codes from system $org-type
 /*
 * ^compose.include.system = $org-type
 
@@ -46,7 +40,7 @@ Description: " Organization is a resource intended for documenting information r
 * active 1.. MS
 * active ^short = "Whether the organization's record is in active use"
 * active ^definition = "Whether the organization's record is in active use"
-* type from EEBaseOrganizationType (extensible)
+* type from EEOrganizationType (extensible)
 * name 1.. MS
 * contact.address MS
 * contact.address only EEBaseAddress
