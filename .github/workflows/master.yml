@@ -1,0 +1,46 @@
+name: Build and Upload Artifact
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build IG with docker builder
+        run: |
+          version=$(grep '^version:' sushi-config.yaml | awk '{print $2}')
+          echo "Building $version using docker fsh builder"
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            docker.kodality.com/fsh-builder \
+            /bin/bash -c "cd /workspace && ./_updatePublisher.sh -y && ./_genonce.sh -publish https://fhir.ee/packages/ee-base/$version/"
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output/
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

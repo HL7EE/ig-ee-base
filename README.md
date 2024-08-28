@@ -1,7 +1,9 @@
 # EE Base Implementation Guide
 Estonian HL7 FHIR base Implementation Guide and profiles.
 
-The latest EEBase release are available on HL7 site [https://build.fhir.org/ig/HL7EE/ig-ee-base/](https://build.fhir.org/ig/HL7EE/ig-ee-base/).
+The latest EEBase release are available on HL7 site https://ig.hl7.fhir.ee/ig-ee-base/
+
+Primary IG source:  https://ig.hl7.fhir.ee/ig-ee-base/
 
 # Build and publication
 EEBase integrated with HL7 [auto build](https://github.com/FHIR/auto-ig-builder) infrastructure.
