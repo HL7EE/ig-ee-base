@@ -10,5 +10,5 @@ EEBase integrated with HL7 [auto build](https://github.com/FHIR/auto-ig-builder)
 Build executed automatically every time you push changes. The results of build are visible in the FHIR [IG Build repo](https://fhir.github.io/auto-ig-builder/builds.html).
 Quick links to the:
 - [QA report](https://build.fhir.org/ig/HL7EE/ig-ee-base/qa.html) 
-- The [log](https://build.fhir.org/ig/HL7EE/ig-ee-base/branches/master/build.log) of latest build.
+- The [log](https://build.fhir.org/ig/HL7EE/ig-ee-base/branches/master/build.log) of the latest build.
 
