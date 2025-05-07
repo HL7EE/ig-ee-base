@@ -1,11 +1,3 @@
-ValueSet: EEBaseLocationForm
-Id: location-form
-Title: "Location Form"
-Description: "Location Form"
-* ^experimental = false
-* include codes from system http://terminology.hl7.org/CodeSystem/location-physical-type
-
-
 Profile: EEBaseLocation
 Parent: Location
 Id: ee-location
@@ -17,7 +9,7 @@ Description: "Location resource gives details and position information of a phys
 * address MS
 * address only EEBaseAddress
 * form MS
-* form from EEBaseLocationForm (required)
+* form from EELocationForm (required)
 * managingOrganization MS
 * managingOrganization only Reference(EEBaseOrganization)
 * partOf only Reference(EEBaseLocation)
