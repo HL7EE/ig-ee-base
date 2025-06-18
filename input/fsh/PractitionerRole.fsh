@@ -28,10 +28,10 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
 * code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code[role] ^short = "Practitioner role"
 * code[role] from EEPractitionerRole (extensible)
-* code[tor].coding.system = "https://fhir.ee/CodeSystem/occupation" (exactly)
+* code[tor].coding.system = $occupation (exactly)
 * code[tor] ^short = "Official occupation at the national register"
 * code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"
-* code[tor] from EEOccupation (extensible)
+* code[tor] from $occupation-VS (extensible)
 
 * specialty MS
 * specialty ^short = "Clinical ja MEDRE specialties"
@@ -62,7 +62,7 @@ Description: "PractitionerRole D99876"
 * practitioner = Reference(Practitioner/D99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
-* code[tor] = EEOccupation#22122501 "Pediaater"
+* code[tor] = $occupation#22122501 "Pediaater"
 * specialty[0] = $SCT#394537008 "Pediatric specialty"
 * specialty[+] = $SCT#418535003 "Pediatric immunology"
 * specialty[+] = $SCT#408439002 "Allergy - specialty"
@@ -80,7 +80,7 @@ Description: "PractitionerRole D98765"
 * practitioner = Reference(Practitioner/D98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
-* code[tor] = EEOccupation#22120901 "Kardioloog"
+* code[tor] = $occupation#22120901 "Kardioloog"
 * specialty[0] = $SCT#394579002 "Cardiology"
 * specialty[+] = $SCT#1251549008 "Interventional cardiology"
 * specialty[eriala] = EEEriala#E170 "Kardioloogia"
@@ -98,7 +98,7 @@ Description: "PractitionerRole N98765"
 * practitioner = Reference(Practitioner/N98765)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEOccupation#22210502 "Õde"
+* code[tor] = $occupation#22210502 "Õde"
 * specialty[0] = $SCT#394810000 "Rheumatology"
 * specialty[eriala] = EEEriala#N200 "Kliiniline õendus"
 
@@ -113,6 +113,6 @@ Description: "PractitionerRole N99876"
 * practitioner = Reference(Practitioner/N99876)
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = EEOccupation#22210502 "Õde"
+* code[tor] = $occupation#22210502 "Õde"
 * specialty[0] = $SCT#773568002 "Emergency medicine"
 * specialty[eriala] = EEEriala#N100 "Intensiivõendus"
