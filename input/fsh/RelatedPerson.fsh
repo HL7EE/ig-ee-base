@@ -33,18 +33,18 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 
 * telecom MS
 * address only EEBaseAddress
-* relationship MS 
+* relationship MS
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open
 * relationship contains
     class 0..* and
-    person 0..* 
+    person 0..*
 * relationship[class].coding.system = v3-RoleClass (exactly)
 * relationship[class].coding.system from http://terminology.hl7.org/ValueSet/v3-RoleClass (extensible)
 * relationship[class] ^short = "Association or legal relationship between two entities."
 * relationship[person].coding.system = $SCT (exactly)
-* relationship[person].coding.system from EEPersonRelationship (extensible)
+* relationship[person].coding.system from $person-relationship-VS (extensible)
 * relationship[person] ^short = "Social relation to the patient"
 
 
@@ -64,6 +64,6 @@ Description: "Jane Doe is a wife of John Doe"
 * name
   * given = "Jane"
   * family = "Doe"
-* gender = #female  
+* gender = #female
 * relationship[0] = $SCT#127848009 "Spouse"
 * relationship[+] = v3-RoleClass#NOK "Next of kin"

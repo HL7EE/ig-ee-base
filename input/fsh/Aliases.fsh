@@ -17,3 +17,4 @@ Alias: $country2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 
 Alias: $occupation = https://fhir.ee/CodeSystem/ametite-klassifikaator
 Alias: $occupation-VS = https://fhir.ee/ValueSet/ametite-klassifikaator
+Alias: $person-relationship-VS = https://fhir.ee/ValueSet/isiku-seos-patsiendiga
