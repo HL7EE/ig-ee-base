@@ -101,7 +101,7 @@ Parent: Address
 Id: ee-address
 Title: "EEBase Address"
 Description: "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This datatype may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. EEBase Address resource is developed in cooperation with Estonian Land Board. EEBase Address resource describes both Estonian and foreign addresses."
-* ^version = "1.0.0"
+* ^version = "1.2.0"
 * ^status = #draft
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -124,8 +124,8 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension[notice] ^short = "Address notices and warnings"
 * extension[notice] ^isModifier = false
 * country 1..1 MS
-* country ^short = "Should use a 2 digit ISO 3166 code"
-* country ^definition = "Riigi kood (lubatud ISO-3166-2 koodid)"
+* country ^short = "Should use a 2 digit country code"
+* country ^definition = "Riigi kood (kasutusel Riikide ja territooriumide klassifikaator (RTK), kus koodid on samad, mis ISO-3166-2"
 * country from $country2
 * use 1..1 MS
 * text MS

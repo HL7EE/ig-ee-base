@@ -44,9 +44,9 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
 * specialty[specialty].coding.system = $SCT (exactly)
 * specialty[specialty] ^short = "Clinical specialty (Tegevusvaldkond)"
 * specialty[specialty] from EEClinicalSpecialty (required)
-* specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/eriala" (exactly)
+* specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/erialad" (exactly)
 * specialty[eriala] ^short = "Medre specialty (TIS erialade loend)"
-* specialty[eriala] from EEEriala (required)
+* specialty[eriala] from $erialad-VS (required)
 
 
 
@@ -66,8 +66,8 @@ Description: "PractitionerRole D99876"
 * specialty[0] = $SCT#394537008 "Pediatric specialty"
 * specialty[+] = $SCT#418535003 "Pediatric immunology"
 * specialty[+] = $SCT#408439002 "Allergy - specialty"
-* specialty[eriala] = EEEriala#E290 "Pediaatria"
-* specialty[+] = EEEriala#E670 "Pediaatria allergoloogia lisapädevusega"
+* specialty[eriala] = $erialad#E290 "Pediaatria"
+* specialty[+] = $erialad#E670 "Pediaatria allergoloogia lisapädevusega"
 
 
 Instance: PractitionerRoleD98765
@@ -83,7 +83,7 @@ Description: "PractitionerRole D98765"
 * code[tor] = $occupation#22120901 "Kardioloog"
 * specialty[0] = $SCT#394579002 "Cardiology"
 * specialty[+] = $SCT#1251549008 "Interventional cardiology"
-* specialty[eriala] = EEEriala#E170 "Kardioloogia"
+* specialty[eriala] = $erialad#E170 "Kardioloogia"
 
 
 
@@ -100,7 +100,7 @@ Description: "PractitionerRole N98765"
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = $occupation#22210502 "Õde"
 * specialty[0] = $SCT#394810000 "Rheumatology"
-* specialty[eriala] = EEEriala#N200 "Kliiniline õendus"
+* specialty[eriala] = $erialad#N200 "Kliiniline õendus"
 
 
 Instance: PractitionerRoleN99876
@@ -115,4 +115,4 @@ Description: "PractitionerRole N99876"
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = $occupation#22210502 "Õde"
 * specialty[0] = $SCT#773568002 "Emergency medicine"
-* specialty[eriala] = EEEriala#N100 "Intensiivõendus"
+* specialty[eriala] = $erialad#N100 "Intensiivõendus"
