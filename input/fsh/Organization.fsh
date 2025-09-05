@@ -34,7 +34,7 @@ Description: " Organization is a resource intended for documenting information r
 //* ^abstract = true
 * . ^short = "A grouping of people or organizations with a common purpose without substructure"
 * identifier 1.. MS
-* identifier.system from EEBaseOrganizationIdentifierDomain (required)
+* identifier.system from $organization-identifier-domain-VS (required)
 * identifier.system 1..1 MS
 * identifier.value 1..1 MS
 * active 1.. MS

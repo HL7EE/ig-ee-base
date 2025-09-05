@@ -1,4 +1,4 @@
-## Release notes
+### Release notes
 
 v1.2.0 - 04.09.2025
 

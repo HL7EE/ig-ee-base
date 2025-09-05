@@ -13,7 +13,7 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 * patient MS
 * identifier MS
 * identifier ^short = "Kontaktisiku identifikaatorid."
-* identifier.system from EEBasePatientIdentifierDomain (extensible)
+* identifier.system from $patient-identifier-domain-VS (extensible)
 * identifier.system 1.. MS
 * identifier.value 1.. MS
 /*

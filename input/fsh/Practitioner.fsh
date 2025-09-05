@@ -12,7 +12,7 @@ Description: "This profile defines the EE Base constraints and extensions on the
 * ^publisher = "HL7 Estonia"
 * identifier 1.. MS
 * identifier.system 1.. MS
-* identifier.system from EEBasePractitionerIdentifierDomain (required)
+* identifier.system from $practitioner-identifier-domain-VS (required)
 * identifier.value 1.. MS
 * identifier.value ^short = "Eesti isikukood või tervishoiutöötaja kood"
 * name 1..1 MS
