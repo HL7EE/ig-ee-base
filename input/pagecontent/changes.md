@@ -8,4 +8,4 @@ v1.2.0 - 04.09.2025
 
 * Terminology correction: https://fhir.ee/CodeSystem/eriala -> https://fhir.ee/CodeSystem/erialad
 * added corrected reference to Erialad CS and VS 
-* Added 5 new alias for idntificator domain ValueSets and CodeSystem, removed references EEBaseOrganizationIdentifierDomain, EEBasePatientIdentifierDomain and EEBasePatientIdentifierDomain
+* Identifier domain references corrected

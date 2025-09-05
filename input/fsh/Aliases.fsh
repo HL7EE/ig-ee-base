@@ -21,6 +21,8 @@ Alias: $person-relationship-VS = https://fhir.ee/ValueSet/isiku-seos-patsiendiga
 Alias: $erialad-VS = https://fhir.ee/ValueSet/erialad
 Alias: $erialad = https://fhir.ee/CodeSystem/erialad
 
+// Added 5 new alias for idntificator domain ValueSets and CodeSystem, removed references 04092025
+
 Alias: $patient-identifier-domain-VS = https://fhir.ee/ValueSet/patsiendi-identifikaatorite-domeen
 Alias: $practitioner-identifier-domain-VS = https://fhir.ee/ValueSet/tervishoiutootaja-identifikaatorite-domeen
 Alias: $organization-identifier-domain-VS = https://fhir.ee/ValueSet/organisatsiooni-identifikaatorite-domeen
