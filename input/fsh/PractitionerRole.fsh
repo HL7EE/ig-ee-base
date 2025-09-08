@@ -56,6 +56,7 @@ Instance: PractitionerRoleD99876
 InstanceOf: EEBasePractitionerRole
 Usage: #example
 Description: "PractitionerRole D99876"
+* language = #et
 * id = "PractRoleD99876"
 * active = true
 * period.start = "2012-01-01"
@@ -74,6 +75,7 @@ Instance: PractitionerRoleD98765
 InstanceOf: EEBasePractitionerRole
 Usage: #example
 Description: "PractitionerRole D98765"
+* language = #et
 * id = "PractRoleD98765"
 * active = true
 * period.start = "2012-01-01"
@@ -92,6 +94,7 @@ Instance: PractitionerRoleN98765
 InstanceOf: EEBasePractitionerRole
 Usage: #example
 Description: "PractitionerRole N98765"
+* language = #et
 * id = "PractRoleN98765"
 * active = true
 * period.start = "2012-01-01"
@@ -107,6 +110,7 @@ Instance: PractitionerRoleN99876
 InstanceOf: EEBasePractitionerRole
 Usage: #example
 Description: "PractitionerRole N99876"
+* language = #et
 * id = "PractRoleN99876"
 * active = true
 * period.start = "2012-01-01"

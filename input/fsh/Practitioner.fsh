@@ -34,6 +34,7 @@ Instance: PractitionerD99876
 InstanceOf: EEBasePractitioner
 Usage: #example
 Description: "Practitioner D99876"
+* language = #et
 * id = "D99876"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
 * identifier[=].value = "D99876"
@@ -49,6 +50,7 @@ Instance: PractitionerD98765
 InstanceOf: EEBasePractitioner
 Usage: #example
 Description: "Practitioner D98765"
+* language = #et
 * id = "D98765"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
 * identifier[=].value = "D98765"
@@ -62,6 +64,7 @@ Instance: PractitionerN98765
 InstanceOf: EEBasePractitioner
 Usage: #example
 Description: "Practitioner N98765"
+* language = #et
 * id = "N98765"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
 * identifier[=].value = "N98765"
@@ -77,6 +80,7 @@ Instance: PractitionerN99876
 InstanceOf: EEBasePractitioner
 Usage: #example
 Description: "Practitioner N99876"
+* language = #et
 * id = "N99876"
 * identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
 * identifier[=].value = "N99876"
