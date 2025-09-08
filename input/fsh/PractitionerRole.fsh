@@ -83,8 +83,8 @@ Description: "PractitionerRole D98765"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = $occupation#22120901 "Kardioloog"
-* specialty[0].coding = $SCT#394579002 "Cardiology" //lisatud coding testimiseks
-* specialty[+].coding = $SCT#1251549008 "Interventional cardiology"
+* specialty[0].coding = $SCT#394592004 "Clinical oncology" //lisatud coding testimiseks
+* specialty[+].coding = $SCT#1259944007 "Immunohemotherapy"
 * specialty[eriala].coding = $erialad#E170 "Kardioloogia"
 
 
