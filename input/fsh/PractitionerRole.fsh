@@ -64,7 +64,7 @@ Description: "PractitionerRole D99876"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = $occupation#22122501 "Pediaater"
-* specialty[0] = $SCT#394537008 "Pediatric specialty"
+* specialty[0] = $SCT#394577000 "Anesthetics"
 * specialty[+] = $SCT#418535003 "Pediatric immunology"
 * specialty[+] = $SCT#408439002 "Allergy specialty"
 * specialty[eriala] = $erialad#E290 "Pediaatria"
@@ -83,9 +83,9 @@ Description: "PractitionerRole D98765"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = $occupation#22120901 "Kardioloog"
-* specialty[0].coding = $SCT#394592004 "Clinical oncology" //lisatud coding testimiseks
-* specialty[+].coding = $SCT#1259944007 "Immunohemotherapy"
-* specialty[eriala].coding = $erialad#E170 "Kardioloogia"
+* specialty[0] = $SCT#394821009 "Occupational medicine" //lisatud coding testimiseks
+* specialty[+] = $SCT#721961006 "Psychosomatic medicine"
+* specialty[eriala] = $erialad#E170 "Kardioloogia"
 
 
 
@@ -102,7 +102,7 @@ Description: "PractitionerRole N98765"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = $occupation#22210502 "Õde"
-* specialty[0] = $SCT#394810000 "Rheumatology"
+* specialty[0] = $SCT#1255685006 "Community nursing"
 * specialty[eriala] = $erialad#N200 "Kliiniline õendus"
 
 
