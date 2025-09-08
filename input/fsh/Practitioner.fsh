@@ -25,7 +25,7 @@ Description: "This profile defines the EE Base constraints and extensions on the
 * qualification ^slicing.rules = #open
 * qualification contains
     degree 0..1 MS
-* qualification[degree].code from $degree (extensible)
+//* qualification[degree].code from $degree (extensible)
 * qualification[degree].code.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0360" (exactly)
 * qualification[degree].code ^short = "Qualification, education, license"
 
@@ -70,7 +70,7 @@ Description: "Practitioner N98765"
 * active = true
 * name.family = "Õde"
 * name.given = "Laura"
-* qualification.code = $degree#PN "Advanced Practice Nurse"
+* qualification.code = $degreeLicenseCertificate#PN "Advanced Practice Nurse"
 
 
 Instance: PractitionerN99876
@@ -85,4 +85,4 @@ Description: "Practitioner N99876"
 * active = true
 * name.family = "Õde"
 * name.given = "Kari"
-* qualification.code = $degree#RN "Registered Nurse"
+* qualification.code = $degreeLicenseCertificate#RN "Registered Nurse"
