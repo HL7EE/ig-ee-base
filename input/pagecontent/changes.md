@@ -9,3 +9,9 @@ v1.2.0 - 04.09.2025
 * Terminology correction: https://fhir.ee/CodeSystem/eriala -> https://fhir.ee/CodeSystem/erialad
 * added corrected reference to Erialad CS and VS 
 * Identifier domain references corrected
+
+* Added ADS and ADR examples for EEBaseAddress
+* Added experimental CS Date Accuracy Index
+* Changed all local VS references to HL7 VS
+* removed dependency from ee.fhir.terminology
+

@@ -28,3 +28,13 @@ Alias: $practitioner-identifier-domain-VS = https://fhir.ee/ValueSet/tervishoiut
 Alias: $organization-identifier-domain-VS = https://fhir.ee/ValueSet/organisatsiooni-identifikaatorite-domeen
 Alias: $identifier-domain = https://fhir.ee/CodeSystem/identifikaatorite-domeen
 Alias: $identifier-domain-VS = https://fhir.ee/ValueSet/identifikaatorite-domeen
+
+Alias: $mode-of-arrival = https://fhir.ee/ValueSet/mode-of-arrival
+Alias: $act-priority = http://terminology.hl7.org/ValueSet/v3-ActPriority
+Alias: $encounter-class = http://terminology.hl7.org/ValueSet/encounter-class
+Alias: $location-form = http://hl7.org/fhir/ValueSet/location-form
+Alias: $observation-category = http://hl7.org/fhir/ValueSet/observation-category
+Alias: $organization-type = http://hl7.org/fhir/ValueSet/organization-type
+Alias: $administrative-gender = http://hl7.org/fhir/ValueSet/administrative-gender
+Alias: $degree = http://terminology.hl7.org/ValueSet/v2-0360
+Alias: $practitioner-role = http://hl7.org/fhir/ValueSet/practitioner-role

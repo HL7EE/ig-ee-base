@@ -27,7 +27,7 @@ Description: "PractitionerRole resource allows exchange of specific set of roles
     tor 0..1 MS
 * code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
 * code[role] ^short = "Practitioner role"
-* code[role] from EEPractitionerRole (extensible)
+* code[role] from $practitioner-role (extensible)
 * code[tor].coding.system = $occupation (exactly)
 * code[tor] ^short = "Official occupation at the national register"
 * code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"

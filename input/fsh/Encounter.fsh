@@ -14,7 +14,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * . ^short = "The method that the patient arrived at the facility."
 * . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
 * value[x] only Coding
-* value[x] from EEModeOfArrival (extensible)
+* value[x] from $mode-of-arrival (extensible)
 
 
 /*
@@ -58,8 +58,8 @@ Description: "Encounter is an interaction between a patient and healthcare provi
     $encounter-associatedEncounter named associatedEncounter 0..1
 * status MS
 * class MS
-* class from EEEncounterClass (extensible)
-* priority from EEActPriority (extensible)
+* class from $encounter-class (extensible)
+* priority from $act-priority (extensible)
 * subject only Reference(Group or EEBasePatient)
 * episodeOfCare only Reference(EEBaseEpisodeOfCare)
 * participant.actor only Reference(EEBasePractitioner or EEBasePractitionerRole or EEBaseRelatedPerson)

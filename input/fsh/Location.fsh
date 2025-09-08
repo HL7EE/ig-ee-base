@@ -9,7 +9,7 @@ Description: "Location resource gives details and position information of a phys
 * address MS
 * address only EEBaseAddress
 * form MS
-* form from EELocationForm (required)
+* form from $location-form (required)
 * managingOrganization MS
 * managingOrganization only Reference(EEBaseOrganization)
 * partOf only Reference(EEBaseLocation)

@@ -40,7 +40,7 @@ Description: " Organization is a resource intended for documenting information r
 * active 1.. MS
 * active ^short = "Whether the organization's record is in active use"
 * active ^definition = "Whether the organization's record is in active use"
-* type from EEOrganizationType (extensible)
+* type from $organization-type (extensible)
 * name 1.. MS
 * contact.address MS
 * contact.address only EEBaseAddress
