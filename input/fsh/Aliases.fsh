@@ -35,6 +35,6 @@ Alias: $encounter-class = http://terminology.hl7.org/ValueSet/encounter-class
 Alias: $location-form = http://hl7.org/fhir/ValueSet/location-form
 Alias: $observation-category = http://hl7.org/fhir/ValueSet/observation-category
 Alias: $organization-type = http://hl7.org/fhir/ValueSet/organization-type
-Alias: $administrative-gender = http://hl7.org/fhir/ValueSet/administrative-gender
+Alias: $gender = http://hl7.org/fhir/ValueSet/administrative-gender
 Alias: $degree = http://terminology.hl7.org/ValueSet/v2-0360
 Alias: $practitioner-role = http://hl7.org/fhir/ValueSet/practitioner-role

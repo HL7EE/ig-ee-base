@@ -73,7 +73,7 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 
 * gender MS
 * gender ^isModifierReason = "Needed for proper reference ranges"
-* gender from $administrative-gender (required)
+* gender from $gender (required)
 * birthDate MS
 * birthDate.extension ^slicing.discriminator.type = #value
 * birthDate.extension ^slicing.discriminator.path = "url"
