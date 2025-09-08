@@ -66,7 +66,7 @@ Description: "PractitionerRole D99876"
 * code[tor] = $occupation#22122501 "Pediaater"
 * specialty[0] = $SCT#394537008 "Pediatric specialty"
 * specialty[+] = $SCT#418535003 "Pediatric immunology"
-* specialty[+] = $SCT#408439002 "Allergy - specialty"
+* specialty[+] = $SCT#408439002 "Allergy specialty"
 * specialty[eriala] = $erialad#E290 "Pediaatria"
 * specialty[+] = $erialad#E670 "Pediaatria allergoloogia lisapädevusega"
 
