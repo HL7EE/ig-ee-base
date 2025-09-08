@@ -50,7 +50,7 @@ Description: "EEBase ADS Oid extension"
 * value[x].code 1..
 
 // OfficialAddress extension should be deleted from EEBase after it will be added to the official FHIR extension registry
-/*Extension: OfficialAddress
+Extension: OfficialAddress
 Id: address-official
 Title: "Official Address"
 Description: "Indicate that this address is meant to be the 'official' address for that person. What an 'official' address is depends on the country. This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country"
@@ -69,7 +69,7 @@ Description: "Indicate that this address is meant to be the 'official' address f
 * value[x] 1..1
 * value[x] only boolean or CodeableConcept
 * value[x] ^meaningWhenMissing = "Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address."
-*/
+
 
 Extension: ExtensionEEBaseEhak
 Id: ee-ehak
@@ -121,7 +121,6 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension[ehak] ^isModifier = false
 * extension[official] ^short = "Indicator of address of residency"
 * extension[official] ^isModifier = false
-* extension[official].url = "http://hl7.org/fhir/StructureDefinition/address-official" //katsetus
 * extension[notice] ^short = "Address notices and warnings"
 * extension[notice] ^isModifier = false
 * country 1..1 MS
