@@ -64,9 +64,9 @@ Description: "PractitionerRole D99876"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = $occupation#22122501 "Pediaater"
-* specialty[0] = $SCT#394577000 "Anesthetics"
-* specialty[+] = $SCT#418535003 "Pediatric immunology"
-* specialty[+] = $SCT#408439002 "Allergy specialty"
+//* specialty[0] = $SCT#394577000 "Anesthetics"
+//* specialty[+] = $SCT#418535003 "Pediatric immunology"
+//* specialty[+] = $SCT#408439002 "Allergy specialty"
 * specialty[eriala] = $erialad#E290 "Pediaatria"
 * specialty[+] = $erialad#E670 "Pediaatria allergoloogia lisapädevusega"
 
@@ -83,8 +83,8 @@ Description: "PractitionerRole D98765"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * code[tor] = $occupation#22120901 "Kardioloog"
-* specialty[0] = $SCT#394821009 "Occupational medicine" //lisatud coding testimiseks
-* specialty[+] = $SCT#721961006 "Psychosomatic medicine"
+//* specialty[0] = $SCT#394821009 "Occupational medicine" //lisatud coding testimiseks
+//* specialty[+] = $SCT#721961006 "Psychosomatic medicine"
 * specialty[eriala] = $erialad#E170 "Kardioloogia"
 
 
@@ -102,7 +102,7 @@ Description: "PractitionerRole N98765"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = $occupation#22210502 "Õde"
-* specialty[0] = $SCT#1255685006 "Community nursing"
+//* specialty[0] = $SCT#1255685006 "Community nursing"
 * specialty[eriala] = $erialad#N200 "Kliiniline õendus"
 
 
@@ -118,5 +118,5 @@ Description: "PractitionerRole N99876"
 * organization = Reference(Organization/rh)
 * code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
 * code[tor] = $occupation#22210502 "Õde"
-* specialty[0] = $SCT#773568002 "Emergency medicine"
+//* specialty[0] = $SCT#773568002 "Emergency medicine"
 * specialty[eriala] = $erialad#N100 "Intensiivõendus"
