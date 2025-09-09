@@ -1,3 +1,5 @@
+Alias: $address-official = http://hl7.org/fhir/StructureDefinition/address-official
+
 Extension: ExtensionEEBaseAddressNotice
 Id: ee-address-notice
 Title: "EEBase Address Notice"
@@ -50,7 +52,7 @@ Description: "EEBase ADS Oid extension"
 * value[x].code 1..
 
 // OfficialAddress extension should be deleted from EEBase after it will be added to the official FHIR extension registry
-Extension: OfficialAddress
+/*Extension: OfficialAddress
 Id: address-official
 Title: "Official Address"
 Description: "Indicate that this address is meant to be the 'official' address for that person. What an 'official' address is depends on the country. This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country"
@@ -69,7 +71,7 @@ Description: "Indicate that this address is meant to be the 'official' address f
 * value[x] 1..1
 * value[x] only boolean or CodeableConcept
 * value[x] ^meaningWhenMissing = "Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address."
-
+*/
 
 Extension: ExtensionEEBaseEhak
 Id: ee-ehak
@@ -111,7 +113,7 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
     ExtensionEEBaseAdsAdrId named adsAdrId 0..1 MS and
     ExtensionEEBaseAdsOid named adsOid 0..1 MS and
     ExtensionEEBaseEhak named ehak 0..1 MS and
-    OfficialAddress named official 0..1 MS and
+    $address-official named official 0..1 MS and
     ExtensionEEBaseAddressNotice named notice 0..* MS
 * extension[adsAdrId] ^short = "ADS AdrId"
 * extension[adsAdrId] ^isModifier = false
