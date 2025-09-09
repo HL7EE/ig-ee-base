@@ -29,7 +29,7 @@ Alias: $organization-identifier-domain-VS = https://fhir.ee/ValueSet/organisatsi
 Alias: $identifier-domain = https://fhir.ee/CodeSystem/identifikaatorite-domeen
 Alias: $identifier-domain-VS = https://fhir.ee/ValueSet/identifikaatorite-domeen
 
-Alias: $mode-of-arrival = https://fhir.ee/ValueSet/mode-of-arrival
+//Alias: $mode-of-arrival = https://fhir.ee/ValueSet/mode-of-arrival
 Alias: $act-priority = http://terminology.hl7.org/ValueSet/v3-ActPriority
 Alias: $encounter-class = http://terminology.hl7.org/ValueSet/encounter-class
 Alias: $location-form = http://hl7.org/fhir/ValueSet/location-form

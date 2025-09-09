@@ -14,7 +14,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * . ^short = "The method that the patient arrived at the facility."
 * . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
 * value[x] only Coding
-* value[x] from $mode-of-arrival (extensible)
+* value[x] from EEModeOfArrival (extensible)
 
 
 /*

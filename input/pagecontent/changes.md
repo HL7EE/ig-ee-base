@@ -10,7 +10,7 @@ v1.2.0 - 04.09.2025
 * Correct reference **added** to Erialad CS and VS 
 * New page "Changes" **added** where all changes should be recorded
 * Identifier domain references **corrected**
-* Experimental CS Date Accuracy Index **added**
+* Local terminology for Date Accuracy Index and Mode of Arrival **added**
 * All local (experimental) VS references **removed** and **changed** to HL7 references
 * Dependency from ee.fhir.terminology **removed**
 
