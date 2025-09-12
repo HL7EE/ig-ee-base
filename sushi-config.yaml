@@ -6,7 +6,7 @@
 #packageId: base
 id: ee.fhir.base
 canonical: https://fhir.ee/base
-version: 1.2.0
+version: 1.2.1
 name: EEBase
 title: Estonian Base Implementation Guide
 description: Eesti FHIR standardi baas juurutusjuhend
