@@ -14,3 +14,7 @@ v1.2.0 - 04.09.2025
 * All local (experimental) VS references **removed** and **changed** to HL7 references
 * Dependency from ee.fhir.terminology **removed**
 
+v1.3.0 - 13.10.2025
+* Added EEAdsAdrId CodeSystem and ValueSet (previously in ee.fhir.terminology), canonical url changed to https://fhir.ee/base/...
+* Added EEAdsOid CodeSystem and ValueSet (previously in ee.fhir.terminology), canonical url changed to https://fhir.ee/base/...
+* Patient.active changed cardinality 1..1 -> 0..1, matching FHIR default
