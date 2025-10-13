@@ -32,7 +32,6 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * identifier.value ^short = "Patient identification code or document number."
 * identifier.period ^short = "Validity period of the identifier of identification document."
 * identifier.assigner ^short = "Organization that issued the document. Can be used as a reference to an organization or as free text."
-* active 1.. MS
 * name MS
 * name.use 1..1 MS
 * name.text MS
@@ -121,7 +120,6 @@ Title: "John Doe (foreign patient)"
 Description: "Foreigner with minimal dataset."
 Usage: #example
 * id = "pat2"
-* active = true
 * identifier[0]
   * system = "https://fhir.ee/sid/pid/usa/ppn"
   * value = "N857623628"
@@ -149,7 +147,6 @@ Title: "Mart Mets (verified patient)"
 Description: "Estonian citizen"
 Usage: #example
 * id = "pat1"
-* active = true
 * identifier[0]
   * system = "https://fhir.ee/sid/pid/est/ni"
   * value = "37302102711"
@@ -182,7 +179,6 @@ Title: "Unknown patient"
 Description: "Patient that can not be recognized during admission"
 Usage: #example
 * id = "patunk"
-* active = false
 * identifier[0]
   * system = "https://fhir.ee/sid/pid/est/mr"
   * value = "74569215-34534563-mfhsjq"
