@@ -57,7 +57,7 @@ Description: "Encounter is an interaction between a patient and healthcare provi
 //* extension contains
 //    ExtensionEEBaseModeOfArrival named modeOfArrival 0..1 and
 //    $encounter-associatedEncounter named associatedEncounter 0..1
-* class from $encounter-class (extensible)
+//* class from $encounter-class (extensible)
 //* priority from $act-priority (extensible)
 * subject only Reference(Group or EEBasePatient)
 * episodeOfCare only Reference(EEBaseEpisodeOfCare)
