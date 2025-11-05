@@ -5,13 +5,10 @@ Parent: HealthcareService
 Id: ee-healthcare-service
 Title: "EEBase HealthcareService"
 Description: "HealthcareService resource describes the details of a single healthcare service or category of services that are provided by an organization at a location. The location of the services could be virtual, as with telemedicine services."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * providedBy only Reference(EEBaseOrganization)
-* providedBy MS 
-* category MS 
-* specialty MS 
 * location only Reference(EEBaseLocation)
 * coverageArea only Reference(EEBaseLocation)
 

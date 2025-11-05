@@ -1,6 +1,7 @@
 Alias: $encounter-modeOfArrival = http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 Alias: $encounter-associatedEncounter = http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter
 
+/*
 Extension: ExtensionEEBaseModeOfArrival
 Id: ee-mode-of-arrival
 Title: "EEBase ModeOfArrival"
@@ -15,7 +16,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 * . ^definition = "Esimesel külastusel tavaliselt registreeritakse kas tuli ise, kiirabiga või teisiti."
 * value[x] only Coding
 * value[x] from EEModeOfArrival (extensible)
-
+*/
 
 /*
 Extension: EEBaseAssociatedEncounter
@@ -47,19 +48,17 @@ Parent: Encounter
 Id: ee-encounter
 Title: "EEBase Encounter"
 Description: "Encounter is an interaction between a patient and healthcare provider(s) to provide healthcare service(s) or assess a patient's health status. There are many types of encounters (such as ambulatory, inpatient, home visits, emergency and the like) which is the reason why the resource encompasses the lifecycle from pre-admission to the actual encounter (for ambulatory encounters) and admission, stay and discharge (for inpatient encounters). Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains
-    ExtensionEEBaseModeOfArrival named modeOfArrival 0..1 and
-    $encounter-associatedEncounter named associatedEncounter 0..1
-* status MS
-* class MS
+//* extension ^slicing.discriminator.type = #value
+//* extension ^slicing.discriminator.path = "url"
+//* extension ^slicing.rules = #open
+//* extension contains
+//    ExtensionEEBaseModeOfArrival named modeOfArrival 0..1 and
+//    $encounter-associatedEncounter named associatedEncounter 0..1
 * class from $encounter-class (extensible)
-* priority from $act-priority (extensible)
+//* priority from $act-priority (extensible)
 * subject only Reference(Group or EEBasePatient)
 * episodeOfCare only Reference(EEBaseEpisodeOfCare)
 * participant.actor only Reference(EEBasePractitioner or EEBasePractitionerRole or EEBaseRelatedPerson)
@@ -85,7 +84,7 @@ Usage: #example
 * actualPeriod.start = "2023-05-09"
 * episodeOfCare[0] = Reference(EpisodeOfCarePatient1)
 * serviceProvider = Reference(Organization/rh)
-* extension[modeOfArrival].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0430#A "Ambulance"
+//* extension[modeOfArrival].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0430#A "Ambulance"
 * location[0].location.display = "Emergency Waiting Room"
 * location[=].status = #active
 * location[=].period.start = "2023-05-09T19:00:00+02:00"

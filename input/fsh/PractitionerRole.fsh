@@ -4,50 +4,48 @@ Id: ee-practitioner-role
 Title: "EEBase PractitionerRole"
 Description: "PractitionerRole resource allows exchange of specific set of roles, specialties and services that a practitioner may perform at an organisation for a period of time. EEBase PractitionerRole profile defines the constraints and extensions for the minimal set of data to query and retrieve information for practitioner role in Estonian context."
 * ^meta.lastUpdated = "2022-09-26T08:01:30.1809509+00:00"
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 EE"
-* active 1.. MS
-* practitioner 1.. MS
+//* active 1.. MS
+* practitioner 1.. 
 * practitioner only Reference(EEBasePractitioner)
-* practitioner.reference MS
-* organization 1.. MS
+* organization 1.. 
 * organization only Reference(EEBaseOrganization)
-* organization.reference MS
 * location only Reference(EEBaseLocation)
 * healthcareService only Reference(EEBaseHealthcareService)
-* code MS
 * code ^short = "The role of the healthcare professional in the healthcare facility"
 * code ^definition = "Tervishoiutöötaja roll TTO-s"
-* code ^slicing.discriminator.type = #value
-* code ^slicing.discriminator.path = "coding.system"
-* code ^slicing.rules = #open
-* code contains
-    role 0..1 MS and
-    tor 0..1 MS
-* code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
-* code[role] ^short = "Practitioner role"
-* code[role] from $practitioner-role (extensible)
-* code[tor].coding.system = $occupation (exactly)
-* code[tor] ^short = "Official occupation at the national register"
-* code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"
-* code[tor] from $occupation-VS (extensible)
 
-* specialty MS
-* specialty ^short = "Clinical ja MEDRE specialties"
-* specialty ^slicing.discriminator.type = #value
-* specialty ^slicing.discriminator.path = "coding.system"
-* specialty ^slicing.rules = #open
-* specialty contains
-    specialty 0..* MS and
-    eriala 0..* MS
-* specialty[specialty].coding.system = $SCT (exactly)
-* specialty[specialty] ^short = "Clinical specialty (Tegevusvaldkond)"
-* specialty[specialty] from EEClinicalSpecialty (required)
-* specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/erialad" (exactly)
-* specialty[eriala] ^short = "Medre specialty (TIS erialade loend)"
-* specialty[eriala] from $erialad-VS (required)
+//* code ^slicing.discriminator.type = #value
+//* code ^slicing.discriminator.path = "coding.system"
+//* code ^slicing.rules = #open
+//* code contains
+//    role 0..1 MS and
+//    tor 0..1 MS
+//* code[role].coding.system = "http://terminology.hl7.org/CodeSystem/practitioner-role" (exactly)
+//* code[role] ^short = "Practitioner role"
+//* code[role] from $practitioner-role (extensible)
+//* code[tor].coding.system = $occupation (exactly)
+//* code[tor] ^short = "Official occupation at the national register"
+//* code[tor] ^short = "Ametinimetus (Töötamiseregistri andmete järgi)"
+//* code[tor] from $occupation-VS (extensible)
 
+* specialty ^short = "For example MEDRE specialties"
+
+
+//* specialty ^slicing.discriminator.type = #value
+//* specialty ^slicing.discriminator.path = "coding.system"
+//* specialty ^slicing.rules = #open
+//* specialty contains
+//    specialty 0..* MS and
+//    eriala 0..* MS
+//* specialty[specialty].coding.system = $SCT (exactly)
+//* specialty[specialty] ^short = "Clinical specialty (Tegevusvaldkond)"
+//* specialty[specialty] from EEClinicalSpecialty (required)
+//* specialty[eriala].coding.system = "https://fhir.ee/CodeSystem/erialad" (exactly)
+//* specialty[eriala] ^short = "Medre specialty (TIS erialade loend)"
+//* specialty[eriala] from $erialad-VS (required)
 
 
 
@@ -62,13 +60,13 @@ Description: "PractitionerRole D99876"
 * period.start = "2012-01-01"
 * practitioner = Reference(Practitioner/D99876)
 * organization = Reference(Organization/rh)
-* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
-* code[tor] = $occupation#22122501 "Pediaater"
+//* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
+* code = $occupation#22122501 "Pediaater"
 //* specialty[0] = $SCT#394577000 "Anesthetics"
 //* specialty[+] = $SCT#418535003 "Pediatric immunology"
 //* specialty[+] = $SCT#408439002 "Allergy specialty"
-* specialty[eriala] = $erialad#E290 "Pediaatria"
-* specialty[+] = $erialad#E670 "Pediaatria allergoloogia lisapädevusega"
+//* specialty[eriala] = $erialad#E290 "Pediaatria"
+* specialty = $erialad#E670 "Pediaatria allergoloogia lisapädevusega"
 
 
 Instance: PractitionerRoleD98765
@@ -81,11 +79,11 @@ Description: "PractitionerRole D98765"
 * period.start = "2012-01-01"
 * practitioner = Reference(Practitioner/D98765)
 * organization = Reference(Organization/rh)
-* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
-* code[tor] = $occupation#22120901 "Kardioloog"
+//* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
+* code = $occupation#22120901 "Kardioloog"
 //* specialty[0] = $SCT#394821009 "Occupational medicine" //lisatud coding testimiseks
 //* specialty[+] = $SCT#721961006 "Psychosomatic medicine"
-* specialty[eriala] = $erialad#E170 "Kardioloogia"
+* specialty = $erialad#E170 "Kardioloogia"
 
 
 
@@ -100,10 +98,10 @@ Description: "PractitionerRole N98765"
 * period.start = "2012-01-01"
 * practitioner = Reference(Practitioner/N98765)
 * organization = Reference(Organization/rh)
-* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = $occupation#22210502 "Õde"
+//* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
+* code = $occupation#22210502 "Õde"
 //* specialty[0] = $SCT#1255685006 "Community nursing"
-* specialty[eriala] = $erialad#N200 "Kliiniline õendus"
+* specialty = $erialad#N200 "Kliiniline õendus"
 
 
 Instance: PractitionerRoleN99876
@@ -116,7 +114,7 @@ Description: "PractitionerRole N99876"
 * period.start = "2012-01-01"
 * practitioner = Reference(Practitioner/N99876)
 * organization = Reference(Organization/rh)
-* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
-* code[tor] = $occupation#22210502 "Õde"
+//* code[role] = http://terminology.hl7.org/CodeSystem/practitioner-role#nurse "Nurse"
+* code = $occupation#22210502 "Õde"
 //* specialty[0] = $SCT#773568002 "Emergency medicine"
-* specialty[eriala] = $erialad#N100 "Intensiivõendus"
+* specialty = $erialad#N100 "Intensiivõendus"

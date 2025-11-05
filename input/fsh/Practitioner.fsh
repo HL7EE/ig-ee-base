@@ -7,27 +7,27 @@ Title: "EEBase Practitioner"
 Description: "This profile defines the EE Base constraints and extensions on the Practitioner resource for the minimal set of data to query and retrieve practitioner information. The profile defines a structure that localises core concepts, including identifiers and terminology, for use in an Estonian context for practitioner."
 * ^meta.versionId = "4"
 * ^meta.lastUpdated = "2022-11-21T13:15:21.1820806+00:00"
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* identifier 1.. MS
-* identifier.system 1.. MS
+* identifier 0.. 
+* identifier.system 1.. 
 * identifier.system from $practitioner-identifier-domain-VS (required)
-* identifier.value 1.. MS
+* identifier.value 1.. 
 * identifier.value ^short = "Eesti isikukood või tervishoiutöötaja kood"
-* name 1..1 MS
-* name.family 1.. MS
-* name.given 1..1 MS
+* name 1..1 
+* name.family 1.. 
+* name.given 1..1 
 * address only EEBaseAddress
 * qualification.issuer only Reference(EEBaseOrganization)
-* qualification ^slicing.discriminator.type = #value
-* qualification ^slicing.discriminator.path = "code.coding.system"
-* qualification ^slicing.rules = #open
-* qualification contains
-    degree 0..1 MS
+//* qualification ^slicing.discriminator.type = #value
+//* qualification ^slicing.discriminator.path = "code.coding.system"
+//* qualification ^slicing.rules = #open
+//* qualification contains
+//    degree 0..1 
 //* qualification[degree].code from $degree (extensible)
-* qualification[degree].code.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0360" (exactly)
-* qualification[degree].code ^short = "Qualification, education, license"
+//* qualification[degree].code.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0360" (exactly)
+//* qualification[degree].code ^short = "Qualification, education, license"
 
 
 Instance: PractitionerD99876
@@ -43,8 +43,8 @@ Description: "Practitioner D99876"
 * active = true
 * name.family = "Arst"
 * name.given = "Paavo"
-* qualification[degree].code.text = "pediaatria"
-* qualification[degree].code = http://terminology.hl7.org/CodeSystem/v2-0360#MD "Doctor of Medicine"
+* qualification.code.text = "pediaatria"
+* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360#MD "Doctor of Medicine"
 
 Instance: PractitionerD98765
 InstanceOf: EEBasePractitioner

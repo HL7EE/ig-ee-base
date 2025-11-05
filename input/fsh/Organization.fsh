@@ -27,22 +27,22 @@ Title: "EEBase Organization"
 Description: " Organization is a resource intended for documenting information related to an entity that has been formed for the purpose of achieving some form of collective action. 'Organization' as such has a narrower definition in context of EEBase - in order to be conformant to EEBaseOrganization profile, an organization MUST be registered as a business. Yet, Organization could be used for documenting contact information and/or providing support for other resources that need to reference organizations."
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-11-21T13:25:49.780106+00:00"
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "HL7 Estonia"
 //* ^abstract = true
 * . ^short = "A grouping of people or organizations with a common purpose without substructure"
-* identifier 1.. MS
+* identifier 1.. 
 * identifier.system from $organization-identifier-domain-VS (required)
-* identifier.system 1..1 MS
-* identifier.value 1..1 MS
-* active 1.. MS
+* identifier.system 1..1 
+* identifier.value 1..1 
+//* active 0..* 
 * active ^short = "Whether the organization's record is in active use"
 * active ^definition = "Whether the organization's record is in active use"
-* type from $organization-type (extensible)
-* name 1.. MS
-* contact.address MS
+//* type from $organization-type (extensible)
+* name 1.. 
+* contact.address 
 * contact.address only EEBaseAddress
 * partOf only Reference(EEBaseOrganization)
 

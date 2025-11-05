@@ -18,3 +18,11 @@ v1.3.0 - 13.10.2025
 * Added EEAdsAdrId CodeSystem and ValueSet (previously in ee.fhir.terminology), canonical url changed to https://fhir.ee/base/...
 * Added EEAdsOid CodeSystem and ValueSet (previously in ee.fhir.terminology), canonical url changed to https://fhir.ee/base/...
 * Patient.active changed cardinality 1..1 -> 0..1, matching FHIR default
+
+v2.0.0 - 6.11.2025
+* Removed MustSupport from all profiles
+* Extensions removed from EEBaseEncounter
+* Removed CS and VS mode-of-arrival
+* EEBaseOrganization active 1..1 -> 0..1
+* EEBasePractitioner identifier 1..* -> 0..*
+    * qualification slicing removed

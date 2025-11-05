@@ -22,21 +22,21 @@ Parent: Patient
 Id: ee-patient
 Title: "EEBase Patient"
 Description: "Patient is a FHIR resource intended for documenting demographical and/or administrative information about the individual on the receiving end of healthcare services. In context of Estonian healthcare data exchange, the patient MUST be identifiable by Person Identity System."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* identifier 1.. MS
+* identifier 1.. 
 * identifier.system from $patient-identifier-domain-VS (required)
-* identifier.system 1.. MS
-* identifier.value 1.. MS
+* identifier.system 1.. 
+* identifier.value 1.. 
 * identifier.value ^short = "Patient identification code or document number."
 * identifier.period ^short = "Validity period of the identifier of identification document."
 * identifier.assigner ^short = "Organization that issued the document. Can be used as a reference to an organization or as free text."
-* name MS
-* name.use 1..1 MS
-* name.text MS
-* name.family MS
-* name.given MS
+* name 
+* name.use 1..1 
+* name.text 
+* name.family 
+* name.given 
 
 // >>> added from MPI
 * name ^slicing.discriminator.type = #value
@@ -44,18 +44,18 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * name ^slicing.rules = #open
 * name ^short = "Patient name"
 * name ^definition = "Patsiendi nimi"
-* name contains official 0..1 MS  and nickname 0..1 MS //and other 0..1
+* name contains official 0..1 and nickname 0..1 //and other 0..1
 * name[official] ^short = "Ametlik nimi"
 * name[official].use = #official (exactly)
-* name[official].family 1..1 MS
+* name[official].family 1..1
 * name[official].family ^short = "Perekonnanimi"
-* name[official].given 1..1 MS
+* name[official].given 1..1
 * name[official].given ^short = "Eesnimi"
-* name[official].prefix 0..1 MS
-* name[official].period MS
+* name[official].prefix 0..1
+* name[official].period
 * name[nickname] ^short = "Tundmatu või anonüümse patsiendi nimi"
 * name[nickname].use = #nickname (exactly)
-* name[nickname].text 1.. MS
+* name[nickname].text 1..
 * name[nickname].text ^short = "Tundmatu patsiendi hüüdnimi"
 * name[nickname].family ..0
 * name[nickname].given ..0
@@ -64,33 +64,33 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 //* name[other] ^short = "Teised nimed"
 // <<< added from MPI
 
-* telecom MS
-* telecom.system 1..1 MS
-* telecom.value 1..1 MS
-* telecom.use MS
-* telecom.period MS
+* telecom 
+* telecom.system 1..1 
+* telecom.value 1..1 
+* telecom.use 
+* telecom.period 
 
-* gender MS
+ 
 * gender ^isModifierReason = "Needed for proper reference ranges"
 * gender from $gender (required)
-* birthDate MS
+* birthDate 
 * birthDate.extension ^slicing.discriminator.type = #value
 * birthDate.extension ^slicing.discriminator.path = "url"
 * birthDate.extension ^slicing.rules = #open
 * birthDate.extension contains $patient-birthTime named birthTime 0..1 and ExtensionEEBasePatientAge named age 0..1 and ExtensionEEBaseDateAccuracyIndicator named accuracyIndicator 0..1
-* birthDate.extension[birthTime] MS
-* birthDate.extension[birthTime].value[x] MS
+* birthDate.extension[birthTime] 
+* birthDate.extension[birthTime].value[x] 
 * birthDate.extension[birthTime] ^short = "Sünniaeg"
 * birthDate.extension[age] ^isModifier = false
 * birthDate.extension[age] ^short = "Vanus"
 * birthDate.extension[accuracyIndicator] ^isModifier = false
 * birthDate.extension[accuracyIndicator] ^short = "Kuupäeva täpsuse indikaator"
-* deceased[x] MS
+* deceased[x] 
 * deceased[x].extension ^slicing.discriminator.type = #value
 * deceased[x].extension ^slicing.discriminator.path = "url"
 * deceased[x].extension ^slicing.rules = #open
 * deceased[x].extension contains ExtensionEEBaseDateAccuracyIndicator named accuracyIndicator 0..1
-* address MS
+* address 
 * address only EEBaseAddress
 /** address ^slicing.discriminator.type = #value
 * address ^slicing.discriminator.path = "country"
@@ -107,10 +107,8 @@ Description: "Patient is a FHIR resource intended for documenting demographical 
 * contact.address only EEBaseAddress
 * contact.organization only Reference(EEBaseOrganization)
 * generalPractitioner only Reference(EEBasePractitioner or EEBasePractitionerRole)
-* generalPractitioner MS
 * generalPractitioner ^type.versioning = #independent
 * managingOrganization only Reference(EEBaseOrganization)
-* link MS
 * link.other only Reference(EEBasePatient or EEBaseRelatedPerson)
 
 

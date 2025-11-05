@@ -3,14 +3,11 @@ Parent: Location
 Id: ee-location
 Title: "EEBase Location"
 Description: "Location resource gives details and position information of a physical place where services are provided, and also where resources and participants may be stored, found, contained or accomodated."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* address MS
 * address only EEBaseAddress
-* form MS
-* form from $location-form (required)
-* managingOrganization MS
+//* form from $location-form (required)
 * managingOrganization only Reference(EEBaseOrganization)
 * partOf only Reference(EEBaseLocation)
 

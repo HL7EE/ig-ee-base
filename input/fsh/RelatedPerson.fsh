@@ -6,16 +6,14 @@ Parent: RelatedPerson
 Id: ee-related-person
 Title: "EEBase RelatedPerson"
 Description: "This profile builds on RelatedPerson resource. The profile allows information exchange about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
 * patient only Reference(EEBasePatient)
-* patient MS
-* identifier MS
 * identifier ^short = "Kontaktisiku identifikaatorid."
 * identifier.system from $patient-identifier-domain-VS (extensible)
-* identifier.system 1.. MS
-* identifier.value 1.. MS
+* identifier.system 1.. 
+* identifier.value 1.. 
 /*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -31,9 +29,7 @@ Description: "This profile builds on RelatedPerson resource. The profile allows 
 * identifier[tis-id] ^definition = "Isiku unikaalne tunnus, mille alusel saab teda eristada teistest isikutest TIS-is. Saab kasutada nii välimaalaste kui ka tundmatu isiku jaoks (juhtudel, kui puudub Eesti isikukood). Mõeldud andmevahetuseks Tervise infosüsteemiga."
 */
 
-* telecom MS
 * address only EEBaseAddress
-* relationship MS
 * relationship ^slicing.discriminator.type = #value
 * relationship ^slicing.discriminator.path = "coding.system"
 * relationship ^slicing.rules = #open

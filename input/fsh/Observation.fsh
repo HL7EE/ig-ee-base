@@ -5,34 +5,20 @@ Parent: Observation
 Id: ee-observation
 Title: "EEBase Observation"
 Description: "Observation represents one of the most important and central units of healthcare data exchange - different kinds of observations varying from clinical findings and measurements to social history. The resource is designed to cover a wide variety of use cases and as a result, at its simplest, a resource instance can consist of only a code, value, and status flag. The granularity of instance highly depends on the use case, therefore the minimal viable data considered is a decision that needs to be made during profiling process."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* status MS
-* category MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
-* category.coding contains obscat 0..* MS 
+* category.coding contains obscat 0..*  
 * category.coding[obscat].system = $obscat (exactly)
 * category.coding[obscat] from $observation-category (required)
-* code MS
 * subject only Reference(EEBasePatient or Group or Device or EEBaseLocation or EEBaseOrganization or Procedure or EEBasePractitioner or Medication or Substance or BiologicallyDerivedProduct or NutritionProduct)
-* subject MS
 * encounter only Reference(EEBaseEncounter)
-* encounter MS
-* effective[x] MS
 * performer only Reference(EEBasePractitioner or EEBasePractitionerRole or EEBaseOrganization or CareTeam or EEBasePatient or EEBaseRelatedPerson)
-* performer MS
-* value[x] MS
-* dataAbsentReason MS
-* interpretation MS
-* bodySite MS
-* bodyStructure MS
-* specimen MS
 * hasMember only Reference(QuestionnaireResponse or MolecularSequence or EEBaseObservation)
-* derivedFrom only Reference(DocumentReference or ImagingStudy or ImagingSelection or QuestionnaireResponse or EEBaseObservation or MolecularSequence or GenomicStudy)
-* component MS
+* derivedFrom only Reference(DocumentReference or ImagingStudy or ImagingSelection or QuestionnaireResponse or EEBaseObservation or MolecularSequence or GenomicStudy) 
 * triggeredBy
   * observation only Reference(EEBaseObservation)
 

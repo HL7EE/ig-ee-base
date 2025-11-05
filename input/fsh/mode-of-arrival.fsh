@@ -1,3 +1,4 @@
+/*
 CodeSystem: EEModeOfArrival
 Id: mode-of-arrival
 Title: "Mode Of Arrival"
@@ -20,3 +21,4 @@ Description: "Mode Of Arrival"
 * ^copyright = "This value set includes content from HL7 Terminology, which is copyright © 2002+ HL7"
 * include codes from system http://terminology.hl7.org/CodeSystem/v2-0430
 * include codes from system EEModeOfArrival
+*/

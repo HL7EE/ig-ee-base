@@ -81,18 +81,18 @@ Parent: Address
 Id: ee-address
 Title: "EEBase Address"
 Description: "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This datatype may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. EEBase Address resource is developed in cooperation with Estonian Land Board. EEBase Address resource describes both Estonian and foreign addresses."
-* ^version = "1.2.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    ExtensionEEBaseAdsAdrId named adsAdrId 0..1 MS and
-    ExtensionEEBaseAdsOid named adsOid 0..1 MS and
-    ExtensionEEBaseEhak named ehak 0..1 MS and
-    $address-official named official 0..1 MS and
-    ExtensionEEBaseAddressNotice named notice 0..* MS
+    ExtensionEEBaseAdsAdrId named adsAdrId 0..1 and
+    ExtensionEEBaseAdsOid named adsOid 0..1 and
+    ExtensionEEBaseEhak named ehak 0..1 and
+    $address-official named official 0..1 and
+    ExtensionEEBaseAddressNotice named notice 0..* 
 * extension[adsAdrId] ^short = "ADS AdrId"
 * extension[adsAdrId] ^isModifier = false
 * extension[adsOid] ^short = "ADS Oid"
@@ -103,12 +103,12 @@ Description: "An address expressed using postal conventions (as opposed to GPS o
 * extension[official] ^isModifier = false
 * extension[notice] ^short = "Address notices and warnings"
 * extension[notice] ^isModifier = false
-* country 1..1 MS
+* country 1..1
 * country ^short = "Should use a 2 digit country code"
 * country ^definition = "Riigi kood (kasutusel Riikide ja territooriumide klassifikaator (RTK), kus koodid on samad, mis ISO-3166-2"
 * country from $country2
-* use 1..1 MS
-* text MS
+* use 1..1
+* text
 * state ^short = "Sub-unit of country"
 * district ^short = "Administrative or political subdivision of a state or city"
 * line.extension ^slicing.discriminator.type = #value

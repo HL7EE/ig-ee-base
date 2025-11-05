@@ -3,17 +3,15 @@ Parent: EpisodeOfCare
 Id: ee-episode-of-care
 Title: "EEBase EpisodeOfCare"
 Description: "An association between a patient and an organization/healthcare provider(s) over a period of time. The managing organization assumes a level of responsibility for the patient during this time. EpisodeOfCare acts as a container resource that links a series of Encounters together for problems/issues (specific condition)."
-* ^version = "1.0.0"
+* ^version = "2.0.0"
 * ^status = #draft
 * ^publisher = "HL7 Estonia"
-* identifier MS
-* status MS
-* type MS
+* identifier 
+* status 
+* type 
 * patient only Reference(EEBasePatient)
-* patient MS
+* patient 
 * managingOrganization only Reference(EEBaseOrganization)
-* managingOrganization MS
-* period MS
 * careManager only Reference(EEBasePractitioner or EEBasePractitionerRole)
 * reason.value only CodeableReference(Condition or Procedure or EEBaseObservation or EEBaseHealthcareService)
 
